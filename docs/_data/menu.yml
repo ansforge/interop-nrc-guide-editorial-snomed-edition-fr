@@ -16,5 +16,5 @@ header:
     url:  https://fr-rmp.snomedtools.org/fr
     external: true
   - title: Historique du guide
-    url: https://github.com/ansforge/interop-nrc-guide-editorial-snomed-edition-fr/commits/main
+    url: https://github.com/ansforge/interop-nrc-guide-editorial-snomed-edition-fr/commits/master/
     external: true
