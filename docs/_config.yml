@@ -20,7 +20,7 @@
 
 title: Guide éditorial - Edition française SNOMED CT
 description: A Jekyll theme for documentation
-baseurl: "/ge-snomed-fr" # the subpath of your site, e.g. /blog
+baseurl: "/interop-nrc-guide-editorial-snomed-edition-fr" # the subpath of your site, e.g. /blog
 url: "https://ansforge.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 highlighter: rouge
 
