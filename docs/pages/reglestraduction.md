@@ -31,7 +31,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
         <div id="tabs-01" class="js-tabcontent">
             <!-- Onglet 1 - Règles génériques -->
             <div class="js-accordion" data-accordion-prefix-classes="o" data-accordion-multiselectable="none">
-                <h3 class="js-accordion__header">Abréviations, acronymes et sigles (ab)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Abréviations, acronymes et sigles (ab)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -81,7 +81,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Articles (ar)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Articles (ar)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -151,7 +151,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Caractères séparateurs ou de ponctuation (se)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Caractères séparateurs ou de ponctuation (se)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -276,7 +276,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Lettres grecques (gr)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Lettres grecques (gr)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -301,7 +301,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Lettres ligaturées (ll)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Lettres ligaturées (ll)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -329,7 +329,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Noms propres (np)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Noms propres (np)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -354,7 +354,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Rectification orthographiques de 1990 (or)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Rectification orthographiques de 1990 (or)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -436,7 +436,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Style général et syntaxe (ss)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Style général et syntaxe (ss)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -542,7 +542,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Symboles scientifiques, chiffres et nombres (sc)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Symboles scientifiques, chiffres et nombres (sc)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -649,7 +649,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Temps des verbes (tv)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Temps des verbes (tv)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -726,7 +726,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Unités de mesure (um)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Unités de mesure (um)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -830,7 +830,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
         <div id="tabs-02" class="js-tabcontent">
             <!-- Onglet 2 - Règles spécifiques aux hiérarchies -->
             <div class="js-accordion" data-accordion-prefix-classes="o" data-accordion-multiselectable="none">
-                <h3 class="js-accordion__header">Constatation clinique - Sous-hiérarchie constatation (co)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Constatation clinique - Sous-hiérarchie constatation (co)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -908,7 +908,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Constatation clinique - Sous-hiérarchie maladie (pa)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Constatation clinique - Sous-hiérarchie maladie (pa)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -1116,7 +1116,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Échantillon (ec)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Échantillon (ec)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -1188,7 +1188,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Environnement ou lieu géographique - Sous-hiérarchie environnement (en)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Environnement ou lieu géographique - Sous-hiérarchie environnement (en)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -1287,7 +1287,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Environnement ou lieu géographique - Sous-hiérarchie région géographique et/ou politique du monde (ge)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Environnement ou lieu géographique - Sous-hiérarchie région géographique et/ou politique du monde (ge)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -1326,7 +1326,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Objet physique (sb)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Objet physique (sb)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -1370,7 +1370,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Organisme (ho)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Organisme (ho)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -1514,7 +1514,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Procédure (pr)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Procédure (pr)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -1738,7 +1738,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Produit pharmaceutique ou biologique (me)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Produit pharmaceutique ou biologique (me)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -1807,7 +1807,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Situation avec contexte explicite (hs)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Situation avec contexte explicite (hs)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
@@ -1833,7 +1833,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
-                <h3 class="js-accordion__header">Structure corporelle (bs)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons//icon-sprite.svg#angle-down"></use></svg></h3>
+                <h3 class="js-accordion__header">Structure corporelle (bs)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
                 <div class="js-accordion__panel">
                     <div class="wysiwyg">
                         <table>
