@@ -1,0 +1,20 @@
+header:
+  - title: Accueil
+    url: /
+  - title: Guide éditorial
+    subfolderitems:
+      - page: Contexte
+        url: /pages/contexte.html
+        title: Contexte
+      - page: Règles de traductions
+        url: /pages/reglestraduction.html
+        title: Règles de traduction
+  - title: SMT
+    url: https://smt.esante.gouv.fr
+    external: true
+  - title: Demandes d'évolution
+    url:  https://fr-rmp.snomedtools.org/fr
+    external: true
+  - title: Historique du guide
+    url: https://github.com/ansforge/interop-nrc-guide-editorial-snomed-edition-fr/commits/main
+    external: true
