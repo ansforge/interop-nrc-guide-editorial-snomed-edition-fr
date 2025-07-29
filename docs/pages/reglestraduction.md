@@ -119,8 +119,15 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>ar4</td>
                                     <td>
-                                        Une description mentionnant une structure corporelle non unique doit utiliser l’article indéfini singulier ou la forme adjectivale (en fonction de l’usage). Les deux formes    peuvent coexister.<br/>
-                                        <u>Exemples</u> : entorse d’un pied, polype d’une corde vocale, irritation d’un œil, irritation oculaire, douleur inguinale, tumeur d’un ovaire, herpès labial, neuropathie fémorale
+                                        Une description mentionnant une structure corporelle non unique doit utiliser l’article défini singulier ou la forme adjectivale (en fonction de l’usage) si le concept ne précise pas qu'une seule des structures est concernée.<br/>
+                                        Elle doit utiliser l'article indéfini singulier si le concept indique qu'une seule des structures est concernée.<br/>
+                                        <u>Exemples</u> :
+                                        <div class="wysiwyg"><ul>
+                                            <li><i>Sprain of foot</i> &rarr; entorse du pied</li>
+                                            <li><i>Single lung transplant</i> &rarr; greffe d'un poumon</li>
+                                            <li><i>MRI of both hands</i> &rarr; IRM des deux mains</li>
+                                        </ul></div>
+                                        entorse d’un pied, polype d’une corde vocale, irritation d’un œil, irritation oculaire, douleur inguinale, tumeur d’un ovaire, herpès labial, neuropathie fémorale
                                     </td>
                                     <td>FTCG</td>
                                     <td>28/06/21</td>
@@ -862,12 +869,12 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>co5</td>
                                     <td>
-                                        Les groupes sanguins sont exprimés sous trois formes : longue, intermédiaire et courte, donc par trois synonymes. Le terme préféré doit être la forme courte :<br/>
+                                        Les groupes sanguins sont exprimés sous trois formes : longue, intermédiaire et courte, donc par trois synonymes. Le terme préféré doit être la forme longue :<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
-                                            <li>PT (forme courte) : groupe A+</li>
+                                            <li>PT (forme longue) : groupe sanguin A Rh(D) positif</li>
                                             <li>SYN (forme intermédiaire) : groupe A positif</li>
-                                            <li>SYN (forme longue) : groupe sanguin A Rh(D) positif</li>
+                                            <li>SYN (forme courte) : groupe A+</li>
                                         </ul></div>
                                     </td>
                                     <td>FTCG</td>
@@ -882,7 +889,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN : taux de [X] supérieur aux valeurs de référence</li>
                                         </ul></div>
                                         <br/>
-                                        Les concepts du type « [X] <i>level bellow reference range</i> » doivent être traduits selon le patron suivant :
+                                        Les concepts du type « [X] <i>level below reference range</i> » doivent être traduits selon le patron suivant :
                                         <div class="wysiwyg"><ul>
                                             <li>PT : taux de [X] inférieur à l’intervalle de référence</li>
                                             <li>SYN : taux de [X] inférieur aux valeurs de référence</li>
