@@ -117,7 +117,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <td>28/06/21</td>
                                 </tr>
                                 <tr>
-                                    <td>ar4</td>
+                                    <td>ar4-FR</td>
                                     <td>
                                         Une description mentionnant une structure corporelle non unique doit utiliser l’article défini singulier ou la forme adjectivale (en fonction de l’usage) si le concept ne précise pas qu'une seule des structures est concernée.<br/>
                                         Elle doit utiliser l'article indéfini singulier si le concept indique qu'une seule des structures est concernée.<br/>
@@ -127,7 +127,6 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Single lung transplant</i> &rarr; greffe d'un poumon</li>
                                             <li><i>MRI of both hands</i> &rarr; IRM des deux mains</li>
                                         </ul></div>
-                                        entorse d’un pied, polype d’une corde vocale, irritation d’un œil, irritation oculaire, douleur inguinale, tumeur d’un ovaire, herpès labial, neuropathie fémorale
                                     </td>
                                     <td>FTCG</td>
                                     <td>28/06/21</td>
@@ -274,7 +273,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <td>se11</td>
                                     <td>
                                         Les synonymes ne doivent pas se terminer par un point (UTF8 0x2E), sauf exception.<br/>
-                                        <u>Exemple d’exception</u> : méningite à Candida spp.
+                                        <u>Exemple d’exception</u> : Candida spp.
                                     </td>
                                     <td>SI</td>
                                     <td>18/12/23</td>
@@ -474,7 +473,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Hospital furniture</i> &rarr; mobilier d’hôpital</li>
                                             <li><i>Breasts asymmetrical</i> &rarr; seins asymétriques</li>
-                                            <li><i>Inpatient rehabilitation environment</i> &rarr; milieu de réadaptation pour patients hospitalisés</li>
+                                            <li><i>Inpatient rehabilitation environment</i> &rarr; environnement de réadaptation pour patient(e)s hospitalisé(e)s</li>
                                         </ul></div>
                                     </td>
                                     <td>SI</td>
@@ -525,7 +524,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <td>ss6</td>
                                     <td>
                                         Le terme préféré doit contenir, entre parenthèses, la terminaison au féminin des adjectifs, participes ou noms dont l’orthographe varie selon le genre.<br/>
-                                        <u>Exemples</u> : amputé(e), diététicien(ne), acupuncteur(-trice), conseiller(-ère) clinique, travailleur(-euse) social(e), clinicien(ne) autorisé(e), professionnel(le) de la santé<br/><br/>
+                                        <u>Exemples</u> : amputé(e), diététicien(ne), acupuncteur(-ice), conseiller(-ère) clinique, travailleur(-se) social(e), clinicien(ne) autorisé(e), professionnel(le) de la santé<br/><br/>
                                         Le point médiant n’est pas jugé suffisamment adopté par le groupe pour être utilisé.
                                     </td>
                                     <td>FTCG</td>
@@ -936,7 +935,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                           <li><i>Disorder of electrolytes</i> &rarr; trouble électrolytique</li>
                                         </ul></div><br/>
                                         2. <b>affection</b> : si l’objet est une structure corporelle.<br/>
-                                        <u>Exemple</u> : <i>Disorder of skin</i> &rarr; affection de la peau<br/><br/>
+                                        <u>Exemple</u> : <i>Disorder of skin</i> &rarr; affection cutanée<br/><br/>
                                         3. <b>anomalie</b> : si l’objet est un descendant de 4421005 |Cell structure (cell structure)|<br/>
                                         <u>Exemple</u> : <i>Chromosomal disorder</i> &rarr; anomalie chromosomique<br/><br/>
                                         4. <b>complication</b> en terme préféré et <b>problème</b> en synonyme acceptable : si associé à un dispositif médical.<br/>
@@ -981,7 +980,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Pressure injury of hip</i> &rarr; escarre de la hanche</li>
-                                            <li><i>Pressure injury of ankle</i> &rarr; escarre d’une cheville</li>
+                                            <li><i>Pressure injury of ankle</i> &rarr; escarre de la cheville</li>
                                         </ul></div>
                                     </td>
                                     <td>FTCG</td>
@@ -1069,6 +1068,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Chilblains (disorder)</i> &rarr; engelures</li>
                                             <li><i>Frostbite of left hand (disorder)</i> &rarr; gelure de la main gauche</li>
+                                            <li><i>Superficial frostbite of thorax</i> &rarr; gelure superficielle thoracique</li>
                                         </ul></div>
                                     </td>
                                     <td>FTCG</td>
@@ -1411,10 +1411,9 @@ La colonne « Source » indique la source d’origine de la règle en question :
 	                                <td>ho4</td>
 	                                <td>
                                         Les concepts représentant un taxon défini à l’aide d’une caractéristique non taxonomique doivent exprimer ces caractéristiques en français.<br/>
-                                        <u>Exemples</u> : <i>Anaerobic Gram-negative bacillus</i>
+                                        <u>Exemple</u> :
                                         <div class="wysiwyg"><ul>
-                                            <li>PT : bacille Gram négatif anaérobie</li>
-                                            <li>SYN : Anaerobic Gram-negative rod</li>
+                                            <li><i>Anaerobic Gram-negative bacillus</i> &rarr; bacille Gram négatif anaérobie</li>
                                         </ul></div>
                                     </td>	
 	                                <td>FTCG</td>
@@ -1609,7 +1608,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <li>SYN : excision totale [X]</li>
                                         <li>SYN : exérèse [X]</li>
                                     </ul></div><br/>
-                                    <u>Exemples</u> : néphrectomie totale ; excision totale d’un rein ; exérèse d’un rein
+                                    <u>Exemples</u><i>Total nephrectomy</i> &rarr; néphrectomie totale ; excision totale du rein ; exérèse du rein
                                 </td>
 	                            <td>FTCG</td>
 	                            <td>28/09/22</td>
@@ -1624,7 +1623,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <li>SYN : résection partielle [X]</li>
                                     </ul></div><br/>
                                     L’adjectif « partielle » est ajouté à la résection pour éviter un conflit de traduction avec un concept parent employant l’expression « resection of [X] ».<br/><br/>
-                                    <u>Exemples</u> : néphrectomie partielle ; résection partielle d’un rein ; excision partielle d’un rein
+                                    <u>Exemples</u><i>Partial nephrectomy</i> &rarr; néphrectomie partielle ; résection partielle du rein ; excision partielle du rein
                                 </td>
                             	<td>FTCG</td>
                             	<td>28/09/22</td>
@@ -1635,7 +1634,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     Dans le cas de l’amputation (chirurgicale) d’une topographie normale, les termes préférés doivent utiliser le terme « amputation » sauf pour le domaine périodontal qui utilise « extraction ».<br/>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ul>
-                                        <li>amputation d’un membre inférieur</li>
+                                        <li>amputation du membre inférieur</li>
                                         <li>extraction de la racine d’une dent</li>
                                     </ul></div>
                                 </td>
@@ -1648,8 +1647,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     Dans le cas d’une biopsie excisionnelle (qui consiste à enlever la totalité du tissu anormal ainsi qu'une marge de tissu qui l'entoure), <i>Excisional biopsy</i> doit être traduit par « biopsie-exérèse » dans les termes préférés ou « biopsie excisionnelle » dans les synonymes acceptables.<br/>
                                     <u>Exemples</u> : <i>Excisional biopsy of breast mass</i>
                                     <div class="wysiwyg"><ul>
-                                        <li>PT : biopsie-exérèse d’une masse d'un sein</li>
-                                        <li>SYN : biopsie excisionnelle d’une masse d'un sein</li>
+                                        <li>PT : biopsie-exérèse d’une masse mammaire</li>
+                                        <li>SYN : biopsie excisionnelle d’une masse mammaire</li>
                                     </ul></div>
                                 </td>
                             	<td>FTCG</td>
@@ -1662,7 +1661,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ul>
                                         <li>biopsie incisionnelle de l’encéphale</li>
-                                        <li>biopsie incisionnelle d’un testicule</li>
+                                        <li>biopsie incisionnelle du testicule</li>
                                     </ul></div>
                                 </td>
                             	<td>FTCG</td>
@@ -1699,7 +1698,9 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </ul></div><br/>
                                     <u>Exemple</u> : <i>Marking of skin using ultrasound guidance</i>
                                     <div class="wysiwyg"><ul>
-                                        <li>PT : marquage de la peau guidé par échographie</li>
+                                        <li>PT : marquage cutané la guidé par échographie</li>
+                                        <li>SYN : marquage cutané sous guidage échographique</li>
+                                        <li>SYN : marquage de la peau guidé par échographie</li>
                                         <li>SYN : marquage de la peau sous guidage échographique</li>
                                     </ul></div>
                                 </td>
@@ -1769,7 +1770,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
 	                                <td>05/06/23</td>
                                 </tr>
                                 <tr>
-	                                <td>me2</td>
+	                                <td>me2-FR</td>
 	                                <td>
                                         L’expression « <i>product containing only</i> [substance] » doit être traduite par « produit contenant uniquement [substance] » dans les termes préférés.<br/><br/>
                                         S’il y a plusieurs substances, elles doivent être listées sans article, dans l’ordre alphabétique et séparé par « et ». Un synonyme acceptable peut remplacer le « et » par un « + ».<br/><br/>
@@ -1955,8 +1956,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 	<td>
                                         L'expression <i>Lower leg</i> doit être traduit selon le patron suivant :
                                         <div class="wysiwyg"><ul>
-                                            <li>PT : partie inférieure d’une jambe</li>
-                                            <li>SYN : partie basse d’une jambe</li>
+                                            <li>PT : partie inférieure de la jambe</li>
+                                            <li>SYN : partie basse de la jambe</li>
                                             <li>SYN : jambe, du genou à la cheville</li>
                                         </ul></div>
                                     </td>
