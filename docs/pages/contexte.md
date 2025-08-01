@@ -31,7 +31,7 @@ description: Contexte du guide éditorial
                         <td><div class="wysiwyg"><ul>
                             <li>Espace de traduction : <a href="https://confluence.ihtsdotools.org/display/tran/translations+home">https://confluence.ihtsdotools.org/display/tran/translations+home</a></li>
                             <li>Guide éditorial international : <a href="http://snomed.org/eg">http://snomed.org/eg</a></li>
-                            <li><i>Translation User Group</i> : <a href="https://confluence.ihtsdotools.org/display/TRANSLATIONUSERGROUP">https://confluence.ihtsdotools.org/display/TRANSLATIONUSERGROUP</a></li>
+                            <li><i>Translation User Group</i> : <a href="https://confluence.ihtsdotools.org/display/TRANSLATIONUSERGROUP">https://confluence.ihtsdotools.org/display/TRANSLATIONUSERGROUP</a> (v 2.28)</li>
                         </ul></div></td>
                     </tr>
                     <tr>

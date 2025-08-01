@@ -66,7 +66,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         </ul></div>
                                     </td>
                                     <td>SI</td>
-                                    <td>02/11/20</td>
+                                    <td>25/11/24</td>
                                 </tr>
                                 <tr>
                                     <td>ab3</td>
@@ -1018,7 +1018,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Bien que <i>disease</i> et <i>disorder</i> ne soient pas strictement équivalents en anglais (<i>disorder</i> étant plus générique que <i>disease</i>), certains concepts possèdent deux synonymes anglais employant chacun l’un de ces deux mots. Les règles pa2 et pa5 se concentrent sur les termes préférés mais n’interdisent pas l’ajout d’un synonyme acceptable suivant l’une ou l’autre de ces deux règles.
                                     </td>
                                     <td>FTCG</td>
-                                    <td>05/06/23</td>
+                                    <td>23/01/23</td>
                                 </tr>
                                 <tr>
                                     <td>pa6</td>
@@ -1031,7 +1031,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         </ul></div>
                                     </td>
                                     <td>FTCG</td>
-                                    <td>23/01/23</td>
+                                    <td>05/04/23</td>
                                 </tr>
                                 <tr>
                                     <td>pa7</td>
@@ -1054,7 +1054,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         </ul></div>
                                     </td>
                                     <td>FTCG</td>
-                                    <td>05/04/23</td>
+                                    <td>18/12/23</td>
                                 </tr>
                                 <tr>
                                     <td>pa8</td>
@@ -1371,7 +1371,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         </ul></div>
                                     </td>
                                     <td>FTCG</td>
-                                    <td>01/09/23</td>
+                                    <td>18/09/23</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1946,35 +1946,43 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 	<td>18/12/23</td>
                                 </tr>
                                 <tr>
-                                	<td>bs10</td>
-                                	<td>L'expression <i>Lower limb</i> doit être traduit par « membre inférieur ».</td>
-	                                <td>FTCG</td>
-	                                <td>25/11/24</td>
-                                </tr>
-                                <tr>
-                                	<td>bs11-FR</td>
+                                	<td>bs10-FR</td>
                                 	<td>
-                                        L'expression <i>Lower leg</i> doit être traduit selon le patron suivant :
+                                        L'expression <i>Lower limb</i> doit être traduite par «   membre inférieur ».<br/><br/>
+                                        L'expression <i>Lower leg</i> doit être traduite selon le patron suivant :
                                         <div class="wysiwyg"><ul>
                                             <li>PT : partie inférieure de la jambe</li>
                                             <li>SYN : partie basse de la jambe</li>
                                             <li>SYN : jambe, du genou à la cheville</li>
-                                        </ul></div>
+                                        </ul></div> 
+                                    </td>
+	                                <td>ANS</td>
+	                                <td>01/08/25</td>
+                                </tr>
+                                <tr>
+                                	<td>bs11-FR</td>
+                                	<td>
+                                        L'expression <i>Upper limb</i> doit être traduite par « membre supérieur ».<br/><br/>
+                                        L'expression <i>Upper arm</i> doit être traduite selon le patron suivant:
+                                        <div class="wysiwyg"><ul>
+                                            <li>PT : partie supérieur du bras</li>
+                                            <li>SYN : bras, de l'épaule au coude</li>
+                                        </ul></div> 
                                     </td>
                                 	<td>ANS</td>
-                                	<td>25/11/24</td>
+                                	<td>01/08/25</td>
                                 </tr>
                                 <tr>
 	                                <td>bs12</td>
 	                                <td>Le mot <i>Cerebrum</i> doit être traduit par « cerveau ».</td>
                                 	<td>FTCG</td>
-                                	<td>25/11/24</td>
+                                	<td>13/01/25</td>
                                 </tr>
                                 <tr>
                                 	<td>bs13</td>
                                 	<td>Le mot <i>Brain</i> doit être traduit par « encéphale ».</td>
                                 	<td>FTCG</td>
-                                	<td>25/11/24</td>
+                                	<td>13/01/25</td>
                                 </tr>
                             </tbody>
                         </table>
