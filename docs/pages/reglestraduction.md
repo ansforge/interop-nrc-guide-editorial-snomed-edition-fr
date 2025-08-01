@@ -1979,6 +1979,53 @@ La colonne « Source » indique la source d’origine de la règle en question :
                         </table>
                     </div>
                 </div>
+                <h3 class="js-accordion__header">Substance (su)<svg class="svg-icon svg-angle-down" aria-hidden="true" focusable="false"><use xlink:href="../assets/svg_icons/icon-sprite.svg#angle-down"></use></svg></h3>
+                <div class="js-accordion__panel">
+                    <div class="wysiwyg">
+                        <table>
+                            <thead>
+                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+	                                <td>su1-FR</td>
+	                                <td>
+                                        Les anticorps doivent suivrent le patron suivant :<br/>
+                                        <div class="wysiwyg"><ul>
+                                            <li>PT : immunoglobuline anti[maladie]</li>
+                                            <li>SYN : immunoglobuline contre [organisme]</li>
+                                            <li>SYN : Ig anti[maladie]</li>
+                                            <li>SYN : Ig contre [organisme]</li>
+                                            <li>SYN : anticorps anti[maladie]</li>
+                                            <li>SYN : anticorps contre [organisme]</li>
+                                        </ul></div>
+                                        <u>Exemple</u> : <i>Rabies virus antibody</i>
+                                        <div class="wysiwyg"><ul>
+                                            <li>PT : immunoglobuline antirabique</li>
+                                            <li>SYN : immunoglobuline contre le virus de la rage</li>
+                                            <li>SYN : Ig antirabique</li>
+                                            <li>SYN : Ig contre le virus de la rage</li>
+                                            <li>SYN : anticorps antirabique</li>
+                                            <li>SYN : anticorps contre le virus de la rage</li>
+                                        </ul></div>
+                                        Si il n'existe pas de nom commun pour la maladie, alors c'est "immunoglobuline contre [organisme, nom scientifique] qui devient le terme préféré.<br/>
+                                        <u>Exemple</u> : <i>Haemophilus influenzae antibody</i>
+                                        <div class="wysiwyg"><ul>
+                                            <li>PT : immunoglobuline contre Haemophilus influenzae</li>
+                                            <li>SYN : immunoglobuline contre le bacille de Pfeiffer</li>
+                                            <li>SYN : Ig contre Haemophilus influenzae</li>
+                                            <li>SYN : Ig contre le bacille de Pfeiffer</li>
+                                            <li>SYN : anticorps contre Haemophilus influenzae</li>
+                                            <li>SYN : anticorps contre le bacille de Pfeiffer</li>
+                                        </ul></div>
+                                    </td>
+	                                <td>ANS</td>
+	                                <td>29/07/25</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
