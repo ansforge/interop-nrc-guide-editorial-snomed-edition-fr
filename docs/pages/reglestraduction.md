@@ -128,8 +128,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>MRI of both hands</i> &rarr; IRM des deux mains</li>
                                         </ul></div>
                                     </td>
-                                    <td>FTCG</td>
-                                    <td>28/06/21</td>
+                                    <td>ANS</td>
+                                    <td>01/08/25</td>
                                 </tr>
                                 <tr>
                                     <td>ar6</td>
@@ -908,7 +908,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <br/>
                                     </td>
                                     <td>ANS</td>
-                                    <td>22/04/25</td>
+                                    <td>01/08/25</td>
                                 </tr>
                             </tbody>
                         </table>
