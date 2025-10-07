@@ -13,7 +13,7 @@ header:
     url: https://smt.esante.gouv.fr
     external: true
   - title: Demandes d'évolution
-    url:  https://fr-rmp.snomedtools.org/fr
+    url:  https://rmp.ihtsdotools.org/
     external: true
   - title: Historique du guide
     url: https://github.com/ansforge/interop-nrc-guide-editorial-snomed-edition-fr/commits/master/

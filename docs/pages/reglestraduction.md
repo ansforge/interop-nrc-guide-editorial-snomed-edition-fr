@@ -6,7 +6,7 @@ description:
 
 Les règles éditoriales ci-dessous doivent être appliquées aux nouvelles traductions.
 
-Pour les traductions déjà existantes ne respectant pas ces règles, le processus de correction se fera au fur et à mesure des publications et en fonction des ressources disponibles. Vous pouvez utiliser le portail des demandes d'évolution pour demander la modification ou l'ajout concepts ou traductions : [https://fr-rmp.snomedtools.org/fr](https://fr-rmp.snomedtools.org/fr).
+Pour les traductions déjà existantes ne respectant pas ces règles, le processus de correction se fera au fur et à mesure des publications et en fonction des ressources disponibles. Vous pouvez utiliser le portail des demandes d'évolution pour demander la modification ou l'ajout concepts ou traductions : [https://rmp.ihtsdotools.org/](https://rmp.ihtsdotools.org/).
 
 Ces règles reprennent celles du *French Translation Collaboration Group* qui ont été reformulées dans un soucis de clarté. Certaines règles ont été modifiées afin de s’aligner avec les choix d’acceptabilité fait par l’ANS.
 
@@ -1965,7 +1965,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         L'expression <i>Upper limb</i> doit être traduite par « membre supérieur ».<br/><br/>
                                         L'expression <i>Upper arm</i> doit être traduite selon le patron suivant:
                                         <div class="wysiwyg"><ul>
-                                            <li>PT : partie supérieur du bras</li>
+                                            <li>PT : partie supérieure du bras</li>
                                             <li>SYN : bras, de l'épaule au coude</li>
                                         </ul></div> 
                                     </td>
@@ -2007,7 +2007,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN : Ig contre [organisme]</li>
                                             <li>SYN : anticorps anti[maladie]</li>
                                             <li>SYN : anticorps contre [organisme]</li>
-                                        </ul></div>
+                                        </ul></div><br/>
                                         <u>Exemple</u> : <i>Rabies virus antibody</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : immunoglobuline antirabique</li>
@@ -2017,6 +2017,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN : anticorps antirabique</li>
                                             <li>SYN : anticorps contre le virus de la rage</li>
                                         </ul></div>
+                                        <br/>
                                         Si il n'existe pas de nom commun pour la maladie, alors c'est "immunoglobuline contre [organisme, nom scientifique] qui devient le terme préféré.<br/>
                                         <u>Exemple</u> : <i>Haemophilus influenzae antibody</i>
                                         <div class="wysiwyg"><ul>
