@@ -523,12 +523,13 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>ss6</td>
                                     <td>
-                                        Le terme préféré doit contenir, entre parenthèses, la terminaison au féminin des adjectifs, participes ou noms dont l’orthographe varie selon le genre.<br/>
-                                        <u>Exemples</u> : amputé(e), diététicien(ne), acupuncteur(-ice), conseiller(-ère) clinique, travailleur(-se) social(e), clinicien(ne) autorisé(e), professionnel(le) de la santé<br/><br/>
+                                        Le terme préféré doit contenir des termes épicènes ou, entre parenthèses, la terminaison au féminin des adjectifs, participes ou noms dont l’orthographe varie selon le genre.<br/>
+                                        <u>Exemples</u> : amputé(e), diététicien(ne), acupuncteur(-ice), conseiller(e) clinique, travailleur(-se) social(e), clinicien(ne) autorisé(e), professionnel(le) de la santé<br/><br/>
+                                        Des synonymes strictement au masculin ou au féminin peuvent être ajoutés pour des questions d'interface.<br/>
                                         Le point médiant n’est pas jugé suffisamment adopté par le groupe pour être utilisé.
                                     </td>
                                     <td>FTCG</td>
-                                    <td>18/09/23</td>
+                                    <td>23/10/25</td>
                                 </tr>
                                 <tr>
                                     <td>ss7</td>
