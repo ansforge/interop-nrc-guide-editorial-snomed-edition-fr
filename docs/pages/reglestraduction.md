@@ -1742,6 +1742,19 @@ La colonne « Source » indique la source d’origine de la règle en question :
                             	<td>FTCG</td>
                             	<td>18/12/23</td>
                             </tr>
+                            <tr>
+	                            <td>pr15-FR</td>
+	                            <td>
+                                    Les concepts <i>X education</i> ou <i>education about X</i> doivent être traduits par "éducation concernant X".<br/>
+                                    <u>Exemples</u> :
+                                    <div class="wysiwyg"><ol>
+                                        <li><i>Amputation education</i> &rarr; éducation concernant l'amputation</li>
+                                        <li><i>Education about hepatitis</i> &rarr; éducation concernant l'hépatite</li>
+                                    </ol></div>
+                                </td>
+                            	<td>ANS</td>
+                            	<td>23/10/25</td>
+                            </tr>
                             </tbody>
                         </table>
                     </div>
