@@ -757,11 +757,11 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>um2</td>
                                     <td>
-                                        Les unités de température doivent être exprimées sous forme développée (e.g. degrés Celsius).<br/>
-                                        <u>Exemple</u> : <i>Fever greater than 38 Celsius</i> &rarr; fièvre supérieure à 38 degrés Celsius
+                                        Les unités de température doivent être exprimées sous forme courte (e.g. °C).<br/>
+                                        <u>Exemple</u> : <i>Fever greater than 38 Celsius</i> &rarr; fièvre supérieure à 38°C
                                     </td>
-                                    <td>FTCG</td>
-                                    <td>02/07/19</td>
+                                    <td>ANS</td>
+                                    <td>27/11/25</td>
                                 </tr>
                                 <tr>
                                     <td>um3</td>
