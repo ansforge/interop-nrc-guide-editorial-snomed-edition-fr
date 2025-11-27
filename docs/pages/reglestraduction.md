@@ -124,8 +124,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Sprain of foot</i> &rarr; entorse du pied</li>
-                                            <li><i>Single lung transplant</i> &rarr; greffe d'un poumon</li>
-                                            <li><i>MRI of both hands</i> &rarr; IRM des deux mains</li>
+                                            <li><i>Single lung transplant</i> &rarr; transplantation d'un poumon</li>
+                                            <li><i>MRI of all fingers of both hands</i> &rarr; IRM de tous les doigts des deux mains</li>
                                         </ul></div>
                                     </td>
                                     <td>ANS</td>
@@ -147,7 +147,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Congenital absence of all fingers</i> &rarr; absence congénitale de tous les doigts</li>
-                                            <li><i>Lesion of both ears</i> &rarr; lésion bilatérale des oreilles</li>
+                                            <li><i>Lesion of both ears</i> &rarr; lésion des deux oreilles</li>
                                         </ul></div>
                                     </td>
                                     <td>FTCG</td>
@@ -860,7 +860,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <div class="wysiwyg"><ul>
                                             <li><i>neurological finding</i> &rarr; constatation neurologique</li>
                                             <li><i>finding of small intestine</i> &rarr; constatation concernant l’intestin grêle</li>
-                                            <li><i>finding of abnormal level of heavy metals in blood</i> &rarr; niveau anormal de métaux lourds dans le sang</li>
+                                            <li><i>finding of abnormal level of heavy metals in blood</i> &rarr; taux de métal lourd sanguin en dehors de l'intervalle de référence</li>
                                         </ul></div>
                                     </td>
                                     <td>FTCG</td>
@@ -965,9 +965,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Les expressions <i>crushing injury</i> et <i>crush injury</i> dans ces mêmes concepts doivent être traduites par « écrasement ».<br/><br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
-                                            <li><i>Minor head injury</i> &rarr; lésion traumatique mineure de la tête</li>
                                             <li><i>Injury to eyelid</i> &rarr; blessure à la paupière</li>
-                                            <li><i>Falling injury</i> &rarr; traumatisme suite à une chute</li>
+                                            <li><i>Falling injury</i> &rarr; traumatisme due à une chute</li>
                                             <li><i>Crush injury of liver</i> &rarr; écrasement du foie</li>
                                         </ul></div>
                                     </td>
@@ -1067,8 +1066,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         </ol></div><br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
-                                            <li><i>Chilblains (disorder)</i> &rarr; engelures</li>
-                                            <li><i>Frostbite of left hand (disorder)</i> &rarr; gelure de la main gauche</li>
+                                            <li><i>Chilblains</i> &rarr; engelure</li>
+                                            <li><i>Frostbite of left hand</i> &rarr; gelure de la main gauche</li>
                                             <li><i>Superficial frostbite of thorax</i> &rarr; gelure superficielle thoracique</li>
                                         </ul></div>
                                     </td>
@@ -1168,7 +1167,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Specimen from uterine cervix obtained by cone biopsy</i> &rarr; échantillon du col utérin prélevé par conisation</li>
                                             <li><i>Specimen obtained by lavage</i> &rarr; échantillon prélevé par lavage</li>
-                                            <li><i>Breast fine needle aspirate sample</i> &rarr; échantillon mammaire prélevé par biopsie à l’aiguille fine</li>
+                                            <li><i>Breast fine needle aspirate sample</i> &rarr; échantillon du sein prélevé par biopsie à l'aiguille fine</li>
                                         </ul></div>
                                     </td>
                                     <td>FTCG</td>
@@ -1241,8 +1240,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Ce patron peut être remplacé par un terme plus spécifique et pertinent.<br/><br/>
                                         <u>Exemples</u> : <i>Location within general practice premises</i>
                                         <div class="wysiwyg"><ul>
-                                            <li>PT : localisation sur les lieux d'un cabinet de médecins généralistes</li>
-                                            <li>SYN : localisation dans des locaux d'un cabinet de médecins généralistes</li>
+                                            <li>PT : localisation sur les lieux d'un cabinet de médecin généraliste</li>
+                                            <li>SYN : localisation dans des locaux d'un cabinet de médecin généraliste</li>
                                         </ul></div>
                                         <u>Exemples de terme plus spécifique</u> : <i>Location within secure unit</i>
                                         <div class="wysiwyg"><ul>
@@ -1699,7 +1698,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </ul></div><br/>
                                     <u>Exemple</u> : <i>Marking of skin using ultrasound guidance</i>
                                     <div class="wysiwyg"><ul>
-                                        <li>PT : marquage cutané la guidé par échographie</li>
+                                        <li>PT : marquage cutané guidé par échographie</li>
                                         <li>SYN : marquage cutané sous guidage échographique</li>
                                         <li>SYN : marquage de la peau guidé par échographie</li>
                                         <li>SYN : marquage de la peau sous guidage échographique</li>
@@ -2026,10 +2025,13 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <div class="wysiwyg"><ul>
                                             <li>PT : immunoglobuline antirabique</li>
                                             <li>SYN : immunoglobuline contre le virus de la rage</li>
+                                            <li>SYN : immunoglobuline contre Lyssavirus rabies</li>
                                             <li>SYN : Ig antirabique</li>
                                             <li>SYN : Ig contre le virus de la rage</li>
+                                            <li>SYN : Ig contre Lyssavirus rabies</li>
                                             <li>SYN : anticorps antirabique</li>
                                             <li>SYN : anticorps contre le virus de la rage</li>
+                                            <li>SYN : anticorps contre Lyssavirus rabies</li>
                                         </ul></div>
                                         <br/>
                                         Si il n'existe pas de nom commun pour la maladie, alors c'est "immunoglobuline contre [organisme, nom scientifique] qui devient le terme préféré.<br/>
