@@ -45,9 +45,13 @@ description: Contexte du guide éditorial
                     <tr>
                         <td>Dictionnaires médicaux et bases de données médicales et pharmacologiques</td>
                         <td><div class="wysiwyg"><ul>
+                            <li>Agence européenne des médicaments (EMA) : <a href="https://www.ema.europa.eu">https://www.ema.europa.eu</a></li>
+                            <li>Agence nationale de sécurité du médicament et des produits de santé (ANSM) :<a href="https://ansm.sante.fr/">https://ansm.sante.fr/</a></li>
                             <li>Dictionnaire de l'Académie nationale de Pharmacie : <a href="https://dictionnaire.acadpharm.org/w/Acadpharm:Accueil">https://dictionnaire.acadpharm.org/w/Acadpharm:Accueil</a></li>
                             <li>Dictionnaire médical de l'Académie de médecine : <a href="https://www.academie-medecine.fr/le-dictionnaire/index.php">https://www.academie-medecine.fr/le-dictionnaire/index.php</a></li>
+                            <li>Directives générales pour la formation de dénominations communes internationales applicables aux substances pharmaceutiques : <a href="https://cdn.who.int/media/docs/default-source/international-nonproprietary-names-(inn)/generalprinciplesfr.pdf?sfvrsn=cf4e7818_8">https://cdn.who.int/media/docs/default-source/international-nonproprietary-names-(inn)/generalprinciplesfr.pdf?sfvrsn=cf4e7818_8</a></li>
                             <li>Manuel Merck : <a href="https://www.msdmanuals.com/fr/professional">https://www.msdmanuals.com/fr/professional</a></li>
+                            <li>MedNet INN services : <a href="https://extranet.who.int/soinn/">https://extranet.who.int/soinn/</a></li>
                             <li>MeSH bilingue : <a href="http://mesh.inserm.fr/FrenchMesh/">http://mesh.inserm.fr/FrenchMesh/</a></li>
                             <li>Orphanet : <a href="https://www.orpha.net/en/disease">https://www.orpha.net/en/disease</a></li>
                             <li><i>Standard Terms</i> de l'EDQM : <a href="https://smt.esante.gouv.fr/terminologie-standardterms/">https://smt.esante.gouv.fr/terminologie-standardterms/</a></li>

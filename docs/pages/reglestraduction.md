@@ -2048,6 +2048,157 @@ La colonne « Source » indique la source d’origine de la règle en question :
 	                                <td>ANS</td>
 	                                <td>29/07/25</td>
                                 </tr>
+                                <tr>
+	                                <td>su2-FR</td>
+	                                <td>
+                                        Les directives générales pour la formation de dénominations communes internationales (DCI) applicables aux substances pharmaceutiques publiées par l’OMS s’appliquent pour le terme préféré.<br/>
+                                        Le libellé du terme préféré est calqué sur la modalité anglosaxonne d’écriture des substances : nom de la partie de la substance pharmacologiquement active cité en premier suivi le cas échéant du nom du radical pharmacologiquement inactif.
+                                        <div class="wysiwyg"><ul>
+                                          <li>PT : Dénomination commune française (DCF) ou DCF avec complément de nom</li>
+                                          <li>SYN : nom commun d'usage</li>
+                                          <li>SYN : nom chimique</li>
+                                        </ul></div><br/>
+                                        En cas d'absence de DCF, le terme préféré reprend le nom commun d'usage. En cas d'absence du nom commun d'usage, le terme préféré reprend le nom chimique.<br/><br/>
+                                        1. <b>Sels</b> : le terme préféré est constitué du nom du cation (base) cité en premier suivi du nom de l’anion (nom du sel résultant de l’acide) avec lequel le cation (base) est combinée pour former le sel. Pour un sel comportant une DCF : la DCF est citée en premier. Elle est suivie du nom du sel (sel de sodium, sel de potassium, sel disodique, …).<br/>
+                                        <u>Exemples</u> :
+                                        <div class="wysiwyg"><ul>
+                                          <li>PT : amlodipine bésilate</li>
+                                          <li>SYN : bésilate d’amlodipine</li>
+                                        </ul></div><br/>
+                                        2. <b>Esters</b> : le terme préféré est constitué du nom de l’acide cité en premier suivi du nom de l’alcool avec lequel il est combiné pour former un ester. Pour un ester comportant une DCF : la DCF est citée en premier. Elle est suivie du nom de l’ester (embonate, …).<br/>
+                                        <u>Exemples</u> :
+                                        <div class="wysiwyg"><ul>
+                                          <li>PT : chlorpromazine embonate</li>
+                                          <li>SYN : embonate de chlorpromazine</li>
+                                        </ul></div><br/>
+                                        <b>Exceptions à la règle :</b> la DCF comporte le nom du sel ou de l'ester.<br/>
+                                        <u>Exemples</u> :
+                                        <div class="wysiwyg"><ul>
+                                            <li>DCF : acétate de rézafungine</li>
+                                              <ul>
+                                                <li>PT : rézafungine acétate</li>
+                                              </ul>
+                                            <li>DCF : palmitate de colfoscéril</li>
+                                              <ul>
+                                                <li>PT : colfoscéril palmitate</li>
+                                              </ul>
+                                        </ul></div>
+                                    </td>
+	                                <td>ANS</td>
+	                                <td>10/12/25</td>
+                                </tr>
+                                <tr>
+	                                <td>su3-FR</td>
+	                                <td>
+                                        Les abréviations d'indicateurs de position "m" pour "méta", "o" pour "ortho" et "p" pour "para" suivies d'un tiret sont utilisées pour le terme préféré.<br/>
+                                        Le cas échéant un synonyme acceptable :
+                                        <div class="wysiwyg"><ul>
+                                          <li>peut reprendre "méta", "ortho" et "para" écrit en toutes lettre suivi d'un tiret ;</li>
+                                          <li>peut reprendre le chiffre "2" pour "ortho", "3" pour "méta" et "4" pour "para" suivi d'un tiret.</li>
+                                        </ul></div><br/>
+                                        <u>Exemples</u> :
+                                        <div class="wysiwyg"><ul>
+                                          <li>PT : p-hydroxybenzoate d'éthyle</li>
+                                          <li>SYN : 4-hydroxybenzoate d'éthyle</li>
+                                          <li>SYN : parahydroxybenzoate d'éthyle</li>
+                                        </ul></div>
+                                    </td>
+	                                <td>ANS</td>
+	                                <td>10/12/25</td>
+                                </tr>
+                                <tr>
+	                                <td>su4-FR</td>
+	                                <td>
+                                        Les descripteurs "cis" et "trans" doivent s'écrire en toutes lettres et être suivis d'un tiret.<br/>
+                                        <u>Exemple</u> :
+                                        <div class="wysiwyg"><ul>
+                                          <li>PT : acide oléique</li>
+                                          <li>SYN : acide 9-cis-octadécénoïque</li>
+                                        </ul></div>
+                                    </td>
+	                                <td>ANS</td>
+	                                <td>10/12/25</td>
+                                </tr>
+                                <tr>
+	                                <td>su5-FR</td>
+	                                <td>
+                                        Les descripteurs "R" et "S" doivent être placés entre parenthèses, préfixé au nom de la molécule et séparé d'un tiret. Ils complètent le nom de la molécule en précisant de manière non équivoque de quel énantiomère il s'agit.<br/>
+                                        <u>Exemple</u> :
+                                        <div class="wysiwyg"><ul>
+                                          <li>PT : (S)-métoprolol tartrate</li>
+                                          <li>SYN : tartrate de (S)-métoprolol</li>
+                                        </ul></div>
+                                    </td>
+	                                <td>ANS</td>
+	                                <td>10/12/25</td>
+                                </tr>
+                                <tr>
+	                                <td>su6-FR</td>
+	                                <td>
+                                        Dans le cas d'un solvate, le terme préféré est formé du nom de la substance puis du nom du solvate utilisé au cours de la fabrication suivi de "solvate".<br/>
+                                        <u>Exemples</u> :
+                                        <div class="wysiwyg"><ul>
+                                          <li><i>Ceftaroline fosamil acetic acid solvate</i></li>
+                                            <ul>
+                                              <li>PT : ceftaroline fosamil acide acétique solvate</li>
+                                              <li>SYN : ceftaroline fosamil solvate d’acide acétique</li>
+                                            </ul>
+                                          <li><i>Paroxetine hydrochloride acetone solvate</i></li>
+                                            <ul>
+                                              <li>PT : parparoxétine chlorhydrate acétone solvate</li>
+                                              <li>SYN : parparoxétine chlorhydrate solvate d’acétone</li>
+                                              <li>SYN : chlorhydrate de paroxétine solvatée dans l’acétone</li>
+                                            </ul>
+                                        </ul></div>
+                                    </td>
+	                                <td>ANS</td>
+	                                <td>10/12/25</td>
+                                </tr>
+                                <tr>
+	                                <td>su7-FR</td>
+	                                <td>
+                                        Si le concept mentionne un microorganisme, le terme préféré utilise son nom scientifique en latin et un synonyme peut utiliser le nom vernaculaire.<br/>
+                                        <u>Exemple</u> :
+                                        <div class="wysiwyg"><ul>
+                                          <li>PT : immunoglobuline monoclonale contre Orthopneumovirus hominis</li>
+                                          <li>SYN : immunoglobuline monoclonale contre le virus respiratoire syncytial humain</li>
+                                        </ul></div><br/>
+                                        Si le concept mentionne un macroorganisme, le terme préféré utilise le nom vernaculaire s'il existe et un synonyme utilise le nom scientifique en latin. Dans le cas où il n'existe pas de nom vernaculaire, le nom scientifique latin est utilisé en terme préféré.<br/>
+                                        <u>Exemple</u> :
+                                        <div class="wysiwyg"><ul>
+                                          <li>PT : alcaloïde de belladone</li>
+                                          <li>SYN : alcaloïde d'Atropa belladonna</li>
+                                        </ul></div>
+                                    </td>
+	                                <td>ANS</td>
+	                                <td>10/12/25</td>
+                                </tr>
+                                <tr>
+	                                <td>su8-FR</td>
+	                                <td>
+                                        Les balises ne sont pas conservées dans le terme préféré. Un synonyme acceptable peut être écrit avec balise(s).<br/>
+                                        <u>Exemple</u> :
+                                        <div class="wysiwyg"><ul>
+                                          <li>PT : moénomycine B1</li>
+                                          <li>SYN : moénomycine >B1<</li>
+                                        </ul></div>
+                                    </td>
+	                                <td>ANS</td>
+	                                <td>10/12/25</td>
+                                </tr>
+                                <tr>
+	                                <td>su9-FR</td>
+	                                <td>
+                                        Dans le cas d'un extrait de plante, le terme préféré comporte dans l'ordre : (i) le nom de la plante, (ii) la partie utilisée et (iii) la forme galénique obtenue par le procédé de préparation employé (poudre totale, extrait, ...).<br/>
+                                        <u>Exemple</u> :
+                                        <div class="wysiwyg"><ul>
+                                          <li>PT : tilleul aubier extrait</li>
+                                          <li>SYN : extrait d'aubier de tilleul</li>
+                                        </ul></div>
+                                    </td>
+	                                <td>ANS</td>
+	                                <td>10/12/25</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
