@@ -1882,9 +1882,9 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <img src="../assets/images/sep.png"/><br/>
                                         Le concept <i>Entire</i> représente l’entité anatomique X dans son entièreté, le concept Part représente toute partie spécifique de cette entité anatomique X. Ces deux concepts sont des enfants immédiats du concept <i>Structure</i> qui est le concept le plus général représentant l’entité anatomique X.<br/><br/>
                                         Les trois mots clés <i>structure</i>, <i>entire</i> et <i>part</i> figurent systématiquement dans les FSN anglais associés respectivement à ces trois concepts.<br/><br/>
-                                        Les termes préférés de ces concepts doivent suivre les patrons suivants :
+                                        Les descriptions de ces concepts doivent suivre les patrons suivants :
                                         <div class="wysiwyg"><ul>
-                                            <li>Concept Structure : « X »</li>
+                                            <li>Concept Structure : « X » pour le terme préféré et au moins un synonyme acceptable « structure X ».</li>
                                             <li>Concept Entire : « X entier » ou « X entière ».</li>
                                             <li>Concept Part : « partie du X » ou « partie de la X ».</li>
                                         </ul></div><br/>
