@@ -1200,7 +1200,11 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>en1-FR</td>
                                     <td>
-                                        Le mot <i>environment</i> doit être traduit par « environnement » dans les termes préférés et « milieu » dans les synonymes acceptables.<br/>
+                                        Les concepts du type « [X] <i>environment</i> » doivent avoir  avoir un terme préféré et au moins un synonyme acceptable respectant le patron suivant :
+                                        <div class="wysiwyg"><ul>
+                                            <li>PT : environnement [X]</li>
+                                            <li>SYN : milieu [X]</li>
+                                        </ul></div><br/>
                                         <u>Exemples</u> : <i>Coastal environment</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : environnement côtier</li>
@@ -1213,7 +1217,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>en2-FR</td>
                                     <td>
-                                        L’expression « <i>community</i> [X] » doit être traduite par « [X] communautaire ».<br/>
+                                        Les concepts du type « <i>community</i> [X] » doivent utiliser le terme « communautaire ».<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>hôpital communautaire</li>
@@ -1226,20 +1230,11 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>en3-FR</td>
                                     <td>
-                                        L’expression « <i>Location within</i> [environnement] <i>premises</i> » doit suivre le patron suivant :
+                                        Les concepts du type « <i>Location within</i> [X] <i>premises</i> » doivent utiliser l'expression « localisation sur les lieux [X] » dans le terme préféré. Cette expression peut être remplacée par une expression plus spécifique et pertinente.<br/>
+                                        <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
-                                            <li>PT : localisation sur les lieux [environnement]</li>
-                                            <li>SYN : localisation dans des locaux [environnement]</li>
-                                        </ul></div><br/>
-                                        Ce patron peut être remplacé par un terme plus spécifique et pertinent.<br/><br/>
-                                        <u>Exemples</u> : <i>Location within general practice premises</i>
-                                        <div class="wysiwyg"><ul>
-                                            <li>PT : localisation sur les lieux d'un cabinet de médecin généraliste</li>
-                                            <li>SYN : localisation dans des locaux d'un cabinet de médecin généraliste</li>
-                                        </ul></div>
-                                        <u>Exemples de terme plus spécifique</u> : <i>Location within secure unit</i>
-                                        <div class="wysiwyg"><ul>
-                                            <li>PT : localisation dans une unité de soins sécurisée</li>
+                                            <li><i>Location within general practice premises</i> &rarr; localisation sur les lieux d'un cabinet de médecine générale</li>
+                                            <li><i>Location within secure unit</i> &rarr; localisation dans une unité de soins sécurisée</li>
                                         </ul></div>
                                     </td>
                                     <td>ANS</td>
@@ -1248,7 +1243,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>en4</td>
                                     <td>
-                                        L’expression « <i>Inpatient</i> [X] » doit être traduite par « [X] pour patient(e) hospitalisé(e) ».<br/>
+                                        Les concepts du type « <i>Inpatient</i> [X] » doivent utiliser l'expression « pour patient(e) hospitalisé(e) ».<br/>
                                         <u>Exemple</u> : <i>Inpatient environment</i> &rarr; environnement de soins pour patient(e) hospitalisé(e)
                                     </td>
                                     <td>FTCG</td>
@@ -1258,8 +1253,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <td>en5</td>
                                     <td>
                                         <div class="wysiwyg"><ul>
-                                            <li>L’expression « <i>Hospital-based outpatient</i> [X] <i>clinic</i> » doit être traduit par « service hospitalier ambulatoire [X] » ;</li>
-                                            <li>L’expression « <i>Outpatient</i> [X] » doit être traduit par « [X] de soins ambulatoires » ou « [X] ambulatoire » selon ce qui est le plus pertinent.</li>
+                                            <li>Les concepts du type « <i>Hospital-based outpatient</i> [X] <i>clinic</i> » doivent utiliser l'expression « service hospitalier ambulatoire [X] » ;</li>
+                                            <li>Les concepts du type « <i>Outpatient</i> [X] » doivent utiliser l'expression « [X] de soins ambulatoires » ou « [X] ambulatoire » selon ce qui est le plus pertinent.</li>
                                         </ul></div><br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
@@ -1274,7 +1269,10 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>en6-FR</td>
                                     <td>
-                                        Le mot <i>clinic</i> doit être traduit par « clinique » sauf dans l’expression « <i>Hospital-based outpatient</i> [X] <i>clinic</i> ».<br/>
+                                        <div class="wysiwyg"><ul>
+                                            <li>Les concepts du type « <i>Hospital-based outpatient</i> [X] <i>clinic</i> » doivent utiliser l'expression « service hospitalier ambulatoire » ;</li>
+                                            <li>Les concepts du type « [X] <i>clinic</i> » doit utiliser le terme « clinique ».</li>
+                                        </ul></div><br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Cardiovascular clinic</i> &rarr; clinique de soins cardiovasculaires</li>
