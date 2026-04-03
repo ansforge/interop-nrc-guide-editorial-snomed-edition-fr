@@ -82,7 +82,7 @@ description: Contexte du guide éditorial
             <div class="wysiwyg"><ul>
                 <li>Le <b>FSN</b> est toujours considéré comme « préféré ».</li>
                 <li>Il existe toujours un synonyme considéré comme « préféré » dans chaque langue : le <b>terme préféré (PT)</b>. C’est ce terme qui est par défaut utilisé dans les jeux de valeurs ou les échanges de données, en plus de l’identifiant SNOMED CT.</li>
-                <li>D’autres synonymes considérés comme « acceptables » peuvent être utilisés comme terme alternatif dans une interface (IHM) par exemple.</li>
+                <li>Les <b>synonymes acceptables (SYN)</b> peuvent être utilisés comme terme alternatif dans une interface (IHM) par exemple.</li>
             </ul></div>
             <br/>
             <p>La SNOMED CT définit trois valeurs de sensibilité à la casse pour ses descriptions :</p>

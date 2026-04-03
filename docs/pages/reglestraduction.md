@@ -10,6 +10,8 @@ Pour les traductions déjà existantes ne respectant pas ces règles, le process
 
 Ces règles reprennent celles du *French Translation Collaboration Group* qui ont été reformulées dans un soucis de clarté. Certaines règles ont été modifiées afin de s’aligner avec les choix d’acceptabilité fait par l’ANS.
 
+Les abréviations PT et SYN utilisés dans les règles désignent, respectivement, les notions de terme préféré et synonyme acceptable telles que décrites dans l'onglet [Composants de la SNOMED CT](https://ansforge.github.io/interop-nrc-guide-editorial-snomed-edition-fr/pages/contexte.html). 
+
 La colonne « Source » indique la source d’origine de la règle en question :
 <div class="wysiwyg"><ul>
   <li>SI : SNOMED Int., cette règle est dérivée du guide éditorial de l’édition internationale ;</li>
