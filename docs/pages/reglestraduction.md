@@ -1393,7 +1393,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>ho3</td>
 	                                <td>
-                                        Les descriptions des concepts représentant un taxon de rang supérieur à l’espèce doivent contenir, dans les termes préférés, le nom de ce rang en français (règne, embranchement, classe, ordre, famille, genre, …).<br/>
+                                        Les concepts représentant un taxon de rang supérieur à l’espèce doivent utiliser le nom de ce rang en français (règne, embranchement, classe, ordre, famille, genre, …) dans le terme préféré.<br/>
                                         <u>Exemples</u> : <i>Family Coronaviridae</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : famille Coronaviridae</li>
@@ -1418,7 +1418,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>ho5</td>
 	                                <td>
-                                        Les concepts représentant un genre doivent suivre le patron suivant :
+                                        Les concepts représentant un genre doivent avoir un terme préféré et au moins un synonyme acceptable respectant le patron suivant :
                                         <div class="wysiwyg"><ul>
                                             <li>PT : genre [X]</li>
                                             <li>SYN : [X] spp.</li>
@@ -1435,7 +1435,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>ho6</td>
 	                                <td>
-                                        Les concepts représentant une sous-espèce doivent suivre le patron suivant (avec [X], [Y] et [Z] représentant respectivement le genre, l’espèce et la sous-espèce) :
+                                        Les concepts représentant une sous-espèce doivent avoir un terme préféré et au moins deux synonymes acceptables respectant le patron suivant (avec [X], [Y] et [Z] représentant respectivement les noms du genre, de l’espèce et de la sous-espèce) :
                                         <div class="wysiwyg"><ul>
                                             <li>PT : [X] [Y] [Z]</li>
                                             <li>SYN : [X] [Y] sous-espèce [Z]</li>
@@ -1454,7 +1454,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>ho7</td>
 	                                <td>
-                                        Les concepts représentant un variant doivent suivre le patron suivant :
+                                        Les concepts représentant un variant doivent avoir un terme préféré et au moins un synonyme acceptable respectant le patron suivant :
                                         <div class="wysiwyg"><ul>
                                             <li>PT : [X] variant [Y]</li>
                                             <li>SYN : [X] var. [Y]</li>
@@ -1471,7 +1471,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>ho8</td>
 	                                <td>
-                                        Les mots <i>genomospecies</i> et <i>genospecies</i> doivent être traduit par « génoespèce ».<br/>
+                                        Les concepts du type « [X] <i>genomospecies</i> [Y] » ou « [X] <i>genospecies</i> [Y] » doivent utiliser le terme « génoespèce ».<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Afipia genospecies 1</i> &rarr; Afipia génoespèce 1</li>
@@ -1484,7 +1484,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>ho9</td>
 	                                <td>
-                                        Un organisme de la forme « [X] <i>not</i> [Y] » doit être traduit par « [X] non [Y] ». Si [Y] est une liste de plusieurs éléments, ils sont rangés par ordre alphabétique et séparés par des virgules et un « et » pour le dernier élément.<br/>
+                                        Les concepts du type « [X] <i>not</i> [Y] » doivent être traduit par « [X] non [Y] ». Si [Y] est une liste de plusieurs éléments, ils sont rangés par ordre alphabétique et séparés par des virgules et un « et » pour le dernier élément.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Aerococcus species not Aerococcus urinae</i> &rarr; Aerococcus non Aerococcus urinae</li>
@@ -1497,7 +1497,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>ho10</td>
 	                                <td>
-                                        Les expressions « <i>CDC</i> [X] » ou « <i>Centers for Disease Control and Prevention</i> [X] » doivent être traduite par « [X] CDC ».<br/>
+                                        Les concepts du type « <i>CDC</i> [X] » ou « <i>Centers for Disease Control and Prevention</i> [X] » doivent se terminer par le terme « [X] CDC ».<br/>
                                         <u>Exemple</u> : <i>CDC Alcaligenes-like group 1</i> &rarr; Alcaligenes-like groupe 1 CDC
                                     </td>
 	                                <td>FTCG</td>
@@ -1506,7 +1506,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>ho11</td>
 	                                <td>
-                                        L’expression « [substance] <i>producing</i> [organisme] » doit être traduite par « [organisme] productrice de [substance] » ou « [organisme] producteur de [substance] ».<br/>
+                                        Les concepts du type « [substance] <i>producing</i> [organisme] » doivent utiliser l'expression « productrice de » ou « producteur de ».<br/>
                                         <u>Exemple</u> : <i>Carbapenemase-producing bacteria</i> &rarr; bactérie productrice de carbapénémase.
                                     </td>
 	                                <td>FTCG</td>
