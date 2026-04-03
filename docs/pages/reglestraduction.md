@@ -848,14 +848,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>co2</td>
                                     <td>
-                                        Le mot <i>finding</i> doit être traduit par :
-                                        <div class="wysiwyg"><ul>
-                                            <li>constatation à propos de [objet] ;</li>
-                                            <li>constatation concernant [objet] ;</li>
-                                            <li>constatation [objet - forme adjectivale] ;</li>
-                                        </ul></div>
-                                        <br/>
-                                        Le mot <i>finding</i> doit être omis s’il est redondant avec le reste de la description.<br/><br/>
+                                        Le mot <i>finding</i> doit être traduit par constatation. Il doit être omis s’il est redondant avec le reste de la description.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>neurological finding</i> &rarr; constatation neurologique</li>
@@ -883,28 +876,28 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>co6-FR</td>
                                     <td>
-                                        L'expression « [X] <i>level above reference range</i> » doivent être traduits selon le patron suivant :
+                                        Les concepts du type « [X] <i>above reference range</i> » doivent avoir un terme préféré et au moins un synonyme acceptable respectant le patron suivant :
                                         <div class="wysiwyg"><ul>
-                                            <li>PT : taux de [X] supérieur à l’intervalle de référence</li>
-                                            <li>SYN : taux de [X] supérieur aux valeurs de référence</li>
+                                            <li>PT : [X] supérieur à l’intervalle de référence</li>
+                                            <li>SYN : [X] supérieur aux valeurs de référence</li>
                                         </ul></div>
                                         <br/>
-                                        Les concepts du type « [X] <i>level below reference range</i> » doivent être traduits selon le patron suivant :
+                                        Les concepts du type « [X] <i>below reference range</i> » doivent avoir un terme préféré et au moins un synonyme acceptable respectant le patron suivant :
                                         <div class="wysiwyg"><ul>
-                                            <li>PT : taux de [X] inférieur à l’intervalle de référence</li>
-                                            <li>SYN : taux de [X] inférieur aux valeurs de référence</li>
+                                            <li>PT : [X] inférieur à l’intervalle de référence</li>
+                                            <li>SYN : [X] inférieur aux valeurs de référence</li>
                                         </ul></div>
                                         <br/>
-                                        Les concepts du type « [X] <i>level within reference range</i> » doivent être traduits selon le patron suivant :
+                                        Les concepts du type « [X] <i>within reference range</i> » doivent avoir un terme préféré et au moins un synonyme acceptable respectant le patron suivant :
                                         <div class="wysiwyg"><ul>
-                                            <li>PT : taux de [X] dans l’intervalle de référence</li>
-                                            <li>SYN : taux de [X] dans les valeurs de référence</li>
+                                            <li>PT : [X] dans l’intervalle de référence</li>
+                                            <li>SYN : [X] dans les valeurs de référence</li>
                                         </ul></div>
                                         <br/>
-                                        Les concepts du type « [X] <i>level outside reference range</i> » doivent être traduits selon le patron suivant :
+                                        Les concepts du type « [X] <i>outside reference range</i> » doivent avoir un terme préféré et au moins un synonyme acceptable respectant le patron suivant :
                                         <div class="wysiwyg"><ul>
-                                            <li>PT : taux de [X] en dehors de l’intervalle de référence</li>
-                                            <li>SYN : taux de [X] en dehors des valeurs de référence</li>
+                                            <li>PT : [X] en dehors de l’intervalle de référence</li>
+                                            <li>SYN : [X] en dehors des valeurs de référence</li>
                                         </ul></div>
                                         <br/>
                                     </td>
