@@ -1074,7 +1074,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <td>
                                         <div class="wysiwyg"><ol>
                                             <li><i>carbuncle</i> doit être traduit par « anthrax » ;</li>
-                                            <li><i>furuncle</i> et <i>boil</i> doivent être traduits par « furoncle », « folliculite nécrotique » et/ou « clou » ;</li>
+                                            <li><i>furuncle</i> et <i>boil</i> doivent être traduits par « furoncle », « folliculite nécrotique » ou « clou » ;</li>
                                             <li><i>anthrax</i> se traduit par « maladie du charbon ».</li>
                                         </ol></div><br/>
                                         <u>Exemples</u> :
