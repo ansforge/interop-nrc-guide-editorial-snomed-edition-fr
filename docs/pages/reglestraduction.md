@@ -1129,8 +1129,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>ec2</td>
                                     <td>
-                                        Dans cette hiérarchie, les termes préférés doivent utiliser « échantillon ».<br/>
-                                        Le terme préféré doit commencer par « échantillon », sauf pour les patrons suivants :
+                                        Dans cette hiérarchie, les descriptions doivent débuter par « échantillon » sauf pour les cas suivants :
                                         <div class="wysiwyg"><ul>
                                             <li>« [X] <i>submitted as specimen</i> » doit être traduit par « [X] présenté comme échantillon » (e.g. <i>Implant submitted as specimen</i> &rarr; implant présenté comme échantillon)</li>
                                             <li>« [X] <i>washings</i> » doit être traduit par « liquide de lavage [X] » (e.g. <i>Pharyngeal washings</i> &rarr; liquide de lavage pharyngien)</li>
