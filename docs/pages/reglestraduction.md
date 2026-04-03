@@ -50,14 +50,14 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>ab2</td>
                                     <td>
-                                        Les acronymes et les sigles peuvent être utilisés dans les synonymes. Dans ce cas, les majuscules sont conservées mais elles doivent être non accentuées.<br/>
+                                        Les acronymes et les sigles peuvent être utilisés dans les descriptions. Dans ce cas, les majuscules sont conservées mais elles doivent être non accentuées.<br/>
                                         L’acronyme ou le sigle doit être suivi de sa forme développée. Elle est :
                                         <div class="wysiwyg"><ul>
-                                            <li>Séparée par un trait d’union (UTF8 0x2D) encadré de deux espaces, s’il n’y a pas d’autres mot dans le synonyme ;</li>
-                                            <li>Entre parenthèses, si le synonyme contient d’autres mots.</li>
+                                            <li>Séparée par un trait d’union (UTF8 0x2D) encadré de deux espaces, s’il n’y a pas d’autres mot dans la description ;</li>
+                                            <li>Entre parenthèses, si la description contient d’autres mots.</li>
                                         </ul></div>
                                         <br/>
-                                        Si l’acronyme ou le sigle est consacré par l’usage, un synonyme sans forme développée peut être créé.<br/><br/>
+                                        Si l’acronyme ou le sigle est consacré par l’usage, une description sans forme développée peut être créé.<br/><br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>EIEC - Escherichia coli entéro-invasif</li>
@@ -134,7 +134,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>ar6</td>
                                     <td>
-                                        Aucun article ne doit figurer dans un synonyme désignant un dispositif ou un produit ciblant une partie du corps.<br/>
+                                        Aucun article ne doit figurer dans une description désignant un dispositif ou un produit ciblant une partie du corps.<br/>
                                         <u>Exemples</u> : prothèse de hanche, sonde nasale, pommade à lèvres
                                     </td>
                                     <td>FTCG</td>
@@ -272,7 +272,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>se11</td>
                                     <td>
-                                        Les synonymes ne doivent pas se terminer par un point (UTF8 0x2E), sauf exception.<br/>
+                                        Les descriptions ne doivent pas se terminer par un point (UTF8 0x2E), sauf exception.<br/>
                                         <u>Exemple d’exception</u> : Candida spp.
                                     </td>
                                     <td>SI</td>
@@ -453,7 +453,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>ss1</td>
                                     <td>
-                                        Les synonymes doivent être écrits en minuscules. Par défaut, ils sont insensibles à la casse (ci).<br/><br/>
+                                        Les descriptions doivent être écrits en minuscules. Par défaut, ils sont insensibles à la casse (ci).<br/><br/>
                                         <u>Exceptions</u> : noms propres, symboles, codes, sigles, acronymes ou taxa comportant des majuscules et/ou des minuscules imposées.<br/><br/>
                                         <u>Exemples</u> : pH, IgG, ADN, Legionella anisa, Epstein-Barr<br/><br/>
                                         <u>Sensibilité à la casse</u> :
@@ -468,7 +468,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>ss2</td>
                                     <td>
-                                        Les synonymes doivent être au singulier excepté si le concept implique un pluriel.<br/>
+                                        Les descriptions doivent être au singulier excepté si le concept implique un pluriel.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Hospital furniture</i> &rarr; mobilier d’hôpital</li>
@@ -525,7 +525,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <td>
                                         Le terme préféré doit contenir des termes épicènes ou, entre parenthèses, la terminaison au féminin des adjectifs, participes ou noms dont l’orthographe varie selon le genre.<br/>
                                         <u>Exemples</u> : amputé(e), diététicien(ne), acupuncteur(-ice), conseiller(e) clinique, travailleur(-se) social(e), clinicien(ne) autorisé(e), professionnel(le) de la santé<br/><br/>
-                                        Des synonymes strictement au masculin ou au féminin peuvent être ajoutés pour des questions d'interface.<br/>
+                                        Des synonymes acceptables strictement au masculin ou au féminin peuvent être ajoutés pour des questions d'interface.<br/>
                                         Le point médiant n’est pas jugé suffisamment adopté par le groupe pour être utilisé.
                                     </td>
                                     <td>FTCG</td>
@@ -534,7 +534,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>ss7</td>
                                     <td>
-                                        Si un FSN ou un synonyme contient une entité provenant d’une autre hiérarchie (e.g. <i>Body structure</i>, <i>Substance</i>, <i>Organism</i>), les règles éditoriales de ladite hiérarchie doivent s’appliquer à cette entité.<br/><br/>
+                                        Si un concept fait référence à une entité provenant d’une autre hiérarchie (e.g. <i>Body structure</i>, <i>Substance</i>, <i>Organism</i>), les règles éditoriales de ladite hiérarchie doivent s’appliquer à cette entité.<br/><br/>
                                         Si l’entité provient de <i>Body structure</i>, le mot « structure » ne doit pas être utilisé.<br/><br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
@@ -667,7 +667,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>tv1</td>
                                     <td>
-                                        Un synonyme doit être un nom, un groupe nominal ou une phrase nominale (<a href="https://confluence.ihtsdotools.org/display/DOCEG/Sentence+Types">https://confluence    ihtsdotools.org/display/DOCEG/Sentence+Types</a>).<br/>
+                                        Une description doit être un nom, un groupe nominal ou une phrase nominale (<a href="https://confluence.ihtsdotools.org/display/DOCEG/Sentence+Types">https://confluence    ihtsdotools.org/display/DOCEG/Sentence+Types</a>).<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>excision partielle du radius</li>
@@ -855,7 +855,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>constatation [objet - forme adjectivale] ;</li>
                                         </ul></div>
                                         <br/>
-                                        Le mot <i>finding</i> doit être omis s’il est redondant avec le reste du synonyme.<br/><br/>
+                                        Le mot <i>finding</i> doit être omis s’il est redondant avec le reste de la description.<br/><br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>neurological finding</i> &rarr; constatation neurologique</li>
@@ -869,7 +869,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>co5</td>
                                     <td>
-                                        Les groupes sanguins sont exprimés sous trois formes : longue, intermédiaire et courte, donc par trois synonymes. Le terme préféré doit être la forme longue :<br/>
+                                        Les groupes sanguins sont exprimés sous trois formes : longue, intermédiaire et courte, donc par trois descriptions. Le terme préféré doit être la forme longue :<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>PT (forme longue) : groupe sanguin A Rh(D) positif</li>
@@ -949,7 +949,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <u>Exemple</u> : <i>Iatrogenic disorder</i> &rarr; maladie iatrogénique<br/><br/>
                                         Le mot <i>disorder</i> peut être absorbé par la traduction française d’un groupe de mots contenant disorder<br/>
                                         <u>Exemple</u> : <i>Disorder of lumbosacral intervertebral disc</i> &rarr; discopathie lombaire et lombo-sacrée<br/><br/>
-                                        Bien que <i>disease</i> et <i>disorder</i> ne soient pas strictement équivalents en anglais (<i>disorder</i> étant plus générique que <i>disease</i>), certains concepts possèdent deux synonymes anglais employant chacun l’un ou l’autre de ces deux mots. Les règles pa2 et pa5 se concentrent sur les termes préférés mais n’interdisent pas l’ajout d’un synonyme acceptable suivant l’une ou l’autre de ces deux règles
+                                        Bien que <i>disease</i> et <i>disorder</i> ne soient pas strictement équivalents en anglais (<i>disorder</i> étant plus générique que <i>disease</i>), certains concepts possèdent deux descriptions anglaises employant chacune l’un ou l’autre de ces deux mots. Les règles pa2 et pa5 se concentrent sur les termes préférés mais n’interdisent pas l’ajout d’un synonyme acceptable suivant l’une ou l’autre de ces deux règles
                                     </td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
@@ -1015,7 +1015,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>PT : cardiopathie ;</li>
                                             <li>SYN : maladie cardiaque</li>
                                         </ul></div><br/>
-                                        Bien que <i>disease</i> et <i>disorder</i> ne soient pas strictement équivalents en anglais (<i>disorder</i> étant plus générique que <i>disease</i>), certains concepts possèdent deux synonymes anglais employant chacun l’un de ces deux mots. Les règles pa2 et pa5 se concentrent sur les termes préférés mais n’interdisent pas l’ajout d’un synonyme acceptable suivant l’une ou l’autre de ces deux règles.
+                                        Bien que <i>disease</i> et <i>disorder</i> ne soient pas strictement équivalents en anglais (<i>disorder</i> étant plus générique que <i>disease</i>), certains concepts possèdent deux descriptions anglaises employant chacune l’un de ces deux mots. Les règles pa2 et pa5 se concentrent sur les termes préférés mais n’interdisent pas l’ajout d’un synonyme acceptable suivant l’une ou l’autre de ces deux règles.
                                     </td>
                                     <td>FTCG</td>
                                     <td>23/01/23</td>
@@ -1953,7 +1953,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 	<td>bs9</td>
                                 	<td>
                                         L'expression <i>Lesser toe</i> désigne un orteil sauf le pouce, il doit donc être traduit dans le terme préféré par « orteil excepté l’hallux ». « orteil latéral » est un synonyme acceptable.<br/><br/>
-                                        Le synonyme « petit orteil » est considéré comme erroné.
+                                        Le terme « petit orteil » est considéré comme erroné.
                                     </td>
                                 	<td>FTCG</td>
                                 	<td>18/12/23</td>
@@ -2059,13 +2059,13 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                           <li>SYN : nom chimique</li>
                                         </ul></div><br/>
                                         En cas d'absence de DCF, le terme préféré reprend le nom commun d'usage. En cas d'absence du nom commun d'usage, le terme préféré reprend le nom chimique.<br/><br/>
-                                        1. <b>Sels</b> : le terme préféré est constitué du nom du cation (base) cité en premier suivi du nom de l’anion (nom du sel résultant de l’acide) avec lequel le cation (base) est combinée pour former le sel. Pour un sel comportant une DCF : la DCF est citée en premier. Elle est suivie du nom du sel (sel de sodium, sel de potassium, sel disodique, …).<br/>
+                                        6. <b>Sels</b> : le terme préféré est constitué du nom du cation (base) cité en premier suivi du nom de l’anion (nom du sel résultant de l’acide) avec lequel le cation (base) est combinée pour former le sel. Pour un sel comportant une DCF : la DCF est citée en premier. Elle est suivie du nom du sel (sel de sodium, sel de potassium, sel disodique, …).<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                           <li>PT : amlodipine bésilate</li>
                                           <li>SYN : bésilate d’amlodipine</li>
                                         </ul></div><br/>
-                                        2. <b>Esters</b> : le terme préféré est constitué du nom de l’acide cité en premier suivi du nom de l’alcool avec lequel il est combiné pour former un ester. Pour un ester comportant une DCF : la DCF est citée en premier. Elle est suivie du nom de l’ester (embonate, …).<br/>
+                                        7. <b>Esters</b> : le terme préféré est constitué du nom de l’acide cité en premier suivi du nom de l’alcool avec lequel il est combiné pour former un ester. Pour un ester comportant une DCF : la DCF est citée en premier. Elle est suivie du nom de l’ester (embonate, …).<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                           <li>PT : chlorpromazine embonate</li>
@@ -2157,13 +2157,13 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>su7-FR</td>
 	                                <td>
-                                        Si le concept mentionne un microorganisme, le terme préféré utilise son nom scientifique en latin et un synonyme peut utiliser le nom vernaculaire.<br/>
+                                        Si le concept mentionne un microorganisme, le terme préféré utilise son nom scientifique en latin et un synonyme acceptable peut utiliser le nom vernaculaire.<br/>
                                         <u>Exemple</u> :
                                         <div class="wysiwyg"><ul>
                                           <li>PT : immunoglobuline monoclonale contre Orthopneumovirus hominis</li>
                                           <li>SYN : immunoglobuline monoclonale contre le virus respiratoire syncytial humain</li>
                                         </ul></div><br/>
-                                        Si le concept mentionne un macroorganisme, le terme préféré utilise le nom vernaculaire s'il existe et un synonyme utilise le nom scientifique en latin. Dans le cas où il n'existe pas de nom vernaculaire, le nom scientifique latin est utilisé en terme préféré.<br/>
+                                        Si le concept mentionne un macroorganisme, le terme préféré utilise le nom vernaculaire s'il existe et un synonyme acceptable utilise le nom scientifique en latin. Dans le cas où il n'existe pas de nom vernaculaire, le nom scientifique latin est utilisé en terme préféré.<br/>
                                         <u>Exemple</u> :
                                         <div class="wysiwyg"><ul>
                                           <li>PT : alcaloïde de belladone</li>
