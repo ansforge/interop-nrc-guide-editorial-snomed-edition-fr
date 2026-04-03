@@ -1336,7 +1336,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>sb1</td>
                                     <td>
-                                        L'expression « <i>evacuated</i> [substance] <i>collection tube</i> [caractéristique] » doit être traduit dans le terme préféré par « tube sous vide [caractéristiques] pour prélèvement [substance] ».<br/>
+                                        Les concepts du type « <i>evacuated</i> [substance] <i>collection tube</i> [caractéristique] » doivent utiliser l'expression « tube sous vide [caractéristiques] pour prélèvement [substance] » dans le terme préféré.<br/>
                                         <u>Exemple</u> : <i>Evacuated blood collection tube, K2EDTA/aprotinin</i> &rarr; tube sous vide EDTA avec anticoagulant irréversible-K2/aprotinine pour prélèvement sanguin
                                     </td>
                                     <td>FTCG</td>
@@ -1345,7 +1345,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>sb2</td>
                                     <td>
-                                        L'expression « <i>evacuated</i> [substance] <i>specimen container</i> [caractéristiques] » doit être traduit dans le terme préféré par « support sous vide [caractéristiques] pour prélèvement [substance] ».<br/>
+                                        Les concepts du type « <i>evacuated</i> [substance] <i>specimen container</i> [caractéristiques] » doivent utiliser l'expression « support sous vide [caractéristiques] pour prélèvement [substance] » dans le terme préféré.<br/>
                                         <u>Exemple</u> : <i>Evacuated urine specimen container, boric acid (H3BO3)</i> &rarr; support sous vide boraté pour prélèvement urinaire
                                     </td>
                                     <td>FTCG</td>
@@ -1354,8 +1354,12 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>sb3</td>
                                     <td>
-                                        65818007 |Stent (physical object)| et ses descendants doivent utiliser « endoprothèse » dans leur terme préféré. Ils peuvent utiliser « stent » dans un synonyme acceptable.<br/><br/>
-                                        Pour les endoprothèses vasculaires un synonyme acceptable utilisant « stent » est obligatoire.<br/><br/>
+                                        Les concept 65818007 |Stent (physical object)| et ses descendants doivent avoir un terme préféré et au moins un synonyme acceptable respectant le patron suivant :
+                                        <div class="wysiwyg"><ul>
+                                            <li>PT : endoprothèse [X]</li>
+                                            <li>SYN : stent [X]</li>
+                                        </ul></div><br/>
+                                        En dehors des endoprothèses vasculaires, le synonyme acceptable utilisant « stent » n'est pas obligatoire.<br/><br/>
                                         <u>Exemples</u> : <i>Antibody-coated coronary artery stent</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : endoprothèse d’artère coronaire enduite d’anticorps</li>
