@@ -1527,7 +1527,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                             <tr>
 	                            <td>pr2</td>
 	                            <td>
-                                    Le mot <i>procedure</i> dans cette hiérarchie doit être traduit en fonction des patrons suivants :
+                                    Le mot <i>procedure</i> dans cette hiérarchie doit avoir un terme préféré et au moins un (ou deux selon le patron) synonyme acceptable :
                                     <div class="wysiwyg"><ol>
                                         <li>Procédures non chirurgicales :</li>
                                             <ul>
@@ -1541,7 +1541,9 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                                 <li>SYN : chirurgie [X]</li>
                                             </ul>
                                     </ol></div><br/>
-                                    Le mot <i>operation</i> est utilisé par la SNOMED CT pour représenter des interventions chirurgicales, il doit donc être traduit en suivant le patron des interventions     chirurgicales décrit ci-dessus.<br/><br/>
+                                    Ces termes peuvent être omis s’ils sont redondants avec le reste de la description ou s'il existe un terme plus spécifique.
+                                    <br/><br/>
+                                    Le mot <i>operation</i> est utilisé par la SNOMED CT pour représenter des interventions chirurgicales, il doit donc être traduit en suivant le patron des interventions chirurgicales décrit ci-dessus.<br/><br/>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ol>
                                         <li><i>Neuromuscular procedure</i> :</li>
@@ -1556,7 +1558,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                                 <li>SYN : chirurgie périrénale</li>
                                             </ul>
                                     </ol></div><br/>
-                                    Pour les procédures obstétriques, le choix du patron dépend de l’acte décrit par le concept.
+                                    Pour les procédures obstétriques, le choix du patron dépend de l’acte décrit par le concept. Il doit être omis s’il est redondant avec le reste de la description.
                                 </td>
 	                            <td>FTCG</td>
 	                            <td>23/11/20</td>
@@ -1570,13 +1572,12 @@ La colonne « Source » indique la source d’origine de la règle en question :
                             <tr>
 	                            <td>pr4</td>
 	                            <td>
-                                    Dans le cas du retrait d’un corps étranger, <i>Removal of foreign body</i> doit être traduit par « retrait d’un corps étranger ».<br/><br/>
-                                    L’expression <i>Magnet extraction</i> doit être traduite par « extraction avec un aimant » dans les termes préférés et peut être traduite par « retrait d’un corps étranger de [site anatomique] à l’aide d’un aimant » dans un synonyme acceptable.<br/>
+                                    Les concepts du type <i>Removal of foreign body [X]</i> doivent avoir un terme préféré de la forme suivante « retrait d’un corps étranger [X] ».<br/><br/>
+                                    Les concepts du type <i>Magnet extraction</i> doivent avoir un terme préféré de la forme suivante « extraction avec un aimant ».<br/>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ul>
                                         <li>retrait d'un corps étranger d'un tissu mou</li>
                                         <li>extraction avec un aimant d’un corps étranger de la cornée</li>
-                                        <li>retrait d’un corps étranger de la cornée à l’aide d’un aimant</li>
                                     </ul></div>
                                 </td>
 	                            <td>FTCG</td>
@@ -1585,7 +1586,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                             <tr>
 	                            <td>pr5</td>
 	                            <td>
-                                    Dans le cas du retrait d’un dispositif médical, l’expression « <i>Removal of</i> [X] » doit être traduite par « retrait de [X] ».<br/>
+                                    Les concepts du type « <i>Removal of [dispositif médical]</i> » doivent être traduits par « retrait de [dispositif médical] ».<br/>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ul>
                                         <li>retrait d’un plâtre</li>
@@ -1598,7 +1599,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                             <tr>
 	                            <td>pr6</td>
 	                            <td>
-                                    Dans le cas de l’ablation chirurgicale totale d’un organe, le concept doit être traduit selon le patron suivant :
+                                    Les concepts représentant l’ablation chirurgicale totale d’un organe doivent avoir un terme préféré et au moins deux synonymes acceptables de la forme suivante :
                                     <div class="wysiwyg"><ul>
                                         <li>PT : [X]ectomie totale</li>
                                         <li>SYN : excision totale [X]</li>
@@ -1612,7 +1613,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                             <tr>
 	                            <td>pr7</td>
 	                            <td>
-                                    Dans le cas de l’ablation chirurgicale partielle d’un organe, le concept doit être traduit selon le patron suivant :
+                                    Les concepts représentant l’ablation chirurgicale partielle d’un organe doivent avoir un terme préféré et au moins deux synonymes acceptables de la forme suivante :
                                     <div class="wysiwyg"><ul>
                                         <li>PT : [X]ectomie partielle</li>
                                         <li>SYN : excision partielle [X]</li>
@@ -1627,7 +1628,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                             <tr>
 	                            <td>pr8</td>
 	                            <td>
-                                    Dans le cas de l’amputation (chirurgicale) d’une topographie normale, les termes préférés doivent utiliser le terme « amputation » sauf pour le domaine périodontal qui utilise « extraction ».<br/>
+                                    Les concepts représentant l’amputation chirurgicale d’une topographie normale doivent avoir un terme préféré utilisant le terme « amputation ».<br/><br/>
+                                    Dans un contexte périodontal, le terme préféré doit utiliser le terme « extraction ».<br/>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ul>
                                         <li>amputation du membre inférieur</li>
@@ -1640,7 +1642,11 @@ La colonne « Source » indique la source d’origine de la règle en question :
                             <tr>
 	                            <td>pr9</td>
 	                            <td>
-                                    Dans le cas d’une biopsie excisionnelle (qui consiste à enlever la totalité du tissu anormal ainsi qu'une marge de tissu qui l'entoure), <i>Excisional biopsy</i> doit être traduit par « biopsie-exérèse » dans les termes préférés ou « biopsie excisionnelle » dans les synonymes acceptables.<br/>
+                                    Les concepts représentant une biopsie excisionnelle (qui consiste à enlever la totalité du tissu anormal ainsi qu'une marge de tissu qui l'entoure) doivent avoir un terme préféré et au moins un synonyme acceptable de la forme suivante :
+                                    <div class="wysiwyg"><ul>
+                                        <li>PT : biopsie-exérèse [X]</li>
+                                        <li>SYN : biopsie excisionnelle</li>
+                                    </ul></div><br/>
                                     <u>Exemples</u> : <i>Excisional biopsy of breast mass</i>
                                     <div class="wysiwyg"><ul>
                                         <li>PT : biopsie-exérèse d’une masse mammaire</li>
@@ -1653,7 +1659,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                             <tr>
 	                            <td>pr10</td>
 	                            <td>
-                                    Dans le cas d’une biopsie incisionnelle (qui consiste à prélever seulement un petit échantillon du tissu anormal en vue d’un examen au microscope), <i>Incisional biopsy</i> se traduit par « biopsie incisionnelle ».<br/>
+                                    Les concepts représentant une biopsie incisionnelle (qui consiste à prélever seulement un petit échantillon du tissu anormal en vue d’un examen au microscope) doivent être traduit par « biopsie incisionnelle ».<br/>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ul>
                                         <li>biopsie incisionnelle de l’encéphale</li>
@@ -1666,7 +1672,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                             <tr>
                             	<td>pr12</td>
                             	<td>
-                                    Les termes préférés des concepts liés à l’imagerie par résonance magnétique, comme action principale ou comme guidage de l’acte principal, doivent contenir l’acronyme IRM sans forme développée.<br/>
+                                    Les concepts mentionnant la notion d’imagerie par résonance magnétique doivent avoir un terme préféré utilisant seulement la forme courte (IRM) et au moins un synonyme utilisant la forme longue (imagerie par résonance magnétique).<br>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ol>
                                         <li><i>MRI for patella tracking</i> :</li>
@@ -1687,7 +1693,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                             <tr>
 	                            <td>pr13</td>
 	                            <td>
-                                    Les concepts représentant une procédure guidée par imagerie doivent suivre le patron suivant :
+                                    Les concepts représentant une procédure guidée par imagerie doivent avoir un terme préféré et au moins un synonyme acceptable de la forme suivante :
                                     <div class="wysiwyg"><ul>
                                         <li>PT : [procédure] guidée par [technique d’imagerie]</li>
                                         <li>SYN : [procédure] sous guidage [technique d’imagerie]</li>
@@ -1706,19 +1712,10 @@ La colonne « Source » indique la source d’origine de la règle en question :
                             <tr>
 	                            <td>pr14</td>
 	                            <td>
-                                    Les concepts dont le FSN anglais utilise <i>fluoroscopy</i> ou <i>fluoroscopic</i> doivent être traduits suivant ces deux patrons, selon si ce mot désigne l’action principale ou le guidage de cette action :
+                                    Les concepts utilisant les notions « <i>fluoroscopy</i> » ou « <i>fluoroscopic</i> » doivent avoir un terme préféré et au moins un synonyme acceptable utilisant les traduction suivantes :
                                     <div class="wysiwyg"><ol>
-                                        <li>Patron action principale :</li>
-                                            <ul>
-                                                <li>PT : radioscopie de [X]</li>
-                                                <li>SYN : fluoroscopie de [X]</li>
-                                            </ul>
-                                        <li>Patron guidage de l’action principale :</li>
-                                            <ul>
-                                                <li>PT : [X] guidée par radioscopie</li>
-                                                <li>SYN : [X] sous guidage radioscopique</li>
-                                                <li>SYN : [X] guidée par fluoroscopie</li>
-                                            </ul>
+                                        <li>PT : radioscopie/radioscopique</li>
+                                        <li>SYN : fluoroscopie/fluoroscopique</li>
                                     </ol></div><br/>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ol>
@@ -1741,7 +1738,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                             <tr>
 	                            <td>pr15-FR</td>
 	                            <td>
-                                    Les concepts <i>X education</i> ou <i>education about X</i> doivent être traduits par "éducation concernant X".<br/>
+                                    Les concepts du type « <i>[X] education</i> » ou « <i>education about [X]</i> » doivent être traduits par "éducation concernant X".<br/>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ol>
                                         <li><i>Amputation education</i> &rarr; éducation concernant l'amputation</li>
