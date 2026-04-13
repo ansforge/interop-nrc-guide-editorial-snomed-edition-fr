@@ -1763,7 +1763,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>me1</td>
 	                                <td>
-                                        L’expression « <i>product containing</i> [substance] » doit être traduite par « produit contenant [substance] » dans les termes préférés.<br/><br/>
+                                        Les concepts du type « <i>product containing</i> [substance] » doivent avoir un terme préféré de la forme suivante « produit contenant [substance] ».<br/><br/>
                                         S’il y a plusieurs substances, elles doivent être listées sans article, dans l’ordre alphabétique et séparé par « et ». Un synonyme acceptable peut remplacer le « et » par un « + ».<br/><br/>
                                         Le mot « produit » peut être remplacé par un terme plus pertinent (e.g. « vaccin contenant… »).<br/><br/>
                                         <u>Exemple</u> :
@@ -1778,7 +1778,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>me2-FR</td>
 	                                <td>
-                                        L’expression « <i>product containing only</i> [substance] » doit être traduite par « produit contenant uniquement [substance] » dans les termes préférés.<br/><br/>
+                                        Les concepts du type « <i>product containing only</i> [substance] » doivent avoir un terme préféré de la forme suivante « produit contenant uniquement [substance] ».<br/><br/>
                                         S’il y a plusieurs substances, elles doivent être listées sans article, dans l’ordre alphabétique et séparé par « et ». Un synonyme acceptable peut remplacer le « et » par un « + ».<br/><br/>
                                         Le mot « produit » peut être remplacé par un terme plus pertinent (e.g. « vaccin contenant… »).<br/><br/>
                                         <u>Exemple</u> :
@@ -1793,11 +1793,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>me3</td>
 	                                <td>
-                                        Dans le cas des médicaments virtuels (<i>clinical drug</i>) qui précisent le(s) composant(s) avec leur(s) dosage(s) et leurs formes manufacturées, les termes préférés doivent suivre le patron suivant :
-                                        <div class="wysiwyg"><ul>
-                                            <li>PT :« produit contenant précisément [substance] [dosage], [forme] »</li>
-                                            <li>SYN : « produit contenant précisément [substance] [dosage] par [forme] »</li>
-                                        </ul></div><br/>
+                                        Les concepts représentant des médicaments virtuels (<i>clinical drug</i>) qui précisent le(s) composant(s) avec leur(s) dosage(s) et leurs formes manufacturées doivent avoir un terme préféré de la forme suivante « produit contenant précisément [substance] [dosage], [forme] »<br/><br/>
                                         S’il y a plusieurs composants avec leurs dosages, ils doivent être listés sans article, dans l’ordre alphabétique et séparé par « et ».<br/><br/>
                                         <u>Exemple</u> :
                                         <div class="wysiwyg"><ul>
