@@ -1854,7 +1854,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>bs2</td>
 	                                <td>
-                                        Les concepts représentant une structure articulaire doivent contenir le mot articulation dans leur terme préféré. Un synonyme acceptable peut omettre ce mot si cela ne provoque pas d’ambiguïté.<br/>
+                                        Les concepts représentant une structure articulaire doivent avoir un terme préféré contenant le terme « articulation ».<br/>
                                         <u>Exemple</u> : <i>Lateral collateral ligament of knee joint</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : ligament collatéral latéral de l'articulation du genou</li>
@@ -1871,12 +1871,13 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <img src="../assets/images/sep.png"/><br/>
                                         Le concept <i>Entire</i> représente l’entité anatomique X dans son entièreté, le concept Part représente toute partie spécifique de cette entité anatomique X. Ces deux concepts sont des enfants immédiats du concept <i>Structure</i> qui est le concept le plus général représentant l’entité anatomique X.<br/><br/>
                                         Les trois mots clés <i>structure</i>, <i>entire</i> et <i>part</i> figurent systématiquement dans les FSN anglais associés respectivement à ces trois concepts.<br/><br/>
-                                        Les descriptions de ces concepts doivent suivre les patrons suivants :
+                                        Les concepts Structure doivent avoir un terme préféré et au moins un synonyme acceptable de la forme suivante :
                                         <div class="wysiwyg"><ul>
-                                            <li>Concept Structure : « X » pour le terme préféré et au moins un synonyme acceptable « structure X ».</li>
-                                            <li>Concept Entire : « X entier » ou « X entière ».</li>
-                                            <li>Concept Part : « partie du X » ou « partie de la X ».</li>
+                                            <li>PT : « [X] »</li>
+                                            <li>SYN : « [X], structure »</li>
                                         </ul></div><br/>
+                                        Les concepts Entire doivent être traduits par « [X] entier » ou « [X] entière ».<br/><br/>
+                                        Les concepts Part doivent être traduits par « partie du [X] » ou « partie de la [X] ».<br/><br/>
                                         <u>Exemple</u> :<br/>
                                         <img src="../assets/images/sep_exemple.png"/>
                                     </td>
@@ -1892,7 +1893,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>bs5</td>
 	                                <td>
-                                        Le mot <i>region</i> doit être traduit par « région ».<br/>
+                                        Les concepts du type « <i>[X] region</i> » doivent avoir un terme préféré utilisant le terme « région ».<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Hip region structure</i> &rarr; région de la hanche</li>
@@ -1905,10 +1906,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>bs6</td>
 	                                <td>
-                                        <div class="wysiwyg"><ul>
-                                            <li>Le mot <i>zone</i> doit être traduit par « zone ».</li>
-                                            <li>Le mot <i>area</i> doit être traduit par « zone », « surface » ou « aire » si le concept est un descendant de 127947003 |Structure of body surface region (body structure)| ou par un mot plus pertinent s’il existe.</li>
-                                        </ul></div>
+                                        Les concepts contenant les termes « <i>zone</i> » ou « <i>area</i> » doivent avoir un terme préféré contenant l'un des termes suivants : « zone », « surface », « aire » ou par un terme plus pertinent s'il existe.<br/><br/>
+                                        Dans le cas d'un concept impacté par les règles bs5 et bs6, un compromis entre les deux termes à ajouté peut être trouvé pour simoplifier le terme préféré et assurer sa pertinence.<br/><br/>
                                         <u>Exemple</u> : <i>Skin structure of dorsal area of hand</i> &rarr; peau de la zone dorsale de la main
                                     </td>
                                 	<td>FTCG</td>
@@ -1917,8 +1916,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>bs7</td>
 	                                <td>
-                                        Le mot <i>proper</i> doit être traduit par « propre ».<br/><br/>
-                                        <u>Exception 1</u> : Si l’utilisation de « propre » provoque un risque de confusion avec l’état de propreté, <i>proper</i> doit être traduit par « proprement dit » ou « proprement dite ».<br/><br/>
+                                        Les concepts contenant le terme « <i>proper</i> » doit avoir un terme préféré contenant le terme « propre ».<br/><br/>
+                                        <u>Exception 1</u> : Si l’utilisation de « propre » provoque un risque de confusion avec l’état de propreté, « <i>proper</i> » doit être traduit par « proprement dit » ou « proprement dite ».<br/><br/>
                                         <u>Exception 2</u> : Si un terme plus précis et pertinent existe, il peut remplacer « propre ».
                                     </td>
                                 	<td>FTCG</td>
@@ -1927,12 +1926,11 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                 	<td>bs8</td>
                                 	<td>
-                                        Le mot <i>apex</i> doit être traduit par « apex » dans les termes préférés. Les mots « pointe », « bout » ou « cime » peuvent être utilisés dans les synonymes acceptables.<br/>
+                                        Les concepts contenant le terme « <i>apex</i> » doivent avoir un terme préféré contenant le terme « apex » ou un terme plus pertinent s'il existe.
                                         <u>Exemples</u> : <i>Structure of tip of tongue</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : apex de la langue</li>
                                             <li>SYN : bout de la langue</li>
-                                            <li>SYN : pointe de la langue</li>
                                         </ul></div>
                                     </td>
                                 	<td>FTCG</td>
@@ -1941,7 +1939,11 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                 	<td>bs9</td>
                                 	<td>
-                                        L'expression <i>Lesser toe</i> désigne un orteil sauf le pouce, il doit donc être traduit dans le terme préféré par « orteil excepté l’hallux ». « orteil latéral » est un synonyme acceptable.<br/><br/>
+                                        Les concepts contenant les termes « <i>Lesser toe</i> » désignent un orteil sauf le pouce, ils doivent donc avoir un terme préféré et au moins un synonyme acceptable contenant les termes suivants :
+                                        <div class="wysiwyg"><ul>
+                                            <li>PT : orteil excepté l'hallux</li>
+                                            <li>SYN : orteil latéral</li>
+                                        </ul></div>
                                         Le terme « petit orteil » est considéré comme erroné.
                                     </td>
                                 	<td>FTCG</td>
@@ -1950,13 +1952,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                 	<td>bs10-FR</td>
                                 	<td>
-                                        L'expression <i>Lower limb</i> doit être traduite par «   membre inférieur ».<br/><br/>
-                                        L'expression <i>Lower leg</i> doit être traduite selon le patron suivant :
-                                        <div class="wysiwyg"><ul>
-                                            <li>PT : partie inférieure de la jambe</li>
-                                            <li>SYN : partie basse de la jambe</li>
-                                            <li>SYN : jambe, du genou à la cheville</li>
-                                        </ul></div> 
+                                        Les concepts contenant les termes « <i>Lower limb</i> » doivent être traduits par « membre inférieur ».<br/><br/>
+                                        Les concepts contenant les termes « <i>Lower leg</i> » doivent être traduits « partie inférieure de la jambe ».
                                     </td>
 	                                <td>ANS</td>
 	                                <td>01/08/25</td>
@@ -1964,25 +1961,27 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                 	<td>bs11-FR</td>
                                 	<td>
-                                        L'expression <i>Upper limb</i> doit être traduite par « membre supérieur ».<br/><br/>
-                                        L'expression <i>Upper arm</i> doit être traduite selon le patron suivant:
-                                        <div class="wysiwyg"><ul>
-                                            <li>PT : partie supérieure du bras</li>
-                                            <li>SYN : bras, de l'épaule au coude</li>
-                                        </ul></div> 
+                                        Les concepts contenant les termes « <i>Upper limb</i> » doivent être traduits par « membre supérieur ».<br/><br/>
+                                        Les concepts contenant les termes « <i>Upper arm</i> » doivent être traduits par « partie supérieure du bras ».
                                     </td>
                                 	<td>ANS</td>
                                 	<td>01/08/25</td>
                                 </tr>
                                 <tr>
 	                                <td>bs12</td>
-	                                <td>Le mot <i>Cerebrum</i> doit être traduit par « cerveau ».</td>
+	                                <td>
+                                        Les concepts contenant le terme « <i>Cerebrum</i> » doivent contenir les termes « cerveau » ou « cérébral ».<br/><br/>
+                                        Les termes « encéphale » ou « encéphalique » sont considérés comme erronés.
+                                    </td>
                                 	<td>FTCG</td>
                                 	<td>13/01/25</td>
                                 </tr>
                                 <tr>
                                 	<td>bs13</td>
-                                	<td>Le mot <i>Brain</i> doit être traduit par « encéphale ».</td>
+                                	<td>
+                                        Les concepts contenant le terme « <i>Brain</i> » doivent contenir les termes « encéphale » ou « encéphalique ».<br/><br/>
+                                        Les concepts contenant le terme « <i>brainstem</i> » sont une exception et doivent contenir le terme « tronc cérébral ».
+                                    </td>
                                 	<td>FTCG</td>
                                 	<td>13/01/25</td>
                                 </tr>
