@@ -2000,37 +2000,17 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>su1-FR</td>
 	                                <td>
-                                        Les anticorps doivent suivrent le patron suivant :<br/>
+                                        Les anticorps doivent avoir un terme préféré et au moins deux synonymes acceptables contenant les termes suivants :<br/>
                                         <div class="wysiwyg"><ul>
-                                            <li>PT : immunoglobuline anti[maladie]</li>
-                                            <li>SYN : immunoglobuline contre [organisme]</li>
-                                            <li>SYN : Ig anti[maladie]</li>
-                                            <li>SYN : Ig contre [organisme]</li>
-                                            <li>SYN : anticorps anti[maladie]</li>
-                                            <li>SYN : anticorps contre [organisme]</li>
+                                            <li>PT : « immunoglobuline » ou « anticorps » selon l'usage</li>
+                                            <li>SYN : Ig</li>
+                                            <li>SYN : « anticorps » ou « immunoglobuline » pour compléter le PT</li>
                                         </ul></div><br/>
                                         <u>Exemple</u> : <i>Rabies virus antibody</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : immunoglobuline antirabique</li>
-                                            <li>SYN : immunoglobuline contre le virus de la rage</li>
-                                            <li>SYN : immunoglobuline contre Lyssavirus rabies</li>
                                             <li>SYN : Ig antirabique</li>
-                                            <li>SYN : Ig contre le virus de la rage</li>
-                                            <li>SYN : Ig contre Lyssavirus rabies</li>
                                             <li>SYN : anticorps antirabique</li>
-                                            <li>SYN : anticorps contre le virus de la rage</li>
-                                            <li>SYN : anticorps contre Lyssavirus rabies</li>
-                                        </ul></div>
-                                        <br/>
-                                        Si il n'existe pas de nom commun pour la maladie, alors c'est "immunoglobuline contre [organisme, nom scientifique] qui devient le terme préféré.<br/>
-                                        <u>Exemple</u> : <i>Haemophilus influenzae antibody</i>
-                                        <div class="wysiwyg"><ul>
-                                            <li>PT : immunoglobuline contre Haemophilus influenzae</li>
-                                            <li>SYN : immunoglobuline contre le bacille de Pfeiffer</li>
-                                            <li>SYN : Ig contre Haemophilus influenzae</li>
-                                            <li>SYN : Ig contre le bacille de Pfeiffer</li>
-                                            <li>SYN : anticorps contre Haemophilus influenzae</li>
-                                            <li>SYN : anticorps contre le bacille de Pfeiffer</li>
                                         </ul></div>
                                     </td>
 	                                <td>ANS</td>
@@ -2039,21 +2019,21 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>su2-FR</td>
 	                                <td>
-                                        Les directives générales pour la formation de dénominations communes internationales (DCI) applicables aux substances pharmaceutiques publiées par l’OMS s’appliquent pour le terme préféré.<br/>
-                                        Le libellé du terme préféré est calqué sur la modalité anglosaxonne d’écriture des substances : nom de la partie de la substance pharmacologiquement active cité en premier suivi le cas échéant du nom du radical pharmacologiquement inactif.
+                                        Les directives générales pour la formation de dénominations communes internationales (DCI) applicables aux substances pharmaceutiques publiées par l’OMS s’appliquent aux termes préférés.<br/>
+                                        Le terme préféré est calqué sur la modalité anglosaxonne d’écriture des substances : nom de la partie de la substance pharmacologiquement active cité en premier suivi le cas échéant du nom du radical pharmacologiquement inactif.
                                         <div class="wysiwyg"><ul>
                                           <li>PT : Dénomination commune française (DCF) ou DCF avec complément de nom</li>
                                           <li>SYN : nom commun d'usage</li>
                                           <li>SYN : nom chimique</li>
                                         </ul></div><br/>
                                         En cas d'absence de DCF, le terme préféré reprend le nom commun d'usage. En cas d'absence du nom commun d'usage, le terme préféré reprend le nom chimique.<br/><br/>
-                                        6. <b>Sels</b> : le terme préféré est constitué du nom du cation (base) cité en premier suivi du nom de l’anion (nom du sel résultant de l’acide) avec lequel le cation (base) est combinée pour former le sel. Pour un sel comportant une DCF : la DCF est citée en premier. Elle est suivie du nom du sel (sel de sodium, sel de potassium, sel disodique, …).<br/>
+                                        <b>Sels</b> : le terme préféré est constitué du nom du cation (base) cité en premier suivi du nom de l’anion (nom du sel résultant de l’acide) avec lequel le cation (base) est combinée pour former le sel. Pour un sel comportant une DCF : la DCF est citée en premier. Elle est suivie du nom du sel (sel de sodium, sel de potassium, sel disodique, …).<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                           <li>PT : amlodipine bésilate</li>
                                           <li>SYN : bésilate d’amlodipine</li>
                                         </ul></div><br/>
-                                        7. <b>Esters</b> : le terme préféré est constitué du nom de l’acide cité en premier suivi du nom de l’alcool avec lequel il est combiné pour former un ester. Pour un ester comportant une DCF : la DCF est citée en premier. Elle est suivie du nom de l’ester (embonate, …).<br/>
+                                        <b>Esters</b> : le terme préféré est constitué du nom de l’acide cité en premier suivi du nom de l’alcool avec lequel il est combiné pour former un ester. Pour un ester comportant une DCF : la DCF est citée en premier. Elle est suivie du nom de l’ester (embonate, …).<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                           <li>PT : chlorpromazine embonate</li>
@@ -2078,11 +2058,11 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>su3-FR</td>
 	                                <td>
-                                        Les abréviations d'indicateurs de position "m" pour "méta", "o" pour "ortho" et "p" pour "para" suivies d'un tiret sont utilisées pour le terme préféré.<br/>
-                                        Le cas échéant un synonyme acceptable :
+                                        Les concepts contenant des indicateurs de position (« o » pour « ortho », « m » pour « méta » et « p » pour « para ») doivent avoir un terme préféré et au moins deux synonymes acceptables doit contenir les indicateurs sous la forme suivante :<br/>
                                         <div class="wysiwyg"><ul>
-                                          <li>peut reprendre "méta", "ortho" et "para" écrit en toutes lettre suivi d'un tiret ;</li>
-                                          <li>peut reprendre le chiffre "2" pour "ortho", "3" pour "méta" et "4" pour "para" suivi d'un tiret.</li>
+                                            <li>PT : « o », « m » et « p »</li>
+                                            <li>SYN : « ortho », « méta » et « para »</li>
+                                            <li>SYN : « 2 », « 3 » et « 4 »</li>
                                         </ul></div><br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
@@ -2097,7 +2077,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>su4-FR</td>
 	                                <td>
-                                        Les descripteurs "cis" et "trans" doivent s'écrire en toutes lettres et être suivis d'un tiret.<br/>
+                                        Les descripteurs « cis » et « trans » doivent s'écrire en toutes lettres et être suivis d'un tiret.<br/>
                                         <u>Exemple</u> :
                                         <div class="wysiwyg"><ul>
                                           <li>PT : acide oléique</li>
@@ -2110,7 +2090,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>su5-FR</td>
 	                                <td>
-                                        Les descripteurs "R" et "S" doivent être placés entre parenthèses, préfixé au nom de la molécule et séparé d'un tiret. Ils complètent le nom de la molécule en précisant de manière non équivoque de quel énantiomère il s'agit.<br/>
+                                        Les descripteurs « R » et « S » doivent être placés entre parenthèses, préfixé au nom de la molécule et séparé d'un tiret. Ils complètent le nom de la molécule en précisant de manière non équivoque de quel énantiomère il s'agit.<br/>
                                         <u>Exemple</u> :
                                         <div class="wysiwyg"><ul>
                                           <li>PT : (S)-métoprolol tartrate</li>
@@ -2123,7 +2103,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>su6-FR</td>
 	                                <td>
-                                        Dans le cas d'un solvate, le terme préféré est formé du nom de la substance puis du nom du solvate utilisé au cours de la fabrication suivi de "solvate".<br/>
+                                        Dans le cas d'un solvate, le terme préféré est formé du nom de la substance puis du nom du solvate utilisé au cours de la fabrication suivi de « solvate ».<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                           <li><i>Ceftaroline fosamil acetic acid solvate</i></li>
@@ -2145,13 +2125,13 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>su7-FR</td>
 	                                <td>
-                                        Si le concept mentionne un microorganisme, le terme préféré utilise son nom scientifique en latin et un synonyme acceptable peut utiliser le nom vernaculaire.<br/>
+                                        Si le concept mentionne un microorganisme, le terme préféré utilise son nom scientifique en latin et au moins un synonyme acceptable peut utiliser le nom vernaculaire.<br/>
                                         <u>Exemple</u> :
                                         <div class="wysiwyg"><ul>
                                           <li>PT : immunoglobuline monoclonale contre Orthopneumovirus hominis</li>
                                           <li>SYN : immunoglobuline monoclonale contre le virus respiratoire syncytial humain</li>
                                         </ul></div><br/>
-                                        Si le concept mentionne un macroorganisme, le terme préféré utilise le nom vernaculaire s'il existe et un synonyme acceptable utilise le nom scientifique en latin. Dans le cas où il n'existe pas de nom vernaculaire, le nom scientifique latin est utilisé en terme préféré.<br/>
+                                        Si le concept mentionne un macroorganisme, le terme préféré utilise le nom vernaculaire s'il existe et au moins un synonyme acceptable utilise le nom scientifique en latin. Dans le cas où il n'existe pas de nom vernaculaire, le nom scientifique latin est utilisé en terme préféré.<br/>
                                         <u>Exemple</u> :
                                         <div class="wysiwyg"><ul>
                                           <li>PT : alcaloïde de belladone</li>
@@ -2164,7 +2144,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
 	                                <td>su8-FR</td>
 	                                <td>
-                                        Les balises ne sont pas conservées dans le terme préféré. Un synonyme acceptable peut être écrit avec balise(s).<br/>
+                                        Les balises ne sont pas conservées dans le terme préféré.<br/>
                                         <u>Exemple</u> :
                                         <div class="wysiwyg"><ul>
                                           <li>PT : moénomycine B1</li>
