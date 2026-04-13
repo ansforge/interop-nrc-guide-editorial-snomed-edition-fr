@@ -609,7 +609,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>sc6</td>
                                     <td>
-                                        Les symboles de comparaison « &lt; » (inférieur à) et « &gt; » (supérieur à) doivent être remplacés par leur forme développée.<br/>
+                                        Les expressions « inférieur à », « inférieure à », « supérieur à » et « supérieure à » sont à privilégier par rapport aux symboles de comparaison « &lt; » et « &gt; ».<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>T1 : taille de la tumeur inférieure à 1 cm, limitée à la glande thyroïde</li>
