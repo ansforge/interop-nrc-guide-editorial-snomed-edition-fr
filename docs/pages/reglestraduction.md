@@ -15,7 +15,7 @@ Les abréviations PT et SYN utilisés dans les règles désignent, respectivemen
 La colonne « Type » indique le type de la règle :
 <div class="wysiwyg"><ul>
   <li>Global : La règle contraint toutes les descriptions du concept.</li>
-  <li>PT : La règle contraint uniquement le terme préféré. Elle peut être suivie aussi pour les synonymes acceptables, mais cela n'est pas obligatoire.<li>
+  <li>PT : La règle contraint uniquement le terme préféré. Elle peut être suivie aussi pour les synonymes acceptables, mais cela n'est pas obligatoire.</li>
   <li>PT + SYN : La règle contraint le terme préféré et au moins un (ou deux dans de rares cas) synonyme(s) acceptable(s). Elle peut être suivie aussi pour le reste des synonymes acceptables, mais cela n'est pas obligatoire.</li>
 </ul></div>
 Certaines règles peuvent faire des recommendations sur différents sujets. Dans cette situation, plusieurs types peuvent coexister, le type le plus présent est alors placé en premier et les "exceptions" identifiées.
@@ -1013,7 +1013,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <u>Exemple</u> : <i>Disorder of lumbosacral intervertebral disc</i> &rarr; discopathie lombaire et lombo-sacrée<br/><br/>
                                         Bien que <i>disease</i> et <i>disorder</i> ne soient pas strictement équivalents en anglais (<i>disorder</i> étant plus générique que <i>disease</i>), certains concepts possèdent deux descriptions anglaises employant chacune l’un ou l’autre de ces deux termes. Les règles pa2 et pa5 se concentrent sur les termes préférés mais n’interdisent pas l’ajout d’un synonyme acceptable suivant l’une ou l’autre de ces deux règles
                                     </td>
-                                    <td>Global<br/>PT + Syn (section 4)</td>
+                                    <td><ul><li>Global</li><li>PT + Syn (section 4)</li></ul></td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -2016,7 +2016,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Part of ear</i> &rarr; PT: partie de l'oreille</li>
                                         </ul></div>
                                     </td>
-	                                <td>Global<br/>PT + SYN (Structure)</td>
+	                                <td><ul><li>Global</li><li>PT + SYN (Structure)</li></ul></td>
                                     <td>SI</td>
 	                                <td>24/01/22</td>
                                 </tr>
