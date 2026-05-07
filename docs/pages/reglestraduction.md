@@ -10,6 +10,17 @@ Pour les traductions déjà existantes ne respectant pas ces règles, le process
 
 Ces règles reprennent celles du *French Translation Collaboration Group* qui ont été reformulées dans un soucis de clarté. Certaines règles ont été modifiées afin de s’aligner avec les choix d’acceptabilité fait par l’ANS.
 
+Les abréviations PT et SYN utilisés dans les règles désignent, respectivement, les notions de terme préféré (PT) et synonyme acceptable (SYN) telles que décrites dans l'onglet [Composants de la SNOMED CT](https://ansforge.github.io/interop-nrc-guide-editorial-snomed-edition-fr/pages/contexte.html). 
+
+La colonne « Type » indique le type de la règle :
+<div class="wysiwyg"><ul>
+  <li>Global : La règle contraint toutes les descriptions du concept.</li>
+  <li>PT : La règle contraint uniquement le terme préféré. Elle peut être suivie aussi pour les synonymes acceptables, mais cela n'est pas obligatoire.<li>
+  <li>PT + SYN : La règle contraint le terme préféré et au moins un (ou deux dans de rares cas) synonyme(s) acceptable(s). Elle peut être suivie aussi pour le reste des synonymes acceptables, mais cela n'est pas obligatoire.</li>
+</ul></div>
+Certaines règles peuvent faire des recommendations sur différents sujets. Dans cette situation, plusieurs types peuvent coexister, le type le plus présent est alors placé en premier et les "exceptions" identifiées.
+<br/>
+
 La colonne « Source » indique la source d’origine de la règle en question :
 <div class="wysiwyg"><ul>
   <li>SI : SNOMED Int., cette règle est dérivée du guide éditorial de l’édition internationale ;</li>
@@ -36,7 +47,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -44,20 +55,21 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <td>
                                         Les abréviations doivent être évitées, sauf si elles sont consacrées par l’usage.<br/>
                                         <u>Exemples</u> : Escherichia spp.</td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>08/04/19</td>
                                 </tr>
                                 <tr>
                                     <td>ab2</td>
                                     <td>
-                                        Les acronymes et les sigles peuvent être utilisés dans les synonymes. Dans ce cas, les majuscules sont conservées mais elles doivent être non accentuées.<br/>
+                                        Les acronymes et les sigles peuvent être utilisés dans les descriptions. Dans ce cas, les majuscules sont conservées mais elles doivent être non accentuées.<br/>
                                         L’acronyme ou le sigle doit être suivi de sa forme développée. Elle est :
                                         <div class="wysiwyg"><ul>
-                                            <li>Séparée par un trait d’union (UTF8 0x2D) encadré de deux espaces, s’il n’y a pas d’autres mot dans le synonyme ;</li>
-                                            <li>Entre parenthèses, si le synonyme contient d’autres mots.</li>
+                                            <li>Séparée par un trait d’union (UTF8 0x2D) encadré de deux espaces, s’il n’y a pas d’autres termes dans la description ;</li>
+                                            <li>Entre parenthèses, si la description contient d’autres termes.</li>
                                         </ul></div>
                                         <br/>
-                                        Si l’acronyme ou le sigle est consacré par l’usage, un synonyme sans forme développée peut être créé.<br/><br/>
+                                        Si l’acronyme ou le sigle est consacré par l’usage, une description sans forme développée peut être créé.<br/><br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>EIEC - Escherichia coli entéro-invasif</li>
@@ -65,15 +77,17 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>COVID-19</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>25/11/24</td>
                                 </tr>
                                 <tr>
                                     <td>ab3</td>
                                     <td>
-                                        Les acronymes et sigles courants deviennent des noms communs. Ils s'écrivent alors en minuscules, se mettent au pluriel et entraînent parfois la formation de dérivés c’est-à-dire qu'ils se retrouvent parfois incorporés dans un nouveau mot.<br/>
+                                        Les acronymes et sigles courants deviennent des noms communs. Ils s'écrivent alors en minuscules, se mettent au pluriel et entraînent parfois la formation de dérivés c’est-à-dire qu'ils se retrouvent parfois incorporés dans un nouveau terme.<br/>
                                         <u>Exemples</u> : laser, sidéen(ne)
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/07/19</td>
                                 </tr>
@@ -86,7 +100,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -95,24 +109,27 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Les articles doivent être évités, sauf exception notée dans l’une des règles ci-dessous.<br/>
                                         <u>Exemple</u> : herpès labial
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>02/07/19</td>
                                 </tr>
                                 <tr>
                                     <td>ar2</td>
                                     <td>
-                                        Aucun article ne doit figurer en début de terme.<br/>
+                                        Aucun article ne doit figurer en début de description.<br/>
                                         <u>Exemple</u> : syndrome hépatorénal (et non « le syndrome hépatorénal »)
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
                                 <tr>
                                     <td>ar3</td>
                                     <td>
-                                        Une description mentionnant une structure corporelle unique, doit utiliser l’article défini singulier ou la forme adjectivale si elle est pertinente.<br/>
+                                        Une description mentionnant une structure corporelle unique doit utiliser l’article défini singulier ou la forme adjectivale si elle est pertinente.<br/>
                                         <u>Exemples</u> : anévrisme du cœur, arrêt cardiaque, brûlure électrique de la peau, inflammation de la bouche, inflammation buccale
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>28/06/21</td>
                                 </tr>
@@ -128,28 +145,31 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>MRI of all fingers of both hands</i> &rarr; IRM de tous les doigts des deux mains</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>ANS</td>
                                     <td>01/08/25</td>
                                 </tr>
                                 <tr>
                                     <td>ar6</td>
                                     <td>
-                                        Aucun article ne doit figurer dans un synonyme désignant un dispositif ou un produit ciblant une partie du corps.<br/>
+                                        Une description désignant un dispositif ou un produit ciblant une partie du corps ne doit pas contenir d'article.<br/>
                                         <u>Exemples</u> : prothèse de hanche, sonde nasale, pommade à lèvres
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
                                 <tr>
                                     <td>ar7</td>
                                     <td>
-                                        L’article défini pluriel doit être utilisé si le terme anglais contient all ou both.<br/>
+                                        Les concepts contenant les termes <i>all</i> ou <i>both</i> doivent utiliser l’article défini pluriel en français.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Congenital absence of all fingers</i> &rarr; absence congénitale de tous les doigts</li>
                                             <li><i>Lesion of both ears</i> &rarr; lésion des deux oreilles</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
@@ -162,7 +182,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -184,6 +204,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Le second cas est retenu pour la description des médicaments virtuels ou si l’absence de virgule engendre une lourdeur excessive.<br/><br/>
                                         <u>Exemple où la virgule est évitée dans le second cas</u> : <i>Anesthesia for renal transplant, recipient</i> &rarr; anesthésie du receveur pour greffe rénal.
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -193,6 +214,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         La barre oblique sans espace peut être utilisée dans l’expression « et/ou » qui traduit <i>and/or</i>.<br/>
                                         <u>Exemple</u> : <i>Structure of skin and/or mucous membrane</i> &rarr; peau et/ou muqueuse
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
@@ -206,12 +228,14 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>tube sous vide avec citrate de sodium 1/4 pour prélèvement sanguin</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>08/04/19</td>
                                 </tr>
                                 <tr>
                                     <td>se4</td>
                                     <td>La barre oblique utilisée pour représenter une alternative dans la description en anglais doit être remplacée par « ou ».</td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -221,6 +245,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Le double point collé sans espace peut être utilisé pour caractériser un sérotype ou un variant.<br/>
                                         <u>Exemple</u> : Escherichia coli de sérotype O103:H1
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>08/04/19</td>
                                 </tr>
@@ -232,6 +257,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Le double point encadré par deux espaces peut introduire le résultat d’une observation dans la hiérarchie <i>Clinical finding</i>.<br/>
                                         <u>Exemples</u> : sang occulte dans les selles : traces
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -245,18 +271,21 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>BPCO – bronchopneumopathie chronique obstructive</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
                                 <tr>
                                     <td>se8</td>
                                     <td>Le tiret simple (UTF8 0x2D) peut être utilisé comme trait d’union dans un mot composé.</td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
                                 <tr>
                                     <td>se9</td>
-                                    <td>Les parenthèses doivent être utilisées pour encadrer la forme développée d’un acronyme ou d’un sigle au sein d’une description plus vaste. Les règles de typographie    françaises sont respectées.</td>
+                                    <td>Les parenthèses doivent être utilisées pour encadrer la forme développée d’un acronyme ou d’un sigle au sein d’une description plus vaste. Les règles de typographie françaises doivent être respectées.</td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -266,15 +295,17 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Seul le caractère « ' » (UTF8 0x27) doit être utilisé pour l’apostrophe.<br/>
                                         <u>Exemple</u> : lipome de l'épaule
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/04/23</td>
                                 </tr>
                                 <tr>
                                     <td>se11</td>
                                     <td>
-                                        Les synonymes ne doivent pas se terminer par un point (UTF8 0x2E), sauf exception.<br/>
+                                        Les descriptions ne doivent pas se terminer par un point (UTF8 0x2E), sauf exception.<br/>
                                         <u>Exemple d’exception</u> : Candida spp.
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>18/12/23</td>
                                 </tr>
@@ -287,7 +318,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                         <thead>
-                            <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                            <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                         </thead>
                         <tbody>
                             <tr>
@@ -300,6 +331,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <li><i>Alpha fetoprotein</i> &rarr; alpha-fœtoprotéine</li>
                                     </ul></div>
                                 </td>
+                                <td>Global</td>
                                 <td>FTCG</td>
                                 <td>05/06/23</td>
                             </tr>
@@ -312,7 +344,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -328,6 +360,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <br/>
                                         <u>Exemples</u> : fœtal, œsophage, nævus
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
@@ -340,7 +373,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -353,6 +386,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Lyme arthritis</i> &rarr; arthrite de Lyme</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT</td>
                                     <td>SI</td>
                                     <td>02/07/19</td>
                                 </tr>
@@ -365,7 +399,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -378,6 +412,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN – événement de la vie</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
@@ -394,6 +429,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN – chirurgie contre-indiquée</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>07/10/24</td>
                                 </tr>
@@ -411,6 +447,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>non-</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
@@ -420,6 +457,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Le trait d’union (UTF8 0x2D) coordonnant deux noms propres ou géographiques doit être conservé pour marquer l’égalité des deux noms.<br/>
                                         <u>Exemple</u> : <i>Epstein-Barr virus hepatitis</i> &rarr; hépatite causée par le virus d’Epstein-Barr
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
@@ -435,6 +473,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <br/>
                                         <u>Exemple d'exception</u> : <i>after fasting</i> &rarr; après un jeûne (pour éviter la confusion avec « jeune »)
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
@@ -447,13 +486,13 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>ss1</td>
                                     <td>
-                                        Les synonymes doivent être écrits en minuscules. Par défaut, ils sont insensibles à la casse (ci).<br/><br/>
+                                        Les descriptions doivent être écrits en minuscules. Par défaut, elles sont insensibles à la casse (ci).<br/><br/>
                                         <u>Exceptions</u> : noms propres, symboles, codes, sigles, acronymes ou taxa comportant des majuscules et/ou des minuscules imposées.<br/><br/>
                                         <u>Exemples</u> : pH, IgG, ADN, Legionella anisa, Epstein-Barr<br/><br/>
                                         <u>Sensibilité à la casse</u> :
@@ -462,13 +501,14 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>Exception – sensible à la casse (CS) et seul le premier caractère est insensible à la casse (cI)</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>02/11/20</td>
                                 </tr>
                                 <tr>
                                     <td>ss2</td>
                                     <td>
-                                        Les synonymes doivent être au singulier excepté si le concept implique un pluriel.<br/>
+                                        Les descriptions doivent être au singulier excepté si le concept implique un pluriel.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Hospital furniture</i> &rarr; mobilier d’hôpital</li>
@@ -476,6 +516,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Inpatient rehabilitation environment</i> &rarr; environnement de réadaptation pour patient(e)s hospitalisé(e)s</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>08/04/19</td>
                                 </tr>
@@ -502,12 +543,14 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>arthrite d'une main (car « arthrite manuelle » est incorrect)</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
                                 <tr>
                                     <td>ss4</td>
                                     <td>Les descriptions doivent respecter l'ordre conventionnel des mots en français.</td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -517,6 +560,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Le pluriel des mots d’origine latine doit suivre les règles de la nouvelle orthographe.<br/>
                                         <u>Exemple</u> : <i>Number of stimuli</i> &rarr; nombre de stimulus
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>08/04/19</td>
                                 </tr>
@@ -525,23 +569,25 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <td>
                                         Le terme préféré doit contenir des termes épicènes ou, entre parenthèses, la terminaison au féminin des adjectifs, participes ou noms dont l’orthographe varie selon le genre.<br/>
                                         <u>Exemples</u> : amputé(e), diététicien(ne), acupuncteur(-ice), conseiller(e) clinique, travailleur(-se) social(e), clinicien(ne) autorisé(e), professionnel(le) de la santé<br/><br/>
-                                        Des synonymes strictement au masculin ou au féminin peuvent être ajoutés pour des questions d'interface.<br/>
+                                        Des synonymes acceptables strictement au masculin ou au féminin peuvent être ajoutés pour des questions d'interface.<br/>
                                         Le point médiant n’est pas jugé suffisamment adopté par le groupe pour être utilisé.
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>23/10/25</td>
                                 </tr>
                                 <tr>
                                     <td>ss7</td>
                                     <td>
-                                        Si un FSN ou un synonyme contient une entité provenant d’une autre hiérarchie (e.g. <i>Body structure</i>, <i>Substance</i>, <i>Organism</i>), les règles éditoriales de ladite hiérarchie doivent s’appliquer à cette entité.<br/><br/>
-                                        Si l’entité provient de <i>Body structure</i>, le mot « structure » ne doit pas être utilisé.<br/><br/>
+                                        Si un concept fait référence à une entité provenant d’une autre hiérarchie (e.g. <i>Body structure</i>, <i>Substance</i>, <i>Organism</i>), les règles éditoriales de ladite hiérarchie doivent s’appliquer à cette entité.<br/><br/>
+                                        Si l’entité provient de <i>Body structure</i>, le terme « structure » ne doit pas être utilisé.<br/><br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>fracture de l’ulna (et non « fracture de la structure osseuse de l’ulna »)</li>
                                             <li>pneumonie causée par Staphylococcus aureus</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -554,12 +600,13 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>sc1</td>
                                     <td>Les symboles mathématiques ou scientifiques doivent respecter la graphie définie par les normes internationales.</td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -569,6 +616,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Les chiffres doivent utiliser l’écriture arabe, sauf si une autre écriture est consacrée par l'usage médical.<br/>
                                         <u>Exemples</u> : vitamine K2, diabète de type 1, 17-hydroxycorticostéroïdes, malformation de Chiari type II, facteur VI, œsophagite de grade II
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/07/19</td>
                                 </tr>
@@ -578,6 +626,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         La virgule doit être utilisée comme séparateur décimal.<br/>
                                         <u>Exemple</u> : 1,5 mg
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/07/19</td>
                                 </tr>
@@ -587,13 +636,14 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         L’espace doit être utilisée comme séparateur des milliers.<br/>
                                         <u>Exemple</u> : 100 000 000
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>07/11/19</td>
                                 </tr>
                                 <tr>
                                     <td>sc5</td>
                                     <td>
-                                        Les indices doivent être accolés sans être explicités par un symbole particulier. Il n'y a pas de concept avec un indice suivant un nombre. Si le cas se présentait le caractère tiret bas « _ » (UTF8                        0x5F) serait utilisé.<br/>
+                                        Les indices doivent être accolés sans être explicités par un symbole particulier. Il n'y a pas de concept avec un indice suivant un nombre. Si le cas se présentait le caractère tiret bas « _ » (UTF8 0x5F) serait utilisé.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>immunoglobuline A2</li>
@@ -601,19 +651,21 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>1_2 (pour 12)</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
                                 <tr>
                                     <td>sc6</td>
                                     <td>
-                                        Les symboles de comparaison « &lt; » (inférieur à) et « &gt; » (supérieur à) doivent être remplacés par leur forme développée.<br/>
+                                        Les expressions « inférieur à », « inférieure à », « supérieur à » et « supérieure à » sont à privilégier par rapport aux symboles de comparaison « &lt; » et « &gt; ».<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>T1 : taille de la tumeur inférieure à 1 cm, limitée à la glande thyroïde</li>
                                             <li>marge supérieure ou égale à 1 mm</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -630,6 +682,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <br/>
                                         Le symbole « + » peut apparaitre dans les synonymes acceptables de concepts de médicaments contenant plusieurs ingrédients.
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
@@ -649,6 +702,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN – 5e maladie</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>07/10/24</td>
                                 </tr>
@@ -661,26 +715,27 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>tv1</td>
                                     <td>
-                                        Un synonyme doit être un nom, un groupe nominal ou une phrase nominale (<a href="https://confluence.ihtsdotools.org/display/DOCEG/Sentence+Types">https://confluence    ihtsdotools.org/display/DOCEG/Sentence+Types</a>).<br/>
+                                        Une description doit être un nom, un groupe nominal ou une phrase nominale (<a href="https://docs.snomed.org/snomed-ct-specifications/snomed-ct-editorial-guide/readme/authoring/general-naming-conventions/sentence-types">https://docs.snomed.org/snomed-ct-specifications/snomed-ct-editorial-guide/readme/authoring/general-naming-conventions/sentence-types</a>).<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>excision partielle du radius</li>
                                             <li>infection aigüe des voies urinaires</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>13/12/21</td>
                                 </tr>
                                 <tr>
                                     <td>tv2</td>
                                     <td>
-                                        Un verbe d’action doit être, si possible, mis sous forme de nom verbal (<a href="https://confluence.ihtsdotools.org/display/DOCEG/Action+Verbs">https://confluence.ihtsdotools.org/display/DOCEG/Action+Verbs</a>).<br/>
+                                        Un verbe d’action doit être, si possible, mis sous forme de nom verbal (<a href="https://docs.snomed.org/snomed-ct-specifications/snomed-ct-editorial-guide/readme/authoring/general-naming-conventions/action-verbs">https://docs.snomed.org/snomed-ct-specifications/snomed-ct-editorial-guide/readme/authoring/general-naming-conventions/action-verbs</a>).<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>incision (plutôt qu’inciser ou incisé)</li>
@@ -688,20 +743,21 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>retrait (plutôt que retirer ou retiré)</li>
                                         </ul></div>
                                         <br/><br/>
-                                        En anglais, le suffixe « -ing » peut être utilisée pour éviter une ambigüité avec l’objet de l’action. Dans ce cas, il n’exprime pas une action progressive en cours.<br/>
+                                        En anglais, le suffixe « -ing » peut être utilisé pour éviter une ambigüité avec l’objet de l’action. Dans ce cas, il n’exprime pas une action progressive en cours.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
-                                            <li><i>grafting of lip</i> &rarr; greffe de la lèvre</li>
-                                            <li><i>suturing</i> &rarr; fermeture par suture</li>
+                                            <li><i>Grafting of lip</i> &rarr; greffe de la lèvre</li>
+                                            <li><i>Suturing</i> &rarr; fermeture par suture</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>05/06/23</td>
                                 </tr>
                                 <tr>
                                     <td>tv3</td>
                                     <td>
-                                        Un verbe d’action au participe passé peut être utilisé dans les hiérarchies <i>Situation with explicit context</i> et <i>Clinical finding</i>, mais en aucun cas dans <i>Procedure</i> (<a href="https://confluence.ihtsdotools.org/display/DOCEG/Procedure+Naming+Conventions">https://confluence.ihtsdotools.org/display/DOCEG/Procedure+Naming+Conventions</a>).<br/>
+                                        Un verbe d’action au participe passé peut être utilisé dans les hiérarchies <i>Situation with explicit context</i> et <i>Clinical finding</i>, mais en aucun cas dans <i>Procedure</i> (<a href="https://docs.snomed.org/snomed-ct-specifications/snomed-ct-editorial-guide/readme/authoring/domain-specific-modeling/procedure/index-1">https://docs.snomed.org/snomed-ct-specifications/snomed-ct-editorial-guide/readme/authoring/domain-specific-modeling/procedure/index-1</a>).<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Clinical finding</i> : stress diminué</li>
@@ -709,6 +765,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Situation with explicit context</i> : injection de cortisone réalisée</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>13/12/21</td>
                                 </tr>
@@ -720,12 +777,13 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         L’utilisation du suffixe « -ing » peut exprimer d’autres intentions, il est donc important de tenir compte de la place du concept dans la hiérarchie, de ses enfants et de ses attributs pour retenir la meilleure traduction.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
-                                            <li><i>sight deteriorating</i> &rarr; vision en cours de détérioration</li>
-                                            <li><i>healing scar</i> &rarr; cicatrice en voie de guérison</li>
+                                            <li><i>Sight deteriorating</i> &rarr; vision en cours de détérioration</li>
+                                            <li><i>Healing scar</i> &rarr; cicatrice en voie de guérison</li>
                                             <li><i>Swearing (finding)</i> &rarr; langage obscène</li>
                                             <li><i>Hitting other person (finding)</i> &rarr; frapper une autre personne</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -738,19 +796,20 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>um1</td>
                                     <td>
-                                        Les unités de mesure doivent être abrégées conformément aux règles du SI (<a href="https://metrologie-francaise.lne.fr/fr/metrologie/unites-de-mesure-si">https://    metrologie-francaise.lne.fr/fr/metrologie/unites-de-mesure-si</a>), sauf exception notée dans l’une des règles ci-dessous.<br/>
+                                        Les unités de mesure doivent être abrégées conformément aux règles du SI (<a href="https://metrologie-francaise.lne.fr/fr/metrologie/unites-de-mesure-si">https://metrologie-francaise.lne.fr/fr/metrologie/unites-de-mesure-si</a>), sauf exception notée dans l’une des règles ci-dessous.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>m &rarr; mètre</li>
                                             <li>Pa &rarr; pascal</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>08/04/19</td>
                                 </tr>
@@ -760,6 +819,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Les unités de température doivent être exprimées sous forme courte (e.g. °C).<br/>
                                         <u>Exemple</u> : <i>Fever greater than 38 Celsius</i> &rarr; fièvre supérieure à 38°C
                                     </td>
+                                    <td>Global</td>
                                     <td>ANS</td>
                                     <td>27/11/25</td>
                                 </tr>
@@ -769,6 +829,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Les degrés d’angle doivent être exprimés sous forme développée, sauf s’il n’y a aucune ambiguïté sur la nature de l’unité.<br/>
                                         <u>Exemple</u> : <i>Left axis deviation greater than -90 degrees by electrocardiogram</i> &rarr; déviation axiale gauche de plus de -90 degrés à l'électrocardiogramme
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/07/19</td>
                                 </tr>
@@ -785,6 +846,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <br/>
                                         UCUM (<a href="https://ucum.org/ucum.html">https://ucum.org/ucum.html</a>) sert de référence pour les unités. Les codes les plus couramment utilisés sont disponibles ici : <a href="http://download.hl7.de/documents/ucum/ucumdata.html">http://download.hl7.de/documents/ucum/ucumdata.html</a>.
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>27/06/22</td>
                                 </tr>
@@ -794,15 +856,17 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Dans la représentation d’une quantité, une espace doit séparer la valeur et l’unité de mesure.<br/>
                                         <u>Exemple</u> : 0,75 g
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
                                 <tr>
                                     <td>um6</td>
                                     <td>
-                                        Le mot percent ou le symbole « % » doivent être traduits par le symbole « % ». Un espace sépare la valeur et le symbole.<br/>
+                                        Le terme <i>percent</i> et le symbole « % » doivent être traduits par le symbole « % ». Un espace sépare la valeur et le symbole.<br/>
                                         <u>Exemple</u> : 75 %
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -816,6 +880,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>10^3 (dix puissance trois)</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -825,6 +890,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         La lettre μ, représentant le suffixe micro- dans une unité, doit être remplacée par la lettre « u ».<br/>
                                         <u>Exemple</u> : umol/L (micromole par litre)
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>02/07/19</td>
                                 </tr>
@@ -842,34 +908,28 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>co2</td>
                                     <td>
-                                        Le mot <i>finding</i> doit être traduit par :
-                                        <div class="wysiwyg"><ul>
-                                            <li>constatation à propos de [objet] ;</li>
-                                            <li>constatation concernant [objet] ;</li>
-                                            <li>constatation [objet - forme adjectivale] ;</li>
-                                        </ul></div>
-                                        <br/>
-                                        Le mot <i>finding</i> doit être omis s’il est redondant avec le reste du synonyme.<br/><br/>
+                                        Le terme <i>finding</i> doit être traduit par « constatation » sauf si ce terme est redondant avec le reste de la description.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
-                                            <li><i>neurological finding</i> &rarr; constatation neurologique</li>
-                                            <li><i>finding of small intestine</i> &rarr; constatation concernant l’intestin grêle</li>
-                                            <li><i>finding of abnormal level of heavy metals in blood</i> &rarr; taux de métal lourd sanguin en dehors de l'intervalle de référence</li>
+                                            <li><i>Neurological finding</i> &rarr; constatation neurologique</li>
+                                            <li><i>Finding of small intestine</i> &rarr; constatation concernant l’intestin grêle</li>
+                                            <li><i>Finding of abnormal level of heavy metals in blood</i> &rarr; taux de métal lourd sanguin en dehors de l'intervalle de référence</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
                                 <tr>
                                     <td>co5</td>
                                     <td>
-                                        Les groupes sanguins sont exprimés sous trois formes : longue, intermédiaire et courte, donc par trois synonymes. Le terme préféré doit être la forme longue :<br/>
+                                        Les groupes sanguins sont exprimés sous trois formes : longue, intermédiaire et courte, donc par trois descriptions. Le terme préféré doit être la forme longue :<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>PT (forme longue) : groupe sanguin A Rh(D) positif</li>
@@ -877,37 +937,39 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN (forme courte) : groupe A+</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>07/11/19</td>
                                 </tr>
                                 <tr>
                                     <td>co6-FR</td>
                                     <td>
-                                        L'expression « [X] <i>level above reference range</i> » doivent être traduits selon le patron suivant :
+                                        Les concepts du type « [X] <i>above reference range</i> » doivent avoir un terme préféré et au moins un synonyme acceptable de la forme suivante :
                                         <div class="wysiwyg"><ul>
-                                            <li>PT : taux de [X] supérieur à l’intervalle de référence</li>
-                                            <li>SYN : taux de [X] supérieur aux valeurs de référence</li>
+                                            <li>PT : [X] supérieur à l’intervalle de référence</li>
+                                            <li>SYN : [X] supérieur aux valeurs de référence</li>
                                         </ul></div>
                                         <br/>
-                                        Les concepts du type « [X] <i>level below reference range</i> » doivent être traduits selon le patron suivant :
+                                        Les concepts du type « [X] <i>below reference range</i> » doivent avoir un terme préféré et au moins un synonyme acceptable de la forme suivante :
                                         <div class="wysiwyg"><ul>
-                                            <li>PT : taux de [X] inférieur à l’intervalle de référence</li>
-                                            <li>SYN : taux de [X] inférieur aux valeurs de référence</li>
+                                            <li>PT : [X] inférieur à l’intervalle de référence</li>
+                                            <li>SYN : [X] inférieur aux valeurs de référence</li>
                                         </ul></div>
                                         <br/>
-                                        Les concepts du type « [X] <i>level within reference range</i> » doivent être traduits selon le patron suivant :
+                                        Les concepts du type « [X] <i>within reference range</i> » doivent avoir un terme préféré et au moins un synonyme acceptable de la forme suivante :
                                         <div class="wysiwyg"><ul>
-                                            <li>PT : taux de [X] dans l’intervalle de référence</li>
-                                            <li>SYN : taux de [X] dans les valeurs de référence</li>
+                                            <li>PT : [X] dans l’intervalle de référence</li>
+                                            <li>SYN : [X] dans les valeurs de référence</li>
                                         </ul></div>
                                         <br/>
-                                        Les concepts du type « [X] <i>level outside reference range</i> » doivent être traduits selon le patron suivant :
+                                        Les concepts du type « [X] <i>outside reference range</i> » doivent avoir un terme préféré et au moins un synonyme acceptable de la forme suivante :
                                         <div class="wysiwyg"><ul>
-                                            <li>PT : taux de [X] en dehors de l’intervalle de référence</li>
-                                            <li>SYN : taux de [X] en dehors des valeurs de référence</li>
+                                            <li>PT : [X] en dehors de l’intervalle de référence</li>
+                                            <li>SYN : [X] en dehors des valeurs de référence</li>
                                         </ul></div>
                                         <br/>
                                     </td>
+                                    <td>PT + SYN</td>
                                     <td>ANS</td>
                                     <td>01/08/25</td>
                                 </tr>
@@ -920,13 +982,13 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>pa2</td>
                                     <td>
-                                        Le mot <i>disorder</i> doit être traduit, dans les termes préférés, par :<br/><br/>
+                                        Le terme <i>disorder</i> doit être traduit dans les termes préférés par :<br/><br/>
                                         1. <b>trouble</b> : si l’objet est une fonction, un métabolisme, a trait au psychisme, au comportement ou au développement.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
@@ -947,17 +1009,19 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         </ul></div><br/>
                                         5. <b>maladie</b> : pour les concepts les plus généraux ne spécifiant pas l’objet de la maladie.<br/>
                                         <u>Exemple</u> : <i>Iatrogenic disorder</i> &rarr; maladie iatrogénique<br/><br/>
-                                        Le mot <i>disorder</i> peut être absorbé par la traduction française d’un groupe de mots contenant disorder<br/>
+                                        Le terme <i>disorder</i> peut être absorbé par la traduction française d’une expression contenant <i>disorder</i><br/>
                                         <u>Exemple</u> : <i>Disorder of lumbosacral intervertebral disc</i> &rarr; discopathie lombaire et lombo-sacrée<br/><br/>
-                                        Bien que <i>disease</i> et <i>disorder</i> ne soient pas strictement équivalents en anglais (<i>disorder</i> étant plus générique que <i>disease</i>), certains concepts possèdent deux synonymes anglais employant chacun l’un ou l’autre de ces deux mots. Les règles pa2 et pa5 se concentrent sur les termes préférés mais n’interdisent pas l’ajout d’un synonyme acceptable suivant l’une ou l’autre de ces deux règles
+                                        Bien que <i>disease</i> et <i>disorder</i> ne soient pas strictement équivalents en anglais (<i>disorder</i> étant plus générique que <i>disease</i>), certains concepts possèdent deux descriptions anglaises employant chacune l’un ou l’autre de ces deux termes. Les règles pa2 et pa5 se concentrent sur les termes préférés mais n’interdisent pas l’ajout d’un synonyme acceptable suivant l’une ou l’autre de ces deux règles
                                     </td>
+                                    <td>Global<br/>PT + Syn (section 4)</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
                                 <tr>
                                     <td>pa3</td>
                                     <td>
-                                        Le mot <i>injury</i> dans les concepts descendants de 417746004 |Traumatic injury|, doit être traduit par :
+                                        <center><p style="color:red;"><b>DISCUSSION EN COURS AU TUG</b></p></center><br/>
+                                        Le terme <i>injury</i> dans les descendants de 417746004 |Traumatic injury| doit être traduit par :
                                         <div class="wysiwyg"><ul>
                                             <li>« blessure » si la peau est impliquée (implicitement ou explicitement) ;</li>
                                             <li>« traumatisme » ou « lésion traumatique » dans le cas contraire.</li>
@@ -970,19 +1034,21 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Crush injury of liver</i> &rarr; écrasement du foie</li>
                                         </ul></div>
                                     </td>
+                                    <td></td>
                                     <td>FTCG</td>
                                     <td>27/05/24</td>
                                 </tr>
                                 <tr>
                                     <td>pa3.1</td>
                                     <td>
-                                        L’expression « <i>Pressure injury of</i> [X] » dans les descendants du concept 1163215007 |Pressure injury (disorder)| doit être traduite par « escarre ».<br/>
+                                        L'expression « <i>Pressure injury of</i> [X] » dans les descendants de 1163215007 |Pressure injury (disorder)| doit être traduite par « escarre ».<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Pressure injury of hip</i> &rarr; escarre de la hanche</li>
                                             <li><i>Pressure injury of ankle</i> &rarr; escarre de la cheville</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>19/08/24</td>
                                 </tr>
@@ -990,9 +1056,9 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <td>pa4</td>
                                     <td>
                                         <div class="wysiwyg"><ul>
-                                            <li>Le mot <i>epilepsy</i> doit être traduit par « épilepsie » ;</li>
-                                            <li>Le mot <i>seizure</i> doit être traduit par « crise » ou « convulsion » / « convulsif » si le terme ne suffit pas à établir le contexte du système nerveux (*) ;</li>
-                                            <li>Le mot <i>convulsion</i> doit être traduit par « convulsion ».</li>
+                                            <li>Le terme <i>epilepsy</i> doit être traduit par « épilepsie » ;</li>
+                                            <li>Le terme <i>seizure</i> doit être traduit par « crise » ou « convulsion » / « convulsif » si la description ne suffit pas à établir le contexte du système nerveux (*) ;</li>
+                                            <li>Le terme <i>convulsion</i> doit être traduit par « convulsion ».</li>
                                         </ul></div>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
@@ -1003,40 +1069,43 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         </ul></div><br/>
                                         (*) « crise » apparait aussi dans la traduction de <i>crisis</i>, beaucoup plus général et non spécifique au système nerveux (e.g. <i>Pain crisis</i> &rarr; crise douloureuse).
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
                                 <tr>
                                     <td>pa5</td>
                                     <td>
-                                        Le mot <i>disease</i> doit être traduit par « maladie » dans les termes préférés, sauf si un terme plus précis existe.<br/>
+                                        Le terme <i>disease</i> doit être traduit dans les termes préférés par « maladie » sauf si un terme plus pertinent existe.<br/>
                                         <u>Exemples</u> : <i>Heart disease</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : cardiopathie ;</li>
                                             <li>SYN : maladie cardiaque</li>
                                         </ul></div><br/>
-                                        Bien que <i>disease</i> et <i>disorder</i> ne soient pas strictement équivalents en anglais (<i>disorder</i> étant plus générique que <i>disease</i>), certains concepts possèdent deux synonymes anglais employant chacun l’un de ces deux mots. Les règles pa2 et pa5 se concentrent sur les termes préférés mais n’interdisent pas l’ajout d’un synonyme acceptable suivant l’une ou l’autre de ces deux règles.
+                                        Bien que <i>disease</i> et <i>disorder</i> ne soient pas strictement équivalents en anglais (<i>disorder</i> étant plus générique que <i>disease</i>), certains concepts possèdent deux descriptions anglaises employant chacune l’un de ces deux termes. Les règles pa2 et pa5 se concentrent sur les termes préférés mais n’interdisent pas l’ajout d’un synonyme acceptable suivant l’une ou l’autre de ces deux règles.
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>23/01/23</td>
                                 </tr>
                                 <tr>
                                     <td>pa6</td>
                                     <td>
-                                        Le mot <i>impairment</i> doit être traduit par « atteinte » dans les termes préférés, sauf si un terme plus juste existe.<br/>
+                                        Le terme <i>impairment</i> doit être traduit dans les termes préférés par « atteinte » sauf si un terme plus pertinent existe.<br/>
                                         <u>Exemples</u> : <i>Visual impairment</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : malvoyance ;</li>
                                             <li>SYN : atteinte de la vision</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>05/04/23</td>
                                 </tr>
                                 <tr>
                                     <td>pa7</td>
                                     <td>
-                                        Le mot <i>primary</i> doit être traduit par :
+                                        Le terme <i>primary</i> doit être traduit par :
                                         <div class="wysiwyg"><ul>
                                             <li>« primitif » pour une pathologie se produisant d’emblée sans cause décelable (étiologie) ;</li>
                                             <li>« primaire » pour qualifier une manifestation pathologique apparaissant en premier (début de processus pathologique).</li>
@@ -1053,6 +1122,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN : douleur viscérale primitive chronique</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>18/12/23</td>
                                 </tr>
@@ -1060,9 +1130,9 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <td>pa8</td>
                                     <td>
                                         <div class="wysiwyg"><ol>
-                                            <li><i>chilblain</i> doit être traduit par « engelure » ;</li>
-                                            <li><i>frostbite</i> doit être traduit par « gelure » ;</li>
-                                            <li><i>Superficial frostbite</i> doit être traduit par « gelure superficielle ».</li>
+                                            <li>Le terme <i>chilblain</i> doit être traduit par « engelure » ;</li>
+                                            <li>Le terme <i>frostbite</i> doit être traduit par « gelure » ;</li>
+                                            <li>L'expression <i>superficial frostbite</i> doit être traduit par « gelure superficielle ».</li>
                                         </ol></div><br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
@@ -1071,6 +1141,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Superficial frostbite of thorax</i> &rarr; gelure superficielle thoracique</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>18/12/23</td>
                                 </tr>
@@ -1079,7 +1150,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <td>
                                         <div class="wysiwyg"><ol>
                                             <li><i>carbuncle</i> doit être traduit par « anthrax » ;</li>
-                                            <li><i>furuncle</i> et <i>boil</i> doivent être traduits par « furoncle », « folliculite nécrotique » et/ou « clou » ;</li>
+                                            <li><i>furuncle</i> et <i>boil</i> doivent être traduits par « furoncle », « folliculite nécrotique » ou « clou » ;</li>
                                             <li><i>anthrax</i> se traduit par « maladie du charbon ».</li>
                                         </ol></div><br/>
                                         <u>Exemples</u> :
@@ -1096,7 +1167,6 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>pa10</td>
                                     <td>
-                                        <center><p style="color:red;"><b>REFONTE EN COURS PAR LE FTCG</b></p></center><br/>
                                         <div class="wysiwyg"><ol>
                                             <li><i>vapors</i> doit être traduit par « vapeurs » ;</li>
                                             <li><i>fumes</i> doit être traduit par « émanation » ou « fumées ».</li>
@@ -1107,15 +1177,17 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Bronchitis caused by chemical fumes</i> &rarr; bronchite causée par des émanations chimiques</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>27/05/24</td>
                                 </tr>
                                 <tr>
                                     <td>pa11</td>
                                     <td>
-                                        Les maladies rares répertoriées par Orphanet utilisent les termes définis par Orphanet.<br/>
-                                        Des synonymes acceptables n’utilisant pas les termes d’Orphanet peuvent être ajoutés.
+                                        Les maladies rares répertoriées par Orphanet utilisent les libellés définis par Orphanet.<br/>
+                                        Des synonymes acceptables n’utilisant pas les libellés d’Orphanet peuvent être ajoutés.
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>10/02/25</td>
                                 </tr>
@@ -1128,33 +1200,34 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>ec2</td>
                                     <td>
-                                        Dans cette hiérarchie, les termes préférés doivent utiliser « échantillon ».<br/>
-                                        Le terme préféré doit commencer par « échantillon », sauf pour les patrons suivants :
+                                        Dans cette hiérarchie, les descriptions doivent débuter par « échantillon » sauf pour les cas suivants :
                                         <div class="wysiwyg"><ul>
                                             <li>« [X] <i>submitted as specimen</i> » doit être traduit par « [X] présenté comme échantillon » (e.g. <i>Implant submitted as specimen</i> &rarr; implant présenté comme échantillon)</li>
                                             <li>« [X] <i>washings</i> » doit être traduit par « liquide de lavage [X] » (e.g. <i>Pharyngeal washings</i> &rarr; liquide de lavage pharyngien)</li>
                                             <li>« [X] <i>cytologic material</i> » doit être traduit par « matériel cytologique [X] » (e.g. <i>Cervix cytologic material</i> &rarr; matériel cytologique du col utérin »)</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
                                 <tr>
                                     <td>ec4</td>
                                     <td>
-                                        L'expression « <i>fluid sample</i> [X] » doit être traduit par « échantillon de liquide [X] ».<br/>
+                                        L'expression « <i>fluid sample</i> [X] » doit être traduite par « échantillon de liquide [X] ».<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Fluid sample</i> &rarr; échantillon de liquide</li>
                                             <li><i>Intravenous infusion fluid sample</i> &rarr; échantillon de liquide de perfusion intraveineuse</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>18/10/21</td>
                                 </tr>
@@ -1170,6 +1243,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Breast fine needle aspirate sample</i> &rarr; échantillon du sein prélevé par biopsie à l'aiguille fine</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>18/09/23</td>
                                 </tr>
@@ -1188,6 +1262,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Specimen from abscess</i> &rarr; échantillon d'abcès</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>18/10/21</td>
                                 </tr>
@@ -1200,63 +1275,62 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>en1-FR</td>
                                     <td>
-                                        Le mot <i>environment</i> doit être traduit par « environnement » dans les termes préférés et « milieu » dans les synonymes acceptables.<br/>
+                                        Les concepts du type « [X] <i>environment</i> » doivent avoir avoir un terme préféré et au moins un synonyme acceptable de la forme suivante :
+                                        <div class="wysiwyg"><ul>
+                                            <li>PT : environnement [X]</li>
+                                            <li>SYN : milieu [X]</li>
+                                        </ul></div><br/>
                                         <u>Exemples</u> : <i>Coastal environment</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : environnement côtier</li>
                                             <li>SYN : milieu côtier</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT + SYN</td>
                                     <td>ANS</td>
                                     <td>21/06/24</td>
                                 </tr>
                                 <tr>
                                     <td>en2-FR</td>
                                     <td>
-                                        L’expression « <i>community</i> [X] » doit être traduite par « [X] communautaire ».<br/>
+                                        L'expression « <i>community</i> [X] » doit être traduite par « communautaire ».<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>hôpital communautaire</li>
                                             <li>environnement communautaire</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>ANS</td>
                                     <td>21/06/24</td>
                                 </tr>
                                 <tr>
                                     <td>en3-FR</td>
                                     <td>
-                                        L’expression « <i>Location within</i> [environnement] <i>premises</i> » doit suivre le patron suivant :
+                                        L'expression « <i>Location within</i> [X] <i>premises</i> » doit être traduite dans les termes préférés par « localisation sur les lieux [X] » sauf si un terme plus pertinent existe.<br/>
+                                        <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
-                                            <li>PT : localisation sur les lieux [environnement]</li>
-                                            <li>SYN : localisation dans des locaux [environnement]</li>
-                                        </ul></div><br/>
-                                        Ce patron peut être remplacé par un terme plus spécifique et pertinent.<br/><br/>
-                                        <u>Exemples</u> : <i>Location within general practice premises</i>
-                                        <div class="wysiwyg"><ul>
-                                            <li>PT : localisation sur les lieux d'un cabinet de médecin généraliste</li>
-                                            <li>SYN : localisation dans des locaux d'un cabinet de médecin généraliste</li>
-                                        </ul></div>
-                                        <u>Exemples de terme plus spécifique</u> : <i>Location within secure unit</i>
-                                        <div class="wysiwyg"><ul>
-                                            <li>PT : localisation dans une unité de soins sécurisée</li>
+                                            <li>Cas général : <i>Location within general practice premises</i> &rarr; localisation sur les lieux d'un cabinet de médecine générale</li>
+                                            <li>Exception : <i>Location within secure unit</i> &rarr; localisation dans une unité de soins sécurisée</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT</td>
                                     <td>ANS</td>
                                     <td>21/06/24</td>
                                 </tr>
                                 <tr>
                                     <td>en4</td>
                                     <td>
-                                        L’expression « <i>Inpatient</i> [X] » doit être traduite par « [X] pour patient(e) hospitalisé(e) ».<br/>
+                                        L'expression « <i>Inpatient</i> [X] » doit être traduite par « pour patient(e) hospitalisé(e) ».<br/>
                                         <u>Exemple</u> : <i>Inpatient environment</i> &rarr; environnement de soins pour patient(e) hospitalisé(e)
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>07/10/24</td>
                                 </tr>
@@ -1264,8 +1338,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <td>en5</td>
                                     <td>
                                         <div class="wysiwyg"><ul>
-                                            <li>L’expression « <i>Hospital-based outpatient</i> [X] <i>clinic</i> » doit être traduit par « service hospitalier ambulatoire [X] » ;</li>
-                                            <li>L’expression « <i>Outpatient</i> [X] » doit être traduit par « [X] de soins ambulatoires » ou « [X] ambulatoire » selon ce qui est le plus pertinent.</li>
+                                            <li>L'expression « <i>Hospital-based outpatient</i> [X] <i>clinic</i> » doit être traduite par « service hospitalier ambulatoire [X] » ;</li>
+                                            <li>L'expression « <i>Outpatient</i> [X] » doit être traduite par « [X] de soins ambulatoires » ou « [X] ambulatoire » selon ce qui est le plus pertinent.</li>
                                         </ul></div><br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
@@ -1274,19 +1348,24 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Outpatient freestanding dialysis treatment facility</i> &rarr; centre de dialyse autonome ambulatoire</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>07/10/24</td>
                                 </tr>
                                 <tr>
                                     <td>en6-FR</td>
                                     <td>
-                                        Le mot <i>clinic</i> doit être traduit par « clinique » sauf dans l’expression « <i>Hospital-based outpatient</i> [X] <i>clinic</i> ».<br/>
+                                        <div class="wysiwyg"><ul>
+                                            <li>L'expression « <i>Hospital-based outpatient</i> [X] <i>clinic</i> » doit être traduite par « service hospitalier ambulatoire » ;</li>
+                                            <li>L'expression « [X] <i>clinic</i> » doit être traduite par le terme « clinique ».</li>
+                                        </ul></div><br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Cardiovascular clinic</i> &rarr; clinique de soins cardiovasculaires</li>
                                             <li><i>Hospital-based outpatient neurology clinic</i> &rarr; service hospitalier ambulatoire de neurologie</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>ANS</td>
                                     <td>21/06/24</td>
                                 </tr>
@@ -1299,7 +1378,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -1313,19 +1392,21 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN : République française</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT + SYN</td>
                                     <td>FTCG</td>
                                     <td>25/11/24</td>
                                 </tr>
                                 <tr>
                                     <td>ge2</td>
                                     <td>
-                                        Les comtés, états et autres entités d’un pays doivent utiliser le terme désignant la nature de cette entité dans les termes préférés pour lever les ambiguïtés potentielles.<br/>
+                                        Les comtés, états et autres entités d’un pays doivent désigner la nature de cette entité dans les termes préférés pour lever les ambiguïtés potentielles.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>État de Géorgie</li>
                                             <li>comtés d'Angleterre</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>25/11/24</td>
                                 </tr>
@@ -1338,38 +1419,45 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>sb1</td>
                                     <td>
-                                        L'expression « <i>evacuated</i> [substance] <i>collection tube</i> [caractéristique] » doit être traduit dans le terme préféré par « tube sous vide [caractéristiques] pour prélèvement [substance] ».<br/>
+                                        L'expression « <i>Evacuated</i> [substance] <i>collection tube</i> [caractéristique] » doit être traduite dans les termes préférés par « tube sous vide [caractéristiques] pour prélèvement [substance] ».<br/>
                                         <u>Exemple</u> : <i>Evacuated blood collection tube, K2EDTA/aprotinin</i> &rarr; tube sous vide EDTA avec anticoagulant irréversible-K2/aprotinine pour prélèvement sanguin
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>07/11/19</td>
                                 </tr>
                                 <tr>
                                     <td>sb2</td>
                                     <td>
-                                        L'expression « <i>evacuated</i> [substance] <i>specimen container</i> [caractéristiques] » doit être traduit dans le terme préféré par « support sous vide [caractéristiques] pour prélèvement [substance] ».<br/>
+                                        L'expression « <i>Evacuated</i> [substance] <i>specimen container</i> [caractéristiques] » doit être traduite dans les termes préférés par « support sous vide [caractéristiques] pour prélèvement [substance] ».<br/>
                                         <u>Exemple</u> : <i>Evacuated urine specimen container, boric acid (H3BO3)</i> &rarr; support sous vide boraté pour prélèvement urinaire
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>07/11/19</td>
                                 </tr>
                                 <tr>
                                     <td>sb3</td>
                                     <td>
-                                        65818007 |Stent (physical object)| et ses descendants doivent utiliser « endoprothèse » dans leur terme préféré. Ils peuvent utiliser « stent » dans un synonyme acceptable.<br/><br/>
-                                        Pour les endoprothèses vasculaires un synonyme acceptable utilisant « stent » est obligatoire.<br/><br/>
+                                        Le concept 65818007 |Stent (physical object)| et ses descendants doivent avoir un terme préféré et au moins un synonyme acceptable de la forme suivante :
+                                        <div class="wysiwyg"><ul>
+                                            <li>PT : endoprothèse [X]</li>
+                                            <li>SYN : stent [X]</li>
+                                        </ul></div><br/>
+                                        En dehors des endoprothèses vasculaires, le synonyme acceptable utilisant « stent » n'est pas obligatoire.<br/><br/>
                                         <u>Exemples</u> : <i>Antibody-coated coronary artery stent</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : endoprothèse d’artère coronaire enduite d’anticorps</li>
                                             <li>SYN : stent coronarien enduit d’anticorps</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT + SYN</td>
                                     <td>FTCG</td>
                                     <td>18/09/23</td>
                                 </tr>
@@ -1382,29 +1470,30 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>ho1</td>
                                     <td>
-                                        Le terme préféré de 410607006 |Organism (organism)| doit être « organisme ».<br/><br/>
-                                        Pour cette section, veuillez aussi vous référez à la page Organism Naming Conventions du guide éditorial international : <a href="https://confluence.ihtsdotools.org/display/DOCEG/Organism+Naming+Conventions">https://confluence.ihtsdotools.org/display/DOCEG/Organism+Naming+Conventions</a>
+                                        Pour cette section, veuillez vous référez à la page Organism Naming Conventions du guide éditorial international : <a href="https://docs.snomed.org/snomed-ct-specifications/snomed-ct-editorial-guide/readme/authoring/domain-specific-modeling/organism/organism-naming-conventions">https://docs.snomed.org/snomed-ct-specifications/snomed-ct-editorial-guide/readme/authoring/domain-specific-modeling/organism/organism-naming-conventions</a>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>04/04/22</td>
                                 </tr>
                                 <tr>
 	                                <td>ho3</td>
 	                                <td>
-                                        Les descriptions des concepts représentant un taxon de rang supérieur à l’espèce doivent contenir, dans les termes préférés, le nom de ce rang en français (règne, embranchement, classe, ordre, famille, genre, …).<br/>
+                                        Les concepts représentant un taxon de rang supérieur à l’espèce doivent utiliser le nom de ce rang en français (règne, embranchement, classe, ordre, famille, genre, …) dans le terme préféré.<br/>
                                         <u>Exemples</u> : <i>Family Coronaviridae</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : famille Coronaviridae</li>
                                             <li>SYN : Coronaviridae</li>
                                         </ul></div>
                                     </td>
-	                                <td>SI</td>
+	                                <td>PT</td>
+                                    <td>SI</td>
 	                                <td>30/05/22</td>
                                 </tr>
                                 <tr>
@@ -1416,13 +1505,14 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Anaerobic Gram-negative bacillus</i> &rarr; bacille Gram négatif anaérobie</li>
                                         </ul></div>
                                     </td>	
-	                                <td>FTCG</td>
+	                                <td>Global</td>
+                                    <td>FTCG</td>
 	                                <td>27/06/22</td>
                                 </tr>
                                 <tr>
 	                                <td>ho5</td>
 	                                <td>
-                                        Les concepts représentant un genre doivent suivre le patron suivant :
+                                        Les concepts représentant un genre doivent avoir un terme préféré et au moins un synonyme acceptable de la forme suivante :
                                         <div class="wysiwyg"><ul>
                                             <li>PT : genre [X]</li>
                                             <li>SYN : [X] spp.</li>
@@ -1433,13 +1523,14 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN : Abiotrophia spp.</li>
                                         </ul></div>
                                     </td>
-	                                <td>FTCG</td>
+	                                <td>PT + SYN</td>
+                                    <td>FTCG</td>
 	                                <td>10/02/25</td>
                                 </tr>
                                 <tr>
 	                                <td>ho6</td>
 	                                <td>
-                                        Les concepts représentant une sous-espèce doivent suivre le patron suivant (avec [X], [Y] et [Z] représentant respectivement le genre, l’espèce et la sous-espèce) :
+                                        Les concepts représentant une sous-espèce doivent avoir un terme préféré et au moins deux synonymes acceptables de la forme suivante (avec [X], [Y] et [Z] représentant respectivement les noms du genre, de l’espèce et de la sous-espèce) :
                                         <div class="wysiwyg"><ul>
                                             <li>PT : [X] [Y] [Z]</li>
                                             <li>SYN : [X] [Y] sous-espèce [Z]</li>
@@ -1452,13 +1543,14 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN : Acetobacter aceti ssp. Liquefaciens</li>
                                         </ul></div>
                                     </td>
-	                                <td>FTCG</td>
+	                                <td>PT + SYN</td>
+                                    <td>FTCG</td>
 	                                <td>10/02/25</td>
                                 </tr>
                                 <tr>
 	                                <td>ho7</td>
 	                                <td>
-                                        Les concepts représentant un variant doivent suivre le patron suivant :
+                                        Les concepts représentant un variant doivent avoir un terme préféré et au moins un synonyme acceptable de la forme suivante :
                                         <div class="wysiwyg"><ul>
                                             <li>PT : [X] variant [Y]</li>
                                             <li>SYN : [X] var. [Y]</li>
@@ -1469,51 +1561,56 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN : Salmonella Ohio var. 14+</li>
                                         </ul></div>
                                     </td>
-	                                <td>FTCG</td>
+	                                <td>PT + SYN</td>
+                                    <td>FTCG</td>
 	                                <td>10/02/25</td>
                                 </tr>
                                 <tr>
 	                                <td>ho8</td>
 	                                <td>
-                                        Les mots <i>genomospecies</i> et <i>genospecies</i> doivent être traduit par « génoespèce ».<br/>
+                                        Les expressions « [X] <i>genomospecies</i> [Y] » ou « [X] <i>genospecies</i> [Y] » doivent être traduites par « génoespèce ».<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Afipia genospecies 1</i> &rarr; Afipia génoespèce 1</li>
                                             <li><i>Proteus genomospecies 4</i> &rarr; Proteus génoespèce 4</li>
                                         </ul></div>
-                                  </td>
-	                                <td>FTCG</td>
+                                    </td>
+	                                <td>Global</td>
+                                    <td>FTCG</td>
 	                                <td>10/02/25</td>
                                 </tr>
                                 <tr>
 	                                <td>ho9</td>
 	                                <td>
-                                        Un organisme de la forme « [X] <i>not</i> [Y] » doit être traduit par « [X] non [Y] ». Si [Y] est une liste de plusieurs éléments, ils sont rangés par ordre alphabétique et séparés par des virgules et un « et » pour le dernier élément.<br/>
+                                        L'expression « [X] <i>not</i> [Y] » doit être traduite par « [X] non [Y] ». Si [Y] est une liste de plusieurs éléments, ils sont rangés par ordre alphabétique et séparés par des virgules et un « et » pour le dernier élément.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Aerococcus species not Aerococcus urinae</i> &rarr; Aerococcus non Aerococcus urinae</li>
                                             <li><i>Aspergillus species, not Aspergillus fumigatus and not Aspergillus niger and not Aspergillus flavus</i> &rarr; Aspergillus non Aspergillus flavus, non Aspergillus fumigatus et non Aspergillus niger</li>
                                         </ul></div>
                                     </td>
-	                                <td>FTCG</td>
+	                                <td>Global</td>
+                                    <td>FTCG</td>
 	                                <td>10/02/25</td>
                                 </tr>
                                 <tr>
 	                                <td>ho10</td>
 	                                <td>
-                                        Les expressions « <i>CDC</i> [X] » ou « <i>Centers for Disease Control and Prevention</i> [X] » doivent être traduite par « [X] CDC ».<br/>
+                                        L'expression « <i>CDC</i> [X] » ou « <i>Centers for Disease Control and Prevention</i> [X] » doit être traduite par « [X] CDC ».<br/>
                                         <u>Exemple</u> : <i>CDC Alcaligenes-like group 1</i> &rarr; Alcaligenes-like groupe 1 CDC
                                     </td>
-	                                <td>FTCG</td>
+	                                <td>Global</td>
+                                    <td>FTCG</td>
 	                                <td>10/02/25</td>
                                 </tr>
                                 <tr>
 	                                <td>ho11</td>
 	                                <td>
-                                        L’expression « [substance] <i>producing</i> [organisme] » doit être traduite par « [organisme] productrice de [substance] » ou « [organisme] producteur de [substance] ».<br/>
+                                        L'expression « [substance] <i>producing</i> [organisme] » doit être traduite par « productrice de » ou « producteur de ».<br/>
                                         <u>Exemple</u> : <i>Carbapenemase-producing bacteria</i> &rarr; bactérie productrice de carbapénémase.
                                     </td>
-	                                <td>FTCG</td>
+	                                <td>Global</td>
+                                    <td>FTCG</td>
 	                                <td>10/02/25</td>
                                 </tr>
                             </tbody>
@@ -1525,13 +1622,13 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                         <thead>
-                            <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                            <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                         </thead>
                         <tbody>
                             <tr>
 	                            <td>pr2</td>
 	                            <td>
-                                    Le mot <i>procedure</i> dans cette hiérarchie doit être traduit en fonction des patrons suivants :
+                                    Les concepts du type « [X] <i>procedure</i> » ou « <i>Procedure</i> [X] » doivent avoir un terme préféré et au moins un (ou deux selon le patron) synonyme acceptable de la forme suivante :
                                     <div class="wysiwyg"><ol>
                                         <li>Procédures non chirurgicales :</li>
                                             <ul>
@@ -1545,7 +1642,9 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                                 <li>SYN : chirurgie [X]</li>
                                             </ul>
                                     </ol></div><br/>
-                                    Le mot <i>operation</i> est utilisé par la SNOMED CT pour représenter des interventions chirurgicales, il doit donc être traduit en suivant le patron des interventions     chirurgicales décrit ci-dessus.<br/><br/>
+                                    Cette règle peut être ignorée si elle créée une redondance au sein de la description ou si un terme plus pertinent existe.
+                                    <br/><br/>
+                                    Le terme <i>operation</i> est utilisé par la SNOMED CT pour représenter des interventions chirurgicales. Les concepts du type « [X] <i>operation</i> » « <i>Operation</i> [X] » doivent suivre le patron des interventions chirurgicales décrit ci-dessus.<br/><br/>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ol>
                                         <li><i>Neuromuscular procedure</i> :</li>
@@ -1560,49 +1659,52 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                                 <li>SYN : chirurgie périrénale</li>
                                             </ul>
                                     </ol></div><br/>
-                                    Pour les procédures obstétriques, le choix du patron dépend de l’acte décrit par le concept.
+                                    Pour les procédures obstétriques, le choix du patron dépend de l’acte décrit par le concept. Il doit être omis s’il est redondant avec le reste de la description.
                                 </td>
-	                            <td>FTCG</td>
+	                            <td>PT + SYN</td>
+                                <td>FTCG</td>
 	                            <td>23/11/20</td>
                             </tr>
                             <tr>
 	                            <td>pr3</td>
-	                            <td>Le mot <i>consultation</i> se traduit par « consultation ».</td>
-	                        	<td>FTCG</td>
+	                            <td>Le terme <i>consultation</i> se traduit par « consultation ».</td>
+	                        	<td>Global</td>
+                                <td>FTCG</td>
 	                        	<td>23/11/20</td>
                             </tr>
                             <tr>
 	                            <td>pr4</td>
 	                            <td>
-                                    Dans le cas du retrait d’un corps étranger, <i>Removal of foreign body</i> doit être traduit par « retrait d’un corps étranger ».<br/><br/>
-                                    L’expression <i>Magnet extraction</i> doit être traduite par « extraction avec un aimant » dans les termes préférés et peut être traduite par « retrait d’un corps étranger de [site anatomique] à l’aide d’un aimant » dans un synonyme acceptable.<br/>
+                                    L'expression « <i>Removal of foreign body [X]</i> » doit être traduite dans les termes préférés par « retrait d’un corps étranger [X] ».<br/><br/>
+                                    L'expression <i>Magnet extraction</i> doit être traduite dans les termes préférés par « extraction avec un aimant ».<br/>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ul>
-                                        <li>retrait d'un corps étranger d'un tissu mou</li>
-                                        <li>extraction avec un aimant d’un corps étranger de la cornée</li>
-                                        <li>retrait d’un corps étranger de la cornée à l’aide d’un aimant</li>
+                                        <li><i>Removal of foreign body from soft tissue</i> &rarr; retrait d'un corps étranger d'un tissu mou</li>
+                                        <li><i>Magnet extraction of foreign body from cornea</i> &rarr; extraction avec un aimant d’un corps étranger de la cornée</li>
                                     </ul></div>
                                 </td>
-	                            <td>FTCG</td>
+	                            <td>PT</td>
+                                <td>FTCG</td>
 	                            <td>28/09/22</td>
                             </tr>
                             <tr>
 	                            <td>pr5</td>
 	                            <td>
-                                    Dans le cas du retrait d’un dispositif médical, l’expression « <i>Removal of</i> [X] » doit être traduite par « retrait de [X] ».<br/>
+                                    L'expression « <i>Removal of [dispositif médical]</i> » doit être traduite par « retrait ».<br/>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ul>
                                         <li>retrait d’un plâtre</li>
                                         <li>retrait d’une sonde urinaire</li>
                                     </ul></div>
                                 </td>
-	                            <td>FTCG</td>
+	                            <td>Global</td>
+                                <td>FTCG</td>
 	                            <td>28/09/22</td>
                             </tr>
                             <tr>
 	                            <td>pr6</td>
 	                            <td>
-                                    Dans le cas de l’ablation chirurgicale totale d’un organe, le concept doit être traduit selon le patron suivant :
+                                    Les concepts représentant l’ablation chirurgicale totale d’un organe doivent avoir un terme préféré et au moins deux synonymes acceptables de la forme suivante :
                                     <div class="wysiwyg"><ul>
                                         <li>PT : [X]ectomie totale</li>
                                         <li>SYN : excision totale [X]</li>
@@ -1610,13 +1712,14 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </ul></div><br/>
                                     <u>Exemples</u><i>Total nephrectomy</i> &rarr; néphrectomie totale ; excision totale du rein ; exérèse du rein
                                 </td>
-	                            <td>FTCG</td>
+	                            <td>PT + SYN</td>
+                                <td>FTCG</td>
 	                            <td>28/09/22</td>
                             </tr>
                             <tr>
 	                            <td>pr7</td>
 	                            <td>
-                                    Dans le cas de l’ablation chirurgicale partielle d’un organe, le concept doit être traduit selon le patron suivant :
+                                    Les concepts représentant l’ablation chirurgicale partielle d’un organe doivent avoir un terme préféré et au moins deux synonymes acceptables de la forme suivante :
                                     <div class="wysiwyg"><ul>
                                         <li>PT : [X]ectomie partielle</li>
                                         <li>SYN : excision partielle [X]</li>
@@ -1625,52 +1728,65 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     L’adjectif « partielle » est ajouté à la résection pour éviter un conflit de traduction avec un concept parent employant l’expression « resection of [X] ».<br/><br/>
                                     <u>Exemples</u><i>Partial nephrectomy</i> &rarr; néphrectomie partielle ; résection partielle du rein ; excision partielle du rein
                                 </td>
-                            	<td>FTCG</td>
+                            	<td>PT + SYN</td>
+                                <td>FTCG</td>
                             	<td>28/09/22</td>
                             </tr>
                             <tr>
 	                            <td>pr8</td>
 	                            <td>
-                                    Dans le cas de l’amputation (chirurgicale) d’une topographie normale, les termes préférés doivent utiliser le terme « amputation » sauf pour le domaine périodontal qui utilise « extraction ».<br/>
+                                    Les concepts représentant l’amputation chirurgicale d’une topographie normale doivent avoir un terme préféré contenant le terme « amputation ».<br/><br/>
+                                    Dans un contexte périodontal, le terme préféré doit utiliser le terme « extraction » à la place de « amputation ».<br/>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ul>
                                         <li>amputation du membre inférieur</li>
                                         <li>extraction de la racine d’une dent</li>
                                     </ul></div>
                                 </td>
-                            	<td>FTCG</td>
+                            	<td>PT</td>
+                                <td>FTCG</td>
                             	<td>28/09/22</td>
                             </tr>
                             <tr>
 	                            <td>pr9</td>
 	                            <td>
-                                    Dans le cas d’une biopsie excisionnelle (qui consiste à enlever la totalité du tissu anormal ainsi qu'une marge de tissu qui l'entoure), <i>Excisional biopsy</i> doit être traduit par « biopsie-exérèse » dans les termes préférés ou « biopsie excisionnelle » dans les synonymes acceptables.<br/>
+                                    Les concepts représentant une biopsie excisionnelle (qui consiste à enlever la totalité du tissu anormal ainsi qu'une marge de tissu qui l'entoure) doivent avoir un terme préféré et au moins un synonyme acceptable de la forme suivante :
+                                    <div class="wysiwyg"><ul>
+                                        <li>PT : biopsie-exérèse [X]</li>
+                                        <li>SYN : biopsie excisionnelle</li>
+                                    </ul></div><br/>
                                     <u>Exemples</u> : <i>Excisional biopsy of breast mass</i>
                                     <div class="wysiwyg"><ul>
                                         <li>PT : biopsie-exérèse d’une masse mammaire</li>
                                         <li>SYN : biopsie excisionnelle d’une masse mammaire</li>
                                     </ul></div>
                                 </td>
-                            	<td>FTCG</td>
+                            	<td>PT + SYN</td>
+                                <td>FTCG</td>
                             	<td>28/09/22</td>
                             </tr>
                             <tr>
 	                            <td>pr10</td>
 	                            <td>
-                                    Dans le cas d’une biopsie incisionnelle (qui consiste à prélever seulement un petit échantillon du tissu anormal en vue d’un examen au microscope), <i>Incisional biopsy</i> se traduit par « biopsie incisionnelle ».<br/>
+                                    Les concepts représentant une biopsie incisionnelle (qui consiste à prélever seulement un petit échantillon du tissu anormal en vue d’un examen au microscope) doivent utiliser les termes « biopsie incisionnelle ».<br/>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ul>
                                         <li>biopsie incisionnelle de l’encéphale</li>
                                         <li>biopsie incisionnelle du testicule</li>
                                     </ul></div>
                                 </td>
-                            	<td>FTCG</td>
+                            	<td>Global</td>
+                                <td>FTCG</td>
                             	<td>28/09/22</td>
                             </tr>
                             <tr>
                             	<td>pr12</td>
                             	<td>
-                                    Les termes préférés des concepts liés à l’imagerie par résonance magnétique, comme action principale ou comme guidage de l’acte principal, doivent contenir l’acronyme IRM sans forme développée.<br/>
+                                    Les concepts mentionnant l’imagerie par résonance magnétique doivent avoir un terme préféré et au moins un synonyme acceptable de la forme suivante :<br>
+                                    <div class="wysiwyg"><ul>
+                                        <li>PT: IRM [X]</li>
+                                        <li>SYN: imagerie par résonnance magnétique [X]</li>
+                                    </ul></div>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ol>
                                         <li><i>MRI for patella tracking</i> :</li>
@@ -1685,13 +1801,14 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             </ul>
                                     </ol></div>
                                 </td>
-                            	<td>SI</td>
+                            	<td>PT + SYN</td>
+                                <td>SI</td>
                             	<td>18/12/23</td>
                             </tr>
                             <tr>
 	                            <td>pr13</td>
 	                            <td>
-                                    Les concepts représentant une procédure guidée par imagerie doivent suivre le patron suivant :
+                                    Les concepts représentant une procédure guidée par imagerie doivent avoir un terme préféré et au moins un synonyme acceptable de la forme suivante :
                                     <div class="wysiwyg"><ul>
                                         <li>PT : [procédure] guidée par [technique d’imagerie]</li>
                                         <li>SYN : [procédure] sous guidage [technique d’imagerie]</li>
@@ -1704,25 +1821,17 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <li>SYN : marquage de la peau sous guidage échographique</li>
                                     </ul></div>
                                 </td>
-                            	<td>FTCG</td>
+                            	<td>PT + SYN</td>
+                                <td>FTCG</td>
                             	<td>18/12/23</td>
                             </tr>
                             <tr>
 	                            <td>pr14</td>
 	                            <td>
-                                    Les concepts dont le FSN anglais utilise <i>fluoroscopy</i> ou <i>fluoroscopic</i> doivent être traduits suivant ces deux patrons, selon si ce mot désigne l’action principale ou le guidage de cette action :
+                                    Les concepts contenant <i>fluoroscopy</i> ou <i>fluoroscopic</i> doivent avoir un terme préféré et au moins un synonyme acceptable de la forme suivante :
                                     <div class="wysiwyg"><ol>
-                                        <li>Patron action principale :</li>
-                                            <ul>
-                                                <li>PT : radioscopie de [X]</li>
-                                                <li>SYN : fluoroscopie de [X]</li>
-                                            </ul>
-                                        <li>Patron guidage de l’action principale :</li>
-                                            <ul>
-                                                <li>PT : [X] guidée par radioscopie</li>
-                                                <li>SYN : [X] sous guidage radioscopique</li>
-                                                <li>SYN : [X] guidée par fluoroscopie</li>
-                                            </ul>
+                                        <li>PT : « radioscopie » ou « radioscopique »</li>
+                                        <li>SYN : « fluoroscopie » ou « fluoroscopique »</li>
                                     </ol></div><br/>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ol>
@@ -1739,20 +1848,22 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         </ul>
                                     </ol></div>
                                 </td>
-                            	<td>FTCG</td>
+                            	<td>PT + SYN</td>
+                                <td>FTCG</td>
                             	<td>18/12/23</td>
                             </tr>
                             <tr>
 	                            <td>pr15-FR</td>
 	                            <td>
-                                    Les concepts <i>X education</i> ou <i>education about X</i> doivent être traduits par "éducation concernant X".<br/>
+                                    Le terme <i>education</i> et ses formes dérivées doivent être traduits par "éducation".<br/>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ol>
                                         <li><i>Amputation education</i> &rarr; éducation concernant l'amputation</li>
                                         <li><i>Education about hepatitis</i> &rarr; éducation concernant l'hépatite</li>
                                     </ol></div>
                                 </td>
-                            	<td>ANS</td>
+                            	<td>Global</td>
+                                <td>ANS</td>
                             	<td>23/10/25</td>
                             </tr>
                             </tbody>
@@ -1764,47 +1875,45 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
 	                                <td>me1</td>
 	                                <td>
-                                        L’expression « <i>product containing</i> [substance] » doit être traduite par « produit contenant [substance] » dans les termes préférés.<br/><br/>
+                                        L'expression « <i>product containing</i> [substance] » doit être traduite dans les termes préférés par « produit contenant ».<br/><br/>
                                         S’il y a plusieurs substances, elles doivent être listées sans article, dans l’ordre alphabétique et séparé par « et ». Un synonyme acceptable peut remplacer le « et » par un « + ».<br/><br/>
-                                        Le mot « produit » peut être remplacé par un terme plus pertinent (e.g. « vaccin contenant… »).<br/><br/>
+                                        Le terme « produit » peut être remplacé par un terme plus pertinent (e.g. « vaccin contenant… »).<br/><br/>
                                         <u>Exemple</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>PT : produit contenant amoxicilline et acide clavulanique</li>
                                             <li>SYN : produit contenant amoxicilline + acide clavulanique</li>
                                         </ul></div>
                                     </td>
-	                                <td>SI</td>
+	                                <td>PT</td>
+                                    <td>SI</td>
 	                                <td>05/06/23</td>
                                 </tr>
                                 <tr>
 	                                <td>me2-FR</td>
 	                                <td>
-                                        L’expression « <i>product containing only</i> [substance] » doit être traduite par « produit contenant uniquement [substance] » dans les termes préférés.<br/><br/>
+                                        L'expression « <i>product containing only</i> [substance] » doit être traduite dans les termes préférés par « produit contenant uniquement ».<br/><br/>
                                         S’il y a plusieurs substances, elles doivent être listées sans article, dans l’ordre alphabétique et séparé par « et ». Un synonyme acceptable peut remplacer le « et » par un « + ».<br/><br/>
-                                        Le mot « produit » peut être remplacé par un terme plus pertinent (e.g. « vaccin contenant… »).<br/><br/>
+                                        Le terme « produit » peut être remplacé par un terme plus pertinent (e.g. « vaccin contenant… »).<br/><br/>
                                         <u>Exemple</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>produit contenant uniquement paracétamol et codéine et caféine</li>
                                             <li>produit contenant uniquement paracétamol + codéine + caféine</li>
                                         </ul></div>
                                     </td>
-                                	<td>SI</td>
+                                	<td>PT</td>
+                                    <td>SI</td>
                                 	<td>05/06/23</td>
                                 </tr>
                                 <tr>
 	                                <td>me3</td>
 	                                <td>
-                                        Dans le cas des médicaments virtuels (<i>clinical drug</i>) qui précisent le(s) composant(s) avec leur(s) dosage(s) et leurs formes manufacturées, les termes préférés doivent suivre le patron suivant :
-                                        <div class="wysiwyg"><ul>
-                                            <li>PT :« produit contenant précisément [substance] [dosage], [forme] »</li>
-                                            <li>SYN : « produit contenant précisément [substance] [dosage] par [forme] »</li>
-                                        </ul></div><br/>
+                                        Les concepts représentant des médicaments virtuels (<i>clinical drug</i>) qui précisent le(s) composant(s) avec leur(s) dosage(s) et leurs formes manufacturées doivent avoir un terme préféré de la forme suivante « produit contenant précisément [substance] [dosage], [forme] »<br/><br/>
                                         S’il y a plusieurs composants avec leurs dosages, ils doivent être listés sans article, dans l’ordre alphabétique et séparé par « et ».<br/><br/>
                                         <u>Exemple</u> :
                                         <div class="wysiwyg"><ul>
@@ -1812,7 +1921,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN : produit contenant précisément maléate d'énalapril 5 mg par comprimé oral</li>
                                         </ul></div>
                                     </td>
-                                	<td>SI</td>
+                                	<td>PT</td>
+                                    <td>SI</td>
                                 	<td>05/06/23</td>
                                 </tr>
                                 <tr>
@@ -1821,7 +1931,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         La caractéristique de libération de la forme manufacturée ne doit pas être reprise dans le terme préféré lorsque sa valeur est « libération conventionnelle (ou classique) », car il s’agit de la valeur par défaut de libération d’une forme pharmaceutique.<br/>
                                         <u>Exemple</u> : maléate de diltiazem 219 mg et maléate d'énalapril 5 mg, comprimé oral
                                     </td>
-	                                <td>SI</td>
+	                                <td>PT</td>
+                                    <td>SI</td>
 	                                <td>23/11/20</td>
                                 </tr>
                             </tbody>
@@ -1833,13 +1944,13 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>hs1</td>
                                     <td>
-                                        Dans la hiérarchie des situations avec contexte explicite, le mot <i>history</i> doit être traduit par « antécédent » au singulier par défaut.<br/>
+                                        Dans la hiérarchie des situations avec contexte explicite, le terme <i>history</i> doit être traduit par « antécédent » au singulier par défaut.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>antécédent familial d’asthme</li>
@@ -1847,6 +1958,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>antécédents familiaux inconnus (le pluriel permet d’éviter une mauvaise interprétation du sens)</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>10/02/25</td>
                                 </tr>
@@ -1859,20 +1971,21 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
 	                                <td>bs2</td>
 	                                <td>
-                                        Les concepts représentant une structure articulaire doivent contenir le mot articulation dans leur terme préféré. Un synonyme acceptable peut omettre ce mot si cela ne provoque pas d’ambiguïté.<br/>
+                                        Les concepts représentant une structure articulaire doivent avoir un terme préféré contenant le terme « articulation ».<br/>
                                         <u>Exemple</u> : <i>Lateral collateral ligament of knee joint</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : ligament collatéral latéral de l'articulation du genou</li>
                                             <li>SYN : ligament collatéral latéral du genou</li>
                                         </ul></div>
                                     </td>
-	                                <td>FTCG</td>
+	                                <td>PT</td>
+                                    <td>FTCG</td>
 	                                <td>18/10/21</td>
                                 </tr>
                                 <tr>
@@ -1882,119 +1995,139 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <img src="../assets/images/sep.png"/><br/>
                                         Le concept <i>Entire</i> représente l’entité anatomique X dans son entièreté, le concept Part représente toute partie spécifique de cette entité anatomique X. Ces deux concepts sont des enfants immédiats du concept <i>Structure</i> qui est le concept le plus général représentant l’entité anatomique X.<br/><br/>
                                         Les trois mots clés <i>structure</i>, <i>entire</i> et <i>part</i> figurent systématiquement dans les FSN anglais associés respectivement à ces trois concepts.<br/><br/>
-                                        Les descriptions de ces concepts doivent suivre les patrons suivants :
+                                        Les concepts Structure doivent avoir un terme préféré et au moins un synonyme acceptable de la forme suivante :
                                         <div class="wysiwyg"><ul>
-                                            <li>Concept Structure : « X » pour le terme préféré et au moins un synonyme acceptable « structure X ».</li>
-                                            <li>Concept Entire : « X entier » ou « X entière ».</li>
-                                            <li>Concept Part : « partie du X » ou « partie de la X ».</li>
-                                        </ul></div><br/>
-                                        <u>Exemple</u> :<br/>
-                                        <img src="../assets/images/sep_exemple.png"/>
+                                            <li>PT : « [X] »</li>
+                                            <li>SYN : « [X], structure »</li>
+                                        </ul></div>
+                                        Exception : Les concepts du type « Structure [X, forme adjectivale] » doivent être traduits par « structure [X, forme adjectivale] ». 
+                                        <br/><br/>
+                                        Les descriptions des concepts Entire doivent contenir « entier » ou « entière ».<br/><br/>
+                                        Les descriptions des concepts Part doivent contenir « partie ».<br/><br/>
+                                        <u>Exemples</u> :<br/>
+                                        <div class="wysiwyg"><ul>
+                                            <li><i>Structure of ear</i></li>
+                                                <ul>
+                                                    <li>PT: oreille</li>
+                                                    <li>SYN: oreille, structure</li>
+                                                </ul>
+                                            <li><i>Venous structure</i> &rarr; PT: structure veineuse</li>
+                                            <li><i>Entire ear</i> &rarr; PT: oreille entière</li>
+                                            <li><i>Part of ear</i> &rarr; PT: partie de l'oreille</li>
+                                        </ul></div>
                                     </td>
-	                                <td>SI</td>
+	                                <td>Global<br/>PT + SYN (Structure)</td>
+                                    <td>SI</td>
 	                                <td>24/01/22</td>
                                 </tr>
                                 <tr>
 	                                <td>bs4</td>
 	                                <td>Les descendants de 91723000 |Anatomical structure (body structure)| doivent avoir un terme préféré suivant la nouvelle nomenclature Terminologia Anatomica. Un synonyme acceptable suivant l’ancienne nomenclature Nomina Anatomica peut être ajouté.</td>
-                                	<td>FTCG</td>
+                                	<td>PT</td>
+                                    <td>FTCG</td>
                                 	<td>24/01/22</td>
                                 </tr>
                                 <tr>
 	                                <td>bs5</td>
 	                                <td>
-                                        Le mot <i>region</i> doit être traduit par « région ».<br/>
+                                        Le terme <i>region</i> doit être traduit dans les termes préférés par « région ».<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Hip region structure</i> &rarr; région de la hanche</li>
                                             <li><i>Sacral region</i> &rarr; région sacrale</li>
                                         </ul></div>
                                     </td>
-                                	<td>FTCG</td>
+                                	<td>PT</td>
+                                    <td>FTCG</td>
                                 	<td>12/12/22</td>
                                 </tr>
                                 <tr>
 	                                <td>bs6</td>
 	                                <td>
-                                        <div class="wysiwyg"><ul>
-                                            <li>Le mot <i>zone</i> doit être traduit par « zone ».</li>
-                                            <li>Le mot <i>area</i> doit être traduit par « zone », « surface » ou « aire » si le concept est un descendant de 127947003 |Structure of body surface region (body structure)| ou par un mot plus pertinent s’il existe.</li>
-                                        </ul></div>
+                                        Les termes <i>zone</i> ou <i>area</i> doivent être traduits dans les termes préférés par l'un des termes suivants « zone », « surface », « aire » ou par un terme plus pertinent s'il existe.<br/><br/>
+                                        Dans le cas d'un concept impacté par les règles bs5 et bs6, un compromis entre les deux termes à ajouter peut être trouvé pour simplifier le terme préféré et assurer sa pertinence.<br/><br/>
                                         <u>Exemple</u> : <i>Skin structure of dorsal area of hand</i> &rarr; peau de la zone dorsale de la main
                                     </td>
-                                	<td>FTCG</td>
+                                	<td>PT</td>
+                                    <td>FTCG</td>
                                 	<td>12/12/22</td>
                                 </tr>
                                 <tr>
 	                                <td>bs7</td>
 	                                <td>
-                                        Le mot <i>proper</i> doit être traduit par « propre ».<br/><br/>
+                                        Le terme <i>proper</i> doit être traduit dans les termes préférés par « propre ».<br/><br/>
                                         <u>Exception 1</u> : Si l’utilisation de « propre » provoque un risque de confusion avec l’état de propreté, <i>proper</i> doit être traduit par « proprement dit » ou « proprement dite ».<br/><br/>
-                                        <u>Exception 2</u> : Si un terme plus précis et pertinent existe, il peut remplacer « propre ».
+                                        <u>Exception 2</u> : Si un terme plus pertinent existe, il peut remplacer « propre ».
                                     </td>
-                                	<td>FTCG</td>
+                                	<td>PT</td>
+                                    <td>FTCG</td>
                                 	<td>05/04/23</td>
                                 </tr>
                                 <tr>
                                 	<td>bs8</td>
                                 	<td>
-                                        Le mot <i>apex</i> doit être traduit par « apex » dans les termes préférés. Les mots « pointe », « bout » ou « cime » peuvent être utilisés dans les synonymes acceptables.<br/>
+                                        Le terme <i>apex</i> doit être traduit dans les termes préférés par « apex » ou un terme plus pertinent s'il existe.
                                         <u>Exemples</u> : <i>Structure of tip of tongue</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : apex de la langue</li>
-                                            <li>SYN : bout de la langue</li>
-                                            <li>SYN : pointe de la langue</li>
                                         </ul></div>
                                     </td>
-                                	<td>FTCG</td>
+                                	<td>PT</td>
+                                    <td>FTCG</td>
                                 	<td>12/12/22</td>
                                 </tr>
                                 <tr>
                                 	<td>bs9</td>
                                 	<td>
-                                        L'expression <i>Lesser toe</i> désigne un orteil sauf le pouce, il doit donc être traduit dans le terme préféré par « orteil excepté l’hallux ». « orteil latéral » est un synonyme acceptable.<br/><br/>
-                                        Le synonyme « petit orteil » est considéré comme erroné.
+                                        Les concepts contenant l'expression « <i>Lesser toe</i> » désignent un orteil sauf le pouce, ils doivent donc avoir un terme préféré et au moins un synonyme acceptable de la forme suivante :
+                                        <div class="wysiwyg"><ul>
+                                            <li>PT : orteil excepté l'hallux</li>
+                                            <li>SYN : orteil latéral</li>
+                                        </ul></div>
+                                        L'expression « petit orteil » est considérée comme erronée.
                                     </td>
-                                	<td>FTCG</td>
+                                	<td>PT + SYN</td>
+                                    <td>FTCG</td>
                                 	<td>18/12/23</td>
                                 </tr>
                                 <tr>
                                 	<td>bs10-FR</td>
                                 	<td>
-                                        L'expression <i>Lower limb</i> doit être traduite par «   membre inférieur ».<br/><br/>
-                                        L'expression <i>Lower leg</i> doit être traduite selon le patron suivant :
-                                        <div class="wysiwyg"><ul>
-                                            <li>PT : partie inférieure de la jambe</li>
-                                            <li>SYN : partie basse de la jambe</li>
-                                            <li>SYN : jambe, du genou à la cheville</li>
-                                        </ul></div> 
+                                        L'expression <i>Lower limb</i> doit être traduite par « membre inférieur ».<br/><br/>
+                                        L'expression <i>Lower leg</i> doit être traduite « partie inférieure de la jambe ».
                                     </td>
-	                                <td>ANS</td>
+	                                <td>Global</td>
+                                    <td>ANS</td>
 	                                <td>01/08/25</td>
                                 </tr>
                                 <tr>
                                 	<td>bs11-FR</td>
                                 	<td>
                                         L'expression <i>Upper limb</i> doit être traduite par « membre supérieur ».<br/><br/>
-                                        L'expression <i>Upper arm</i> doit être traduite selon le patron suivant:
-                                        <div class="wysiwyg"><ul>
-                                            <li>PT : partie supérieure du bras</li>
-                                            <li>SYN : bras, de l'épaule au coude</li>
-                                        </ul></div> 
+                                        L'expression <i>Upper arm</i> doit être traduite par « partie supérieure du bras ».
                                     </td>
-                                	<td>ANS</td>
+                                	<td>Global</td>
+                                    <td>ANS</td>
                                 	<td>01/08/25</td>
                                 </tr>
                                 <tr>
 	                                <td>bs12</td>
-	                                <td>Le mot <i>Cerebrum</i> doit être traduit par « cerveau ».</td>
-                                	<td>FTCG</td>
+	                                <td>
+                                        Le terme <i>cerebrum</i> et ses formes dérivées doivent être traduites par « cerveau » ou « cérébral ».<br/><br/>
+                                        Les termes « encéphale » ou « encéphalique » sont considérés comme erronés.
+                                    </td>
+                                	<td>Global</td>
+                                    <td>FTCG</td>
                                 	<td>13/01/25</td>
                                 </tr>
                                 <tr>
                                 	<td>bs13</td>
-                                	<td>Le mot <i>Brain</i> doit être traduit par « encéphale ».</td>
-                                	<td>FTCG</td>
+                                	<td>
+                                        Le terme <i>brain</i> doit être traduit par « encéphale » ou « encéphalique ».<br/><br/>
+                                        Le terme <i>brainstem</i> est une exception et doit être traduit par « tronc cérébral ».
+                                    </td>
+                                	<td>Global</td>
+                                    <td>FTCG</td>
                                 	<td>13/01/25</td>
                                 </tr>
                             </tbody>
@@ -2006,66 +2139,47 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
 	                                <td>su1-FR</td>
 	                                <td>
-                                        Les anticorps doivent suivrent le patron suivant :<br/>
+                                        Les anticorps doivent avoir un terme préféré et au moins deux synonymes acceptables contenant les termes suivants :<br/>
                                         <div class="wysiwyg"><ul>
-                                            <li>PT : immunoglobuline anti[maladie]</li>
-                                            <li>SYN : immunoglobuline contre [organisme]</li>
-                                            <li>SYN : Ig anti[maladie]</li>
-                                            <li>SYN : Ig contre [organisme]</li>
-                                            <li>SYN : anticorps anti[maladie]</li>
-                                            <li>SYN : anticorps contre [organisme]</li>
+                                            <li>PT : « immunoglobuline » ou « anticorps » selon l'usage</li>
+                                            <li>SYN : Ig</li>
+                                            <li>SYN : « anticorps » ou « immunoglobuline » pour compléter le PT</li>
                                         </ul></div><br/>
                                         <u>Exemple</u> : <i>Rabies virus antibody</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : immunoglobuline antirabique</li>
-                                            <li>SYN : immunoglobuline contre le virus de la rage</li>
-                                            <li>SYN : immunoglobuline contre Lyssavirus rabies</li>
                                             <li>SYN : Ig antirabique</li>
-                                            <li>SYN : Ig contre le virus de la rage</li>
-                                            <li>SYN : Ig contre Lyssavirus rabies</li>
                                             <li>SYN : anticorps antirabique</li>
-                                            <li>SYN : anticorps contre le virus de la rage</li>
-                                            <li>SYN : anticorps contre Lyssavirus rabies</li>
-                                        </ul></div>
-                                        <br/>
-                                        Si il n'existe pas de nom commun pour la maladie, alors c'est "immunoglobuline contre [organisme, nom scientifique] qui devient le terme préféré.<br/>
-                                        <u>Exemple</u> : <i>Haemophilus influenzae antibody</i>
-                                        <div class="wysiwyg"><ul>
-                                            <li>PT : immunoglobuline contre Haemophilus influenzae</li>
-                                            <li>SYN : immunoglobuline contre le bacille de Pfeiffer</li>
-                                            <li>SYN : Ig contre Haemophilus influenzae</li>
-                                            <li>SYN : Ig contre le bacille de Pfeiffer</li>
-                                            <li>SYN : anticorps contre Haemophilus influenzae</li>
-                                            <li>SYN : anticorps contre le bacille de Pfeiffer</li>
                                         </ul></div>
                                     </td>
-	                                <td>ANS</td>
+	                                <td>PT + SYN</td>
+                                    <td>ANS</td>
 	                                <td>29/07/25</td>
                                 </tr>
                                 <tr>
 	                                <td>su2-FR</td>
 	                                <td>
-                                        Les directives générales pour la formation de dénominations communes internationales (DCI) applicables aux substances pharmaceutiques publiées par l’OMS s’appliquent pour le terme préféré.<br/>
-                                        Le libellé du terme préféré est calqué sur la modalité anglosaxonne d’écriture des substances : nom de la partie de la substance pharmacologiquement active cité en premier suivi le cas échéant du nom du radical pharmacologiquement inactif.
+                                        Les directives générales pour la formation de dénominations communes internationales (DCI) applicables aux substances pharmaceutiques publiées par l’OMS s’appliquent aux termes préférés.<br/>
+                                        Le terme préféré est calqué sur la modalité anglosaxonne d’écriture des substances : nom de la partie de la substance pharmacologiquement active cité en premier suivi le cas échéant du nom du radical pharmacologiquement inactif.
                                         <div class="wysiwyg"><ul>
                                           <li>PT : Dénomination commune française (DCF) ou DCF avec complément de nom</li>
                                           <li>SYN : nom commun d'usage</li>
                                           <li>SYN : nom chimique</li>
                                         </ul></div><br/>
                                         En cas d'absence de DCF, le terme préféré reprend le nom commun d'usage. En cas d'absence du nom commun d'usage, le terme préféré reprend le nom chimique.<br/><br/>
-                                        1. <b>Sels</b> : le terme préféré est constitué du nom du cation (base) cité en premier suivi du nom de l’anion (nom du sel résultant de l’acide) avec lequel le cation (base) est combinée pour former le sel. Pour un sel comportant une DCF : la DCF est citée en premier. Elle est suivie du nom du sel (sel de sodium, sel de potassium, sel disodique, …).<br/>
+                                        <b>Sels</b> : le terme préféré est constitué du nom du cation (base) cité en premier suivi du nom de l’anion (nom du sel résultant de l’acide) avec lequel le cation (base) est combinée pour former le sel. Pour un sel comportant une DCF : la DCF est citée en premier. Elle est suivie du nom du sel (sel de sodium, sel de potassium, sel disodique, …).<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                           <li>PT : amlodipine bésilate</li>
                                           <li>SYN : bésilate d’amlodipine</li>
                                         </ul></div><br/>
-                                        2. <b>Esters</b> : le terme préféré est constitué du nom de l’acide cité en premier suivi du nom de l’alcool avec lequel il est combiné pour former un ester. Pour un ester comportant une DCF : la DCF est citée en premier. Elle est suivie du nom de l’ester (embonate, …).<br/>
+                                        <b>Esters</b> : le terme préféré est constitué du nom de l’acide cité en premier suivi du nom de l’alcool avec lequel il est combiné pour former un ester. Pour un ester comportant une DCF : la DCF est citée en premier. Elle est suivie du nom de l’ester (embonate, …).<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                           <li>PT : chlorpromazine embonate</li>
@@ -2084,17 +2198,18 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                               </ul>
                                         </ul></div>
                                     </td>
-	                                <td>ANS</td>
+	                                <td>PT + SYN</td>
+                                    <td>ANS</td>
 	                                <td>10/12/25</td>
                                 </tr>
                                 <tr>
 	                                <td>su3-FR</td>
 	                                <td>
-                                        Les abréviations d'indicateurs de position "m" pour "méta", "o" pour "ortho" et "p" pour "para" suivies d'un tiret sont utilisées pour le terme préféré.<br/>
-                                        Le cas échéant un synonyme acceptable :
+                                        Les concepts contenant des indicateurs de position (« o » pour « ortho », « m » pour « méta » et « p » pour « para ») doivent avoir un terme préféré et au moins deux synonymes acceptables contenant les indicateurs sous la forme suivante :<br/>
                                         <div class="wysiwyg"><ul>
-                                          <li>peut reprendre "méta", "ortho" et "para" écrit en toutes lettre suivi d'un tiret ;</li>
-                                          <li>peut reprendre le chiffre "2" pour "ortho", "3" pour "méta" et "4" pour "para" suivi d'un tiret.</li>
+                                            <li>PT : « o », « m » et « p »</li>
+                                            <li>SYN : « ortho », « méta » et « para »</li>
+                                            <li>SYN : « 2 », « 3 » et « 4 »</li>
                                         </ul></div><br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
@@ -2103,39 +2218,42 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                           <li>SYN : parahydroxybenzoate d'éthyle</li>
                                         </ul></div>
                                     </td>
-	                                <td>ANS</td>
+	                                <td>PT + SYN</td>
+                                    <td>ANS</td>
 	                                <td>10/12/25</td>
                                 </tr>
                                 <tr>
 	                                <td>su4-FR</td>
 	                                <td>
-                                        Les descripteurs "cis" et "trans" doivent s'écrire en toutes lettres et être suivis d'un tiret.<br/>
+                                        Les descripteurs « cis » et « trans » doivent s'écrire en toutes lettres et être suivis d'un tiret.<br/>
                                         <u>Exemple</u> :
                                         <div class="wysiwyg"><ul>
                                           <li>PT : acide oléique</li>
                                           <li>SYN : acide 9-cis-octadécénoïque</li>
                                         </ul></div>
                                     </td>
-	                                <td>ANS</td>
+	                                <td>Global</td>
+                                    <td>ANS</td>
 	                                <td>10/12/25</td>
                                 </tr>
                                 <tr>
 	                                <td>su5-FR</td>
 	                                <td>
-                                        Les descripteurs "R" et "S" doivent être placés entre parenthèses, préfixé au nom de la molécule et séparé d'un tiret. Ils complètent le nom de la molécule en précisant de manière non équivoque de quel énantiomère il s'agit.<br/>
+                                        Les descripteurs « R » et « S » doivent être placés entre parenthèses, préfixé au nom de la molécule et séparé d'un tiret. Ils complètent le nom de la molécule en précisant de manière non équivoque de quel énantiomère il s'agit.<br/>
                                         <u>Exemple</u> :
                                         <div class="wysiwyg"><ul>
                                           <li>PT : (S)-métoprolol tartrate</li>
                                           <li>SYN : tartrate de (S)-métoprolol</li>
                                         </ul></div>
                                     </td>
-	                                <td>ANS</td>
+	                                <td>Global</td>
+                                    <td>ANS</td>
 	                                <td>10/12/25</td>
                                 </tr>
                                 <tr>
 	                                <td>su6-FR</td>
 	                                <td>
-                                        Dans le cas d'un solvate, le terme préféré est formé du nom de la substance puis du nom du solvate utilisé au cours de la fabrication suivi de "solvate".<br/>
+                                        Dans le cas d'un solvate, le terme préféré est formé du nom de la substance puis du nom du solvate utilisé au cours de la fabrication suivi de « solvate ».<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                           <li><i>Ceftaroline fosamil acetic acid solvate</i></li>
@@ -2151,39 +2269,42 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             </ul>
                                         </ul></div>
                                     </td>
-	                                <td>ANS</td>
+	                                <td>PT</td>
+                                    <td>ANS</td>
 	                                <td>10/12/25</td>
                                 </tr>
                                 <tr>
 	                                <td>su7-FR</td>
 	                                <td>
-                                        Si le concept mentionne un microorganisme, le terme préféré utilise son nom scientifique en latin et un synonyme peut utiliser le nom vernaculaire.<br/>
+                                        Si le concept mentionne un microorganisme, le terme préféré utilise son nom scientifique en latin et au moins un synonyme acceptable peut utiliser le nom vernaculaire.<br/>
                                         <u>Exemple</u> :
                                         <div class="wysiwyg"><ul>
                                           <li>PT : immunoglobuline monoclonale contre Orthopneumovirus hominis</li>
                                           <li>SYN : immunoglobuline monoclonale contre le virus respiratoire syncytial humain</li>
                                         </ul></div><br/>
-                                        Si le concept mentionne un macroorganisme, le terme préféré utilise le nom vernaculaire s'il existe et un synonyme utilise le nom scientifique en latin. Dans le cas où il n'existe pas de nom vernaculaire, le nom scientifique latin est utilisé en terme préféré.<br/>
+                                        Si le concept mentionne un macroorganisme, le terme préféré utilise le nom vernaculaire s'il existe et au moins un synonyme acceptable utilise le nom scientifique en latin. Dans le cas où il n'existe pas de nom vernaculaire, le nom scientifique latin est utilisé en terme préféré.<br/>
                                         <u>Exemple</u> :
                                         <div class="wysiwyg"><ul>
                                           <li>PT : alcaloïde de belladone</li>
                                           <li>SYN : alcaloïde d'Atropa belladonna</li>
                                         </ul></div>
                                     </td>
-	                                <td>ANS</td>
+	                                <td>PT + SYN</td>
+                                    <td>ANS</td>
 	                                <td>10/12/25</td>
                                 </tr>
                                 <tr>
 	                                <td>su8-FR</td>
 	                                <td>
-                                        Les balises ne sont pas conservées dans le terme préféré. Un synonyme acceptable peut être écrit avec balise(s).<br/>
+                                        Les balises ne sont pas conservées dans le terme préféré.<br/>
                                         <u>Exemple</u> :
                                         <div class="wysiwyg"><ul>
                                           <li>PT : moénomycine B1</li>
                                           <li>SYN : moénomycine >B1<</li>
                                         </ul></div>
                                     </td>
-	                                <td>ANS</td>
+	                                <td>PT</td>
+                                    <td>ANS</td>
 	                                <td>10/12/25</td>
                                 </tr>
                                 <tr>
@@ -2196,7 +2317,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                           <li>SYN : extrait d'aubier de tilleul</li>
                                         </ul></div>
                                     </td>
-	                                <td>ANS</td>
+	                                <td>PT</td>
+                                    <td>ANS</td>
 	                                <td>10/12/25</td>
                                 </tr>
                             </tbody>
