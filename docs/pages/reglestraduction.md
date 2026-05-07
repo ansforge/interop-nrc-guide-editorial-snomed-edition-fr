@@ -12,6 +12,15 @@ Ces règles reprennent celles du *French Translation Collaboration Group* qui on
 
 Les abréviations PT et SYN utilisés dans les règles désignent, respectivement, les notions de terme préféré (PT) et synonyme acceptable (SYN) telles que décrites dans l'onglet [Composants de la SNOMED CT](https://ansforge.github.io/interop-nrc-guide-editorial-snomed-edition-fr/pages/contexte.html). 
 
+La colonne « Type » indique le type de la règle :
+<div class="wysiwyg"><ul>
+  <li>Global : La règle contraint toutes les descriptions du concept.</li>
+  <li>PT : La règle contraint uniquement le terme préféré. Elle peut être suivie aussi pour les synonymes acceptables, mais cela n'est pas obligatoire.<li>
+  <li>PT + SYN : La règle contraint le terme préféré et au moins un (ou deux dans de rares cas) synonyme(s) acceptable(s). Elle peut être suivie aussi pour le reste des synonymes acceptables, mais cela n'est pas obligatoire.</li>
+</ul></div>
+Certaines règles peuvent faire des recommendations sur différents sujets. Dans cette situation, plusieurs types peuvent coexister, le type le plus présent est alors placé en premier et les "exceptions" identifiées.
+<br/>
+
 La colonne « Source » indique la source d’origine de la règle en question :
 <div class="wysiwyg"><ul>
   <li>SI : SNOMED Int., cette règle est dérivée du guide éditorial de l’édition internationale ;</li>
@@ -38,7 +47,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -46,6 +55,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <td>
                                         Les abréviations doivent être évitées, sauf si elles sont consacrées par l’usage.<br/>
                                         <u>Exemples</u> : Escherichia spp.</td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>08/04/19</td>
                                 </tr>
@@ -67,6 +77,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>COVID-19</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>25/11/24</td>
                                 </tr>
@@ -76,6 +87,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Les acronymes et sigles courants deviennent des noms communs. Ils s'écrivent alors en minuscules, se mettent au pluriel et entraînent parfois la formation de dérivés c’est-à-dire qu'ils se retrouvent parfois incorporés dans un nouveau terme.<br/>
                                         <u>Exemples</u> : laser, sidéen(ne)
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/07/19</td>
                                 </tr>
@@ -88,7 +100,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -97,6 +109,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Les articles doivent être évités, sauf exception notée dans l’une des règles ci-dessous.<br/>
                                         <u>Exemple</u> : herpès labial
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>02/07/19</td>
                                 </tr>
@@ -106,6 +119,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Aucun article ne doit figurer en début de description.<br/>
                                         <u>Exemple</u> : syndrome hépatorénal (et non « le syndrome hépatorénal »)
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -115,6 +129,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Une description mentionnant une structure corporelle unique doit utiliser l’article défini singulier ou la forme adjectivale si elle est pertinente.<br/>
                                         <u>Exemples</u> : anévrisme du cœur, arrêt cardiaque, brûlure électrique de la peau, inflammation de la bouche, inflammation buccale
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>28/06/21</td>
                                 </tr>
@@ -130,6 +145,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>MRI of all fingers of both hands</i> &rarr; IRM de tous les doigts des deux mains</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>ANS</td>
                                     <td>01/08/25</td>
                                 </tr>
@@ -139,19 +155,21 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Une description désignant un dispositif ou un produit ciblant une partie du corps ne doit pas contenir d'article.<br/>
                                         <u>Exemples</u> : prothèse de hanche, sonde nasale, pommade à lèvres
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
                                 <tr>
                                     <td>ar7</td>
                                     <td>
-                                        Les concepts contenant les mots <i>all</i> ou <i>both</i> doivent utiliser l’article défini pluriel en français.<br/>
+                                        Les concepts contenant les termes <i>all</i> ou <i>both</i> doivent utiliser l’article défini pluriel en français.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Congenital absence of all fingers</i> &rarr; absence congénitale de tous les doigts</li>
                                             <li><i>Lesion of both ears</i> &rarr; lésion des deux oreilles</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
@@ -164,7 +182,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -186,6 +204,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Le second cas est retenu pour la description des médicaments virtuels ou si l’absence de virgule engendre une lourdeur excessive.<br/><br/>
                                         <u>Exemple où la virgule est évitée dans le second cas</u> : <i>Anesthesia for renal transplant, recipient</i> &rarr; anesthésie du receveur pour greffe rénal.
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -195,6 +214,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         La barre oblique sans espace peut être utilisée dans l’expression « et/ou » qui traduit <i>and/or</i>.<br/>
                                         <u>Exemple</u> : <i>Structure of skin and/or mucous membrane</i> &rarr; peau et/ou muqueuse
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
@@ -208,12 +228,14 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>tube sous vide avec citrate de sodium 1/4 pour prélèvement sanguin</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>08/04/19</td>
                                 </tr>
                                 <tr>
                                     <td>se4</td>
                                     <td>La barre oblique utilisée pour représenter une alternative dans la description en anglais doit être remplacée par « ou ».</td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -223,6 +245,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Le double point collé sans espace peut être utilisé pour caractériser un sérotype ou un variant.<br/>
                                         <u>Exemple</u> : Escherichia coli de sérotype O103:H1
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>08/04/19</td>
                                 </tr>
@@ -234,6 +257,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Le double point encadré par deux espaces peut introduire le résultat d’une observation dans la hiérarchie <i>Clinical finding</i>.<br/>
                                         <u>Exemples</u> : sang occulte dans les selles : traces
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -247,18 +271,21 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>BPCO – bronchopneumopathie chronique obstructive</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
                                 <tr>
                                     <td>se8</td>
                                     <td>Le tiret simple (UTF8 0x2D) peut être utilisé comme trait d’union dans un mot composé.</td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
                                 <tr>
                                     <td>se9</td>
                                     <td>Les parenthèses doivent être utilisées pour encadrer la forme développée d’un acronyme ou d’un sigle au sein d’une description plus vaste. Les règles de typographie françaises doivent être respectées.</td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -268,6 +295,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Seul le caractère « ' » (UTF8 0x27) doit être utilisé pour l’apostrophe.<br/>
                                         <u>Exemple</u> : lipome de l'épaule
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/04/23</td>
                                 </tr>
@@ -277,6 +305,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Les descriptions ne doivent pas se terminer par un point (UTF8 0x2E), sauf exception.<br/>
                                         <u>Exemple d’exception</u> : Candida spp.
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>18/12/23</td>
                                 </tr>
@@ -289,7 +318,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                         <thead>
-                            <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                            <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                         </thead>
                         <tbody>
                             <tr>
@@ -302,6 +331,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <li><i>Alpha fetoprotein</i> &rarr; alpha-fœtoprotéine</li>
                                     </ul></div>
                                 </td>
+                                <td>Global</td>
                                 <td>FTCG</td>
                                 <td>05/06/23</td>
                             </tr>
@@ -314,7 +344,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -330,6 +360,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <br/>
                                         <u>Exemples</u> : fœtal, œsophage, nævus
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
@@ -342,7 +373,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -355,6 +386,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Lyme arthritis</i> &rarr; arthrite de Lyme</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT</td>
                                     <td>SI</td>
                                     <td>02/07/19</td>
                                 </tr>
@@ -367,7 +399,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -380,6 +412,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN – événement de la vie</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
@@ -396,6 +429,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN – chirurgie contre-indiquée</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>07/10/24</td>
                                 </tr>
@@ -413,6 +447,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>non-</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
@@ -422,6 +457,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Le trait d’union (UTF8 0x2D) coordonnant deux noms propres ou géographiques doit être conservé pour marquer l’égalité des deux noms.<br/>
                                         <u>Exemple</u> : <i>Epstein-Barr virus hepatitis</i> &rarr; hépatite causée par le virus d’Epstein-Barr
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
@@ -437,6 +473,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <br/>
                                         <u>Exemple d'exception</u> : <i>after fasting</i> &rarr; après un jeûne (pour éviter la confusion avec « jeune »)
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
@@ -449,7 +486,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -464,6 +501,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>Exception – sensible à la casse (CS) et seul le premier caractère est insensible à la casse (cI)</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>02/11/20</td>
                                 </tr>
@@ -478,6 +516,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Inpatient rehabilitation environment</i> &rarr; environnement de réadaptation pour patient(e)s hospitalisé(e)s</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>08/04/19</td>
                                 </tr>
@@ -504,12 +543,14 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>arthrite d'une main (car « arthrite manuelle » est incorrect)</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
                                 <tr>
                                     <td>ss4</td>
                                     <td>Les descriptions doivent respecter l'ordre conventionnel des mots en français.</td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -519,6 +560,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Le pluriel des mots d’origine latine doit suivre les règles de la nouvelle orthographe.<br/>
                                         <u>Exemple</u> : <i>Number of stimuli</i> &rarr; nombre de stimulus
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>08/04/19</td>
                                 </tr>
@@ -530,6 +572,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Des synonymes acceptables strictement au masculin ou au féminin peuvent être ajoutés pour des questions d'interface.<br/>
                                         Le point médiant n’est pas jugé suffisamment adopté par le groupe pour être utilisé.
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>23/10/25</td>
                                 </tr>
@@ -537,13 +580,14 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <td>ss7</td>
                                     <td>
                                         Si un concept fait référence à une entité provenant d’une autre hiérarchie (e.g. <i>Body structure</i>, <i>Substance</i>, <i>Organism</i>), les règles éditoriales de ladite hiérarchie doivent s’appliquer à cette entité.<br/><br/>
-                                        Si l’entité provient de <i>Body structure</i>, le mot « structure » ne doit pas être utilisé.<br/><br/>
+                                        Si l’entité provient de <i>Body structure</i>, le terme « structure » ne doit pas être utilisé.<br/><br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>fracture de l’ulna (et non « fracture de la structure osseuse de l’ulna »)</li>
                                             <li>pneumonie causée par Staphylococcus aureus</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -556,12 +600,13 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>sc1</td>
                                     <td>Les symboles mathématiques ou scientifiques doivent respecter la graphie définie par les normes internationales.</td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -571,6 +616,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Les chiffres doivent utiliser l’écriture arabe, sauf si une autre écriture est consacrée par l'usage médical.<br/>
                                         <u>Exemples</u> : vitamine K2, diabète de type 1, 17-hydroxycorticostéroïdes, malformation de Chiari type II, facteur VI, œsophagite de grade II
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/07/19</td>
                                 </tr>
@@ -580,6 +626,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         La virgule doit être utilisée comme séparateur décimal.<br/>
                                         <u>Exemple</u> : 1,5 mg
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/07/19</td>
                                 </tr>
@@ -589,6 +636,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         L’espace doit être utilisée comme séparateur des milliers.<br/>
                                         <u>Exemple</u> : 100 000 000
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>07/11/19</td>
                                 </tr>
@@ -603,6 +651,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>1_2 (pour 12)</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
@@ -616,6 +665,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>marge supérieure ou égale à 1 mm</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -632,6 +682,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <br/>
                                         Le symbole « + » peut apparaitre dans les synonymes acceptables de concepts de médicaments contenant plusieurs ingrédients.
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/11/20</td>
                                 </tr>
@@ -651,6 +702,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN – 5e maladie</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>07/10/24</td>
                                 </tr>
@@ -663,7 +715,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -676,6 +728,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>infection aigüe des voies urinaires</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>13/12/21</td>
                                 </tr>
@@ -697,6 +750,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Suturing</i> &rarr; fermeture par suture</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -711,6 +765,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Situation with explicit context</i> : injection de cortisone réalisée</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>13/12/21</td>
                                 </tr>
@@ -728,6 +783,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Hitting other person (finding)</i> &rarr; frapper une autre personne</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -740,7 +796,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -753,6 +809,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>Pa &rarr; pascal</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>08/04/19</td>
                                 </tr>
@@ -762,6 +819,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Les unités de température doivent être exprimées sous forme courte (e.g. °C).<br/>
                                         <u>Exemple</u> : <i>Fever greater than 38 Celsius</i> &rarr; fièvre supérieure à 38°C
                                     </td>
+                                    <td>Global</td>
                                     <td>ANS</td>
                                     <td>27/11/25</td>
                                 </tr>
@@ -771,6 +829,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Les degrés d’angle doivent être exprimés sous forme développée, sauf s’il n’y a aucune ambiguïté sur la nature de l’unité.<br/>
                                         <u>Exemple</u> : <i>Left axis deviation greater than -90 degrees by electrocardiogram</i> &rarr; déviation axiale gauche de plus de -90 degrés à l'électrocardiogramme
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>02/07/19</td>
                                 </tr>
@@ -787,6 +846,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <br/>
                                         UCUM (<a href="https://ucum.org/ucum.html">https://ucum.org/ucum.html</a>) sert de référence pour les unités. Les codes les plus couramment utilisés sont disponibles ici : <a href="http://download.hl7.de/documents/ucum/ucumdata.html">http://download.hl7.de/documents/ucum/ucumdata.html</a>.
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>27/06/22</td>
                                 </tr>
@@ -796,15 +856,17 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Dans la représentation d’une quantité, une espace doit séparer la valeur et l’unité de mesure.<br/>
                                         <u>Exemple</u> : 0,75 g
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
                                 <tr>
                                     <td>um6</td>
                                     <td>
-                                        Le mot <i>percent</i> et le symbole « % » doivent être traduits par le symbole « % ». Un espace sépare la valeur et le symbole.<br/>
+                                        Le terme <i>percent</i> et le symbole « % » doivent être traduits par le symbole « % ». Un espace sépare la valeur et le symbole.<br/>
                                         <u>Exemple</u> : 75 %
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -818,6 +880,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>10^3 (dix puissance trois)</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -827,6 +890,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         La lettre μ, représentant le suffixe micro- dans une unité, doit être remplacée par la lettre « u ».<br/>
                                         <u>Exemple</u> : umol/L (micromole par litre)
                                     </td>
+                                    <td>Global</td>
                                     <td>SI</td>
                                     <td>02/07/19</td>
                                 </tr>
@@ -844,13 +908,13 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>co2</td>
                                     <td>
-                                        Le mot <i>finding</i> doit être traduit par « constatation » sauf si ce mot est redondant avec le reste de la description.<br/>
+                                        Le terme <i>finding</i> doit être traduit par « constatation » sauf si ce terme est redondant avec le reste de la description.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Neurological finding</i> &rarr; constatation neurologique</li>
@@ -858,6 +922,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Finding of abnormal level of heavy metals in blood</i> &rarr; taux de métal lourd sanguin en dehors de l'intervalle de référence</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -872,6 +937,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN (forme courte) : groupe A+</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>07/11/19</td>
                                 </tr>
@@ -903,6 +969,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         </ul></div>
                                         <br/>
                                     </td>
+                                    <td>PT + SYN</td>
                                     <td>ANS</td>
                                     <td>01/08/25</td>
                                 </tr>
@@ -915,13 +982,13 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>pa2</td>
                                     <td>
-                                        Le mot <i>disorder</i> doit être traduit dans les termes préférés par :<br/><br/>
+                                        Le terme <i>disorder</i> doit être traduit dans les termes préférés par :<br/><br/>
                                         1. <b>trouble</b> : si l’objet est une fonction, un métabolisme, a trait au psychisme, au comportement ou au développement.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
@@ -942,17 +1009,19 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         </ul></div><br/>
                                         5. <b>maladie</b> : pour les concepts les plus généraux ne spécifiant pas l’objet de la maladie.<br/>
                                         <u>Exemple</u> : <i>Iatrogenic disorder</i> &rarr; maladie iatrogénique<br/><br/>
-                                        Le mot <i>disorder</i> peut être absorbé par la traduction française d’un groupe de mots contenant <i>disorder</i><br/>
+                                        Le terme <i>disorder</i> peut être absorbé par la traduction française d’une expression contenant <i>disorder</i><br/>
                                         <u>Exemple</u> : <i>Disorder of lumbosacral intervertebral disc</i> &rarr; discopathie lombaire et lombo-sacrée<br/><br/>
-                                        Bien que <i>disease</i> et <i>disorder</i> ne soient pas strictement équivalents en anglais (<i>disorder</i> étant plus générique que <i>disease</i>), certains concepts possèdent deux descriptions anglaises employant chacune l’un ou l’autre de ces deux mots. Les règles pa2 et pa5 se concentrent sur les termes préférés mais n’interdisent pas l’ajout d’un synonyme acceptable suivant l’une ou l’autre de ces deux règles
+                                        Bien que <i>disease</i> et <i>disorder</i> ne soient pas strictement équivalents en anglais (<i>disorder</i> étant plus générique que <i>disease</i>), certains concepts possèdent deux descriptions anglaises employant chacune l’un ou l’autre de ces deux termes. Les règles pa2 et pa5 se concentrent sur les termes préférés mais n’interdisent pas l’ajout d’un synonyme acceptable suivant l’une ou l’autre de ces deux règles
                                     </td>
+                                    <td>Global<br/>PT + Syn (section 4)</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
                                 <tr>
                                     <td>pa3</td>
                                     <td>
-                                        Le mot <i>injury</i> dans les descendants de 417746004 |Traumatic injury| doit être traduit par :
+                                        <center><p style="color:red;"><b>DISCUSSION EN COURS AU TUG</b></p></center><br/>
+                                        Le terme <i>injury</i> dans les descendants de 417746004 |Traumatic injury| doit être traduit par :
                                         <div class="wysiwyg"><ul>
                                             <li>« blessure » si la peau est impliquée (implicitement ou explicitement) ;</li>
                                             <li>« traumatisme » ou « lésion traumatique » dans le cas contraire.</li>
@@ -965,6 +1034,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Crush injury of liver</i> &rarr; écrasement du foie</li>
                                         </ul></div>
                                     </td>
+                                    <td></td>
                                     <td>FTCG</td>
                                     <td>27/05/24</td>
                                 </tr>
@@ -978,6 +1048,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Pressure injury of ankle</i> &rarr; escarre de la cheville</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>19/08/24</td>
                                 </tr>
@@ -985,9 +1056,9 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <td>pa4</td>
                                     <td>
                                         <div class="wysiwyg"><ul>
-                                            <li>Le mot <i>epilepsy</i> doit être traduit par « épilepsie » ;</li>
-                                            <li>Le mot <i>seizure</i> doit être traduit par « crise » ou « convulsion » / « convulsif » si la description ne suffit pas à établir le contexte du système nerveux (*) ;</li>
-                                            <li>Le mot <i>convulsion</i> doit être traduit par « convulsion ».</li>
+                                            <li>Le terme <i>epilepsy</i> doit être traduit par « épilepsie » ;</li>
+                                            <li>Le terme <i>seizure</i> doit être traduit par « crise » ou « convulsion » / « convulsif » si la description ne suffit pas à établir le contexte du système nerveux (*) ;</li>
+                                            <li>Le terme <i>convulsion</i> doit être traduit par « convulsion ».</li>
                                         </ul></div>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
@@ -998,40 +1069,43 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         </ul></div><br/>
                                         (*) « crise » apparait aussi dans la traduction de <i>crisis</i>, beaucoup plus général et non spécifique au système nerveux (e.g. <i>Pain crisis</i> &rarr; crise douloureuse).
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
                                 <tr>
                                     <td>pa5</td>
                                     <td>
-                                        Le mot <i>disease</i> doit être traduit dans les termes préférés par « maladie » sauf si un terme plus pertinent existe.<br/>
+                                        Le terme <i>disease</i> doit être traduit dans les termes préférés par « maladie » sauf si un terme plus pertinent existe.<br/>
                                         <u>Exemples</u> : <i>Heart disease</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : cardiopathie ;</li>
                                             <li>SYN : maladie cardiaque</li>
                                         </ul></div><br/>
-                                        Bien que <i>disease</i> et <i>disorder</i> ne soient pas strictement équivalents en anglais (<i>disorder</i> étant plus générique que <i>disease</i>), certains concepts possèdent deux descriptions anglaises employant chacune l’un de ces deux mots. Les règles pa2 et pa5 se concentrent sur les termes préférés mais n’interdisent pas l’ajout d’un synonyme acceptable suivant l’une ou l’autre de ces deux règles.
+                                        Bien que <i>disease</i> et <i>disorder</i> ne soient pas strictement équivalents en anglais (<i>disorder</i> étant plus générique que <i>disease</i>), certains concepts possèdent deux descriptions anglaises employant chacune l’un de ces deux termes. Les règles pa2 et pa5 se concentrent sur les termes préférés mais n’interdisent pas l’ajout d’un synonyme acceptable suivant l’une ou l’autre de ces deux règles.
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>23/01/23</td>
                                 </tr>
                                 <tr>
                                     <td>pa6</td>
                                     <td>
-                                        Le mot <i>impairment</i> doit être traduit dans les termes préférés par « atteinte » sauf si un terme plus pertinent existe.<br/>
+                                        Le terme <i>impairment</i> doit être traduit dans les termes préférés par « atteinte » sauf si un terme plus pertinent existe.<br/>
                                         <u>Exemples</u> : <i>Visual impairment</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : malvoyance ;</li>
                                             <li>SYN : atteinte de la vision</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>05/04/23</td>
                                 </tr>
                                 <tr>
                                     <td>pa7</td>
                                     <td>
-                                        Le mot <i>primary</i> doit être traduit par :
+                                        Le terme <i>primary</i> doit être traduit par :
                                         <div class="wysiwyg"><ul>
                                             <li>« primitif » pour une pathologie se produisant d’emblée sans cause décelable (étiologie) ;</li>
                                             <li>« primaire » pour qualifier une manifestation pathologique apparaissant en premier (début de processus pathologique).</li>
@@ -1048,6 +1122,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN : douleur viscérale primitive chronique</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>18/12/23</td>
                                 </tr>
@@ -1055,8 +1130,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <td>pa8</td>
                                     <td>
                                         <div class="wysiwyg"><ol>
-                                            <li>Le mot <i>chilblain</i> doit être traduit par « engelure » ;</li>
-                                            <li>Le mot <i>frostbite</i> doit être traduit par « gelure » ;</li>
+                                            <li>Le terme <i>chilblain</i> doit être traduit par « engelure » ;</li>
+                                            <li>Le terme <i>frostbite</i> doit être traduit par « gelure » ;</li>
                                             <li>L'expression <i>superficial frostbite</i> doit être traduit par « gelure superficielle ».</li>
                                         </ol></div><br/>
                                         <u>Exemples</u> :
@@ -1066,6 +1141,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Superficial frostbite of thorax</i> &rarr; gelure superficielle thoracique</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>18/12/23</td>
                                 </tr>
@@ -1091,7 +1167,6 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>pa10</td>
                                     <td>
-                                        <center><p style="color:red;"><b>REFONTE EN COURS PAR LE FTCG</b></p></center><br/>
                                         <div class="wysiwyg"><ol>
                                             <li><i>vapors</i> doit être traduit par « vapeurs » ;</li>
                                             <li><i>fumes</i> doit être traduit par « émanation » ou « fumées ».</li>
@@ -1102,6 +1177,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Bronchitis caused by chemical fumes</i> &rarr; bronchite causée par des émanations chimiques</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>27/05/24</td>
                                 </tr>
@@ -1111,6 +1187,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         Les maladies rares répertoriées par Orphanet utilisent les libellés définis par Orphanet.<br/>
                                         Des synonymes acceptables n’utilisant pas les libellés d’Orphanet peuvent être ajoutés.
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>10/02/25</td>
                                 </tr>
@@ -1123,7 +1200,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -1136,6 +1213,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>« [X] <i>cytologic material</i> » doit être traduit par « matériel cytologique [X] » (e.g. <i>Cervix cytologic material</i> &rarr; matériel cytologique du col utérin »)</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>05/06/23</td>
                                 </tr>
@@ -1149,6 +1227,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Intravenous infusion fluid sample</i> &rarr; échantillon de liquide de perfusion intraveineuse</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>18/10/21</td>
                                 </tr>
@@ -1164,6 +1243,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Breast fine needle aspirate sample</i> &rarr; échantillon du sein prélevé par biopsie à l'aiguille fine</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>18/09/23</td>
                                 </tr>
@@ -1182,6 +1262,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Specimen from abscess</i> &rarr; échantillon d'abcès</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>18/10/21</td>
                                 </tr>
@@ -1194,7 +1275,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -1211,6 +1292,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN : milieu côtier</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT + SYN</td>
                                     <td>ANS</td>
                                     <td>21/06/24</td>
                                 </tr>
@@ -1224,6 +1306,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>environnement communautaire</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>ANS</td>
                                     <td>21/06/24</td>
                                 </tr>
@@ -1233,10 +1316,11 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         L'expression « <i>Location within</i> [X] <i>premises</i> » doit être traduite dans les termes préférés par « localisation sur les lieux [X] » sauf si un terme plus pertinent existe.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
-                                            <li><i>Location within general practice premises</i> &rarr; localisation sur les lieux d'un cabinet de médecine générale</li>
-                                            <li><i>Location within secure unit</i> &rarr; localisation dans une unité de soins sécurisée</li>
+                                            <li>Cas général : <i>Location within general practice premises</i> &rarr; localisation sur les lieux d'un cabinet de médecine générale</li>
+                                            <li>Exception : <i>Location within secure unit</i> &rarr; localisation dans une unité de soins sécurisée</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT</td>
                                     <td>ANS</td>
                                     <td>21/06/24</td>
                                 </tr>
@@ -1246,6 +1330,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         L'expression « <i>Inpatient</i> [X] » doit être traduite par « pour patient(e) hospitalisé(e) ».<br/>
                                         <u>Exemple</u> : <i>Inpatient environment</i> &rarr; environnement de soins pour patient(e) hospitalisé(e)
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>07/10/24</td>
                                 </tr>
@@ -1263,6 +1348,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Outpatient freestanding dialysis treatment facility</i> &rarr; centre de dialyse autonome ambulatoire</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>07/10/24</td>
                                 </tr>
@@ -1271,7 +1357,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <td>
                                         <div class="wysiwyg"><ul>
                                             <li>L'expression « <i>Hospital-based outpatient</i> [X] <i>clinic</i> » doit être traduite par « service hospitalier ambulatoire » ;</li>
-                                            <li>Les concepts du type « [X] <i>clinic</i> » doit utiliser le mot « clinique ».</li>
+                                            <li>L'expression « [X] <i>clinic</i> » doit être traduite par le terme « clinique ».</li>
                                         </ul></div><br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
@@ -1279,6 +1365,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Hospital-based outpatient neurology clinic</i> &rarr; service hospitalier ambulatoire de neurologie</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>ANS</td>
                                     <td>21/06/24</td>
                                 </tr>
@@ -1291,7 +1378,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -1305,6 +1392,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN : République française</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT + SYN</td>
                                     <td>FTCG</td>
                                     <td>25/11/24</td>
                                 </tr>
@@ -1318,6 +1406,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>comtés d'Angleterre</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>25/11/24</td>
                                 </tr>
@@ -1330,7 +1419,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -1339,6 +1428,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         L'expression « <i>Evacuated</i> [substance] <i>collection tube</i> [caractéristique] » doit être traduite dans les termes préférés par « tube sous vide [caractéristiques] pour prélèvement [substance] ».<br/>
                                         <u>Exemple</u> : <i>Evacuated blood collection tube, K2EDTA/aprotinin</i> &rarr; tube sous vide EDTA avec anticoagulant irréversible-K2/aprotinine pour prélèvement sanguin
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>07/11/19</td>
                                 </tr>
@@ -1348,6 +1438,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         L'expression « <i>Evacuated</i> [substance] <i>specimen container</i> [caractéristiques] » doit être traduite dans les termes préférés par « support sous vide [caractéristiques] pour prélèvement [substance] ».<br/>
                                         <u>Exemple</u> : <i>Evacuated urine specimen container, boric acid (H3BO3)</i> &rarr; support sous vide boraté pour prélèvement urinaire
                                     </td>
+                                    <td>PT</td>
                                     <td>FTCG</td>
                                     <td>07/11/19</td>
                                 </tr>
@@ -1366,6 +1457,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN : stent coronarien enduit d’anticorps</li>
                                         </ul></div>
                                     </td>
+                                    <td>PT + SYN</td>
                                     <td>FTCG</td>
                                     <td>18/09/23</td>
                                 </tr>
@@ -1378,14 +1470,15 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>ho1</td>
                                     <td>
-                                        Pour cette section, veuillez aussi vous référez à la page Organism Naming Conventions du guide éditorial international : <a href="https://docs.snomed.org/snomed-ct-specifications/snomed-ct-editorial-guide/readme/authoring/domain-specific-modeling/organism/organism-naming-conventions">https://docs.snomed.org/snomed-ct-specifications/snomed-ct-editorial-guide/readme/authoring/domain-specific-modeling/organism/organism-naming-conventions</a>
+                                        Pour cette section, veuillez vous référez à la page Organism Naming Conventions du guide éditorial international : <a href="https://docs.snomed.org/snomed-ct-specifications/snomed-ct-editorial-guide/readme/authoring/domain-specific-modeling/organism/organism-naming-conventions">https://docs.snomed.org/snomed-ct-specifications/snomed-ct-editorial-guide/readme/authoring/domain-specific-modeling/organism/organism-naming-conventions</a>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>04/04/22</td>
                                 </tr>
@@ -1399,7 +1492,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN : Coronaviridae</li>
                                         </ul></div>
                                     </td>
-	                                <td>SI</td>
+	                                <td>PT</td>
+                                    <td>SI</td>
 	                                <td>30/05/22</td>
                                 </tr>
                                 <tr>
@@ -1411,7 +1505,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Anaerobic Gram-negative bacillus</i> &rarr; bacille Gram négatif anaérobie</li>
                                         </ul></div>
                                     </td>	
-	                                <td>FTCG</td>
+	                                <td>Global</td>
+                                    <td>FTCG</td>
 	                                <td>27/06/22</td>
                                 </tr>
                                 <tr>
@@ -1428,7 +1523,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN : Abiotrophia spp.</li>
                                         </ul></div>
                                     </td>
-	                                <td>FTCG</td>
+	                                <td>PT + SYN</td>
+                                    <td>FTCG</td>
 	                                <td>10/02/25</td>
                                 </tr>
                                 <tr>
@@ -1447,7 +1543,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN : Acetobacter aceti ssp. Liquefaciens</li>
                                         </ul></div>
                                     </td>
-	                                <td>FTCG</td>
+	                                <td>PT + SYN</td>
+                                    <td>FTCG</td>
 	                                <td>10/02/25</td>
                                 </tr>
                                 <tr>
@@ -1464,7 +1561,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN : Salmonella Ohio var. 14+</li>
                                         </ul></div>
                                     </td>
-	                                <td>FTCG</td>
+	                                <td>PT + SYN</td>
+                                    <td>FTCG</td>
 	                                <td>10/02/25</td>
                                 </tr>
                                 <tr>
@@ -1476,8 +1574,9 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Afipia genospecies 1</i> &rarr; Afipia génoespèce 1</li>
                                             <li><i>Proteus genomospecies 4</i> &rarr; Proteus génoespèce 4</li>
                                         </ul></div>
-                                  </td>
-	                                <td>FTCG</td>
+                                    </td>
+	                                <td>Global</td>
+                                    <td>FTCG</td>
 	                                <td>10/02/25</td>
                                 </tr>
                                 <tr>
@@ -1490,7 +1589,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Aspergillus species, not Aspergillus fumigatus and not Aspergillus niger and not Aspergillus flavus</i> &rarr; Aspergillus non Aspergillus flavus, non Aspergillus fumigatus et non Aspergillus niger</li>
                                         </ul></div>
                                     </td>
-	                                <td>FTCG</td>
+	                                <td>Global</td>
+                                    <td>FTCG</td>
 	                                <td>10/02/25</td>
                                 </tr>
                                 <tr>
@@ -1499,7 +1599,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         L'expression « <i>CDC</i> [X] » ou « <i>Centers for Disease Control and Prevention</i> [X] » doit être traduite par « [X] CDC ».<br/>
                                         <u>Exemple</u> : <i>CDC Alcaligenes-like group 1</i> &rarr; Alcaligenes-like groupe 1 CDC
                                     </td>
-	                                <td>FTCG</td>
+	                                <td>Global</td>
+                                    <td>FTCG</td>
 	                                <td>10/02/25</td>
                                 </tr>
                                 <tr>
@@ -1508,7 +1609,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         L'expression « [substance] <i>producing</i> [organisme] » doit être traduite par « productrice de » ou « producteur de ».<br/>
                                         <u>Exemple</u> : <i>Carbapenemase-producing bacteria</i> &rarr; bactérie productrice de carbapénémase.
                                     </td>
-	                                <td>FTCG</td>
+	                                <td>Global</td>
+                                    <td>FTCG</td>
 	                                <td>10/02/25</td>
                                 </tr>
                             </tbody>
@@ -1520,7 +1622,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                         <thead>
-                            <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                            <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                         </thead>
                         <tbody>
                             <tr>
@@ -1542,7 +1644,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </ol></div><br/>
                                     Cette règle peut être ignorée si elle créée une redondance au sein de la description ou si un terme plus pertinent existe.
                                     <br/><br/>
-                                    Le mot <i>operation</i> est utilisé par la SNOMED CT pour représenter des interventions chirurgicales. Les concepts du type « [X] <i>operation</i> » « <i>Operation</i> [X] » doivent suivre le patron des interventions chirurgicales décrit ci-dessus.<br/><br/>
+                                    Le terme <i>operation</i> est utilisé par la SNOMED CT pour représenter des interventions chirurgicales. Les concepts du type « [X] <i>operation</i> » « <i>Operation</i> [X] » doivent suivre le patron des interventions chirurgicales décrit ci-dessus.<br/><br/>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ol>
                                         <li><i>Neuromuscular procedure</i> :</li>
@@ -1559,13 +1661,15 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </ol></div><br/>
                                     Pour les procédures obstétriques, le choix du patron dépend de l’acte décrit par le concept. Il doit être omis s’il est redondant avec le reste de la description.
                                 </td>
-	                            <td>FTCG</td>
+	                            <td>PT + SYN</td>
+                                <td>FTCG</td>
 	                            <td>23/11/20</td>
                             </tr>
                             <tr>
 	                            <td>pr3</td>
-	                            <td>Le mot <i>consultation</i> se traduit par « consultation ».</td>
-	                        	<td>FTCG</td>
+	                            <td>Le terme <i>consultation</i> se traduit par « consultation ».</td>
+	                        	<td>Global</td>
+                                <td>FTCG</td>
 	                        	<td>23/11/20</td>
                             </tr>
                             <tr>
@@ -1575,11 +1679,12 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     L'expression <i>Magnet extraction</i> doit être traduite dans les termes préférés par « extraction avec un aimant ».<br/>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ul>
-                                        <li>retrait d'un corps étranger d'un tissu mou</li>
-                                        <li>extraction avec un aimant d’un corps étranger de la cornée</li>
+                                        <li><i>Removal of foreign body from soft tissue</i> &rarr; retrait d'un corps étranger d'un tissu mou</li>
+                                        <li><i>Magnet extraction of foreign body from cornea</i> &rarr; extraction avec un aimant d’un corps étranger de la cornée</li>
                                     </ul></div>
                                 </td>
-	                            <td>FTCG</td>
+	                            <td>PT</td>
+                                <td>FTCG</td>
 	                            <td>28/09/22</td>
                             </tr>
                             <tr>
@@ -1592,7 +1697,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <li>retrait d’une sonde urinaire</li>
                                     </ul></div>
                                 </td>
-	                            <td>FTCG</td>
+	                            <td>Global</td>
+                                <td>FTCG</td>
 	                            <td>28/09/22</td>
                             </tr>
                             <tr>
@@ -1606,7 +1712,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </ul></div><br/>
                                     <u>Exemples</u><i>Total nephrectomy</i> &rarr; néphrectomie totale ; excision totale du rein ; exérèse du rein
                                 </td>
-	                            <td>FTCG</td>
+	                            <td>PT + SYN</td>
+                                <td>FTCG</td>
 	                            <td>28/09/22</td>
                             </tr>
                             <tr>
@@ -1621,21 +1728,23 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     L’adjectif « partielle » est ajouté à la résection pour éviter un conflit de traduction avec un concept parent employant l’expression « resection of [X] ».<br/><br/>
                                     <u>Exemples</u><i>Partial nephrectomy</i> &rarr; néphrectomie partielle ; résection partielle du rein ; excision partielle du rein
                                 </td>
-                            	<td>FTCG</td>
+                            	<td>PT + SYN</td>
+                                <td>FTCG</td>
                             	<td>28/09/22</td>
                             </tr>
                             <tr>
 	                            <td>pr8</td>
 	                            <td>
-                                    Les concepts représentant l’amputation chirurgicale d’une topographie normale doivent avoir un terme préféré contenant le mot « amputation ».<br/><br/>
-                                    Dans un contexte périodontal, le terme préféré doit utiliser le terme « extraction ».<br/>
+                                    Les concepts représentant l’amputation chirurgicale d’une topographie normale doivent avoir un terme préféré contenant le terme « amputation ».<br/><br/>
+                                    Dans un contexte périodontal, le terme préféré doit utiliser le terme « extraction » à la place de « amputation ».<br/>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ul>
                                         <li>amputation du membre inférieur</li>
                                         <li>extraction de la racine d’une dent</li>
                                     </ul></div>
                                 </td>
-                            	<td>FTCG</td>
+                            	<td>PT</td>
+                                <td>FTCG</td>
                             	<td>28/09/22</td>
                             </tr>
                             <tr>
@@ -1652,7 +1761,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <li>SYN : biopsie excisionnelle d’une masse mammaire</li>
                                     </ul></div>
                                 </td>
-                            	<td>FTCG</td>
+                            	<td>PT + SYN</td>
+                                <td>FTCG</td>
                             	<td>28/09/22</td>
                             </tr>
                             <tr>
@@ -1665,7 +1775,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <li>biopsie incisionnelle du testicule</li>
                                     </ul></div>
                                 </td>
-                            	<td>FTCG</td>
+                            	<td>Global</td>
+                                <td>FTCG</td>
                             	<td>28/09/22</td>
                             </tr>
                             <tr>
@@ -1690,7 +1801,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             </ul>
                                     </ol></div>
                                 </td>
-                            	<td>SI</td>
+                            	<td>PT + SYN</td>
+                                <td>SI</td>
                             	<td>18/12/23</td>
                             </tr>
                             <tr>
@@ -1709,13 +1821,14 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <li>SYN : marquage de la peau sous guidage échographique</li>
                                     </ul></div>
                                 </td>
-                            	<td>FTCG</td>
+                            	<td>PT + SYN</td>
+                                <td>FTCG</td>
                             	<td>18/12/23</td>
                             </tr>
                             <tr>
 	                            <td>pr14</td>
 	                            <td>
-                                    Les concepts contenant <i>fluoroscopy</i> ou <i>fluoroscopic</i> doivent avoir un terme préféré et au moins un synonyme acceptable contenant les mots suivants :
+                                    Les concepts contenant <i>fluoroscopy</i> ou <i>fluoroscopic</i> doivent avoir un terme préféré et au moins un synonyme acceptable de la forme suivante :
                                     <div class="wysiwyg"><ol>
                                         <li>PT : « radioscopie » ou « radioscopique »</li>
                                         <li>SYN : « fluoroscopie » ou « fluoroscopique »</li>
@@ -1735,20 +1848,22 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         </ul>
                                     </ol></div>
                                 </td>
-                            	<td>FTCG</td>
+                            	<td>PT + SYN</td>
+                                <td>FTCG</td>
                             	<td>18/12/23</td>
                             </tr>
                             <tr>
 	                            <td>pr15-FR</td>
 	                            <td>
-                                    Le mot <i>education</i> doit être traduit par "éducation".<br/>
+                                    Le terme <i>education</i> et ses formes dérivées doivent être traduits par "éducation".<br/>
                                     <u>Exemples</u> :
                                     <div class="wysiwyg"><ol>
                                         <li><i>Amputation education</i> &rarr; éducation concernant l'amputation</li>
                                         <li><i>Education about hepatitis</i> &rarr; éducation concernant l'hépatite</li>
                                     </ol></div>
                                 </td>
-                            	<td>ANS</td>
+                            	<td>Global</td>
+                                <td>ANS</td>
                             	<td>23/10/25</td>
                             </tr>
                             </tbody>
@@ -1760,7 +1875,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -1768,14 +1883,15 @@ La colonne « Source » indique la source d’origine de la règle en question :
 	                                <td>
                                         L'expression « <i>product containing</i> [substance] » doit être traduite dans les termes préférés par « produit contenant ».<br/><br/>
                                         S’il y a plusieurs substances, elles doivent être listées sans article, dans l’ordre alphabétique et séparé par « et ». Un synonyme acceptable peut remplacer le « et » par un « + ».<br/><br/>
-                                        Le mot « produit » peut être remplacé par un terme plus pertinent (e.g. « vaccin contenant… »).<br/><br/>
+                                        Le terme « produit » peut être remplacé par un terme plus pertinent (e.g. « vaccin contenant… »).<br/><br/>
                                         <u>Exemple</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>PT : produit contenant amoxicilline et acide clavulanique</li>
                                             <li>SYN : produit contenant amoxicilline + acide clavulanique</li>
                                         </ul></div>
                                     </td>
-	                                <td>SI</td>
+	                                <td>PT</td>
+                                    <td>SI</td>
 	                                <td>05/06/23</td>
                                 </tr>
                                 <tr>
@@ -1783,14 +1899,15 @@ La colonne « Source » indique la source d’origine de la règle en question :
 	                                <td>
                                         L'expression « <i>product containing only</i> [substance] » doit être traduite dans les termes préférés par « produit contenant uniquement ».<br/><br/>
                                         S’il y a plusieurs substances, elles doivent être listées sans article, dans l’ordre alphabétique et séparé par « et ». Un synonyme acceptable peut remplacer le « et » par un « + ».<br/><br/>
-                                        Le mot « produit » peut être remplacé par un terme plus pertinent (e.g. « vaccin contenant… »).<br/><br/>
+                                        Le terme « produit » peut être remplacé par un terme plus pertinent (e.g. « vaccin contenant… »).<br/><br/>
                                         <u>Exemple</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>produit contenant uniquement paracétamol et codéine et caféine</li>
                                             <li>produit contenant uniquement paracétamol + codéine + caféine</li>
                                         </ul></div>
                                     </td>
-                                	<td>SI</td>
+                                	<td>PT</td>
+                                    <td>SI</td>
                                 	<td>05/06/23</td>
                                 </tr>
                                 <tr>
@@ -1804,7 +1921,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN : produit contenant précisément maléate d'énalapril 5 mg par comprimé oral</li>
                                         </ul></div>
                                     </td>
-                                	<td>SI</td>
+                                	<td>PT</td>
+                                    <td>SI</td>
                                 	<td>05/06/23</td>
                                 </tr>
                                 <tr>
@@ -1813,7 +1931,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         La caractéristique de libération de la forme manufacturée ne doit pas être reprise dans le terme préféré lorsque sa valeur est « libération conventionnelle (ou classique) », car il s’agit de la valeur par défaut de libération d’une forme pharmaceutique.<br/>
                                         <u>Exemple</u> : maléate de diltiazem 219 mg et maléate d'énalapril 5 mg, comprimé oral
                                     </td>
-	                                <td>SI</td>
+	                                <td>PT</td>
+                                    <td>SI</td>
 	                                <td>23/11/20</td>
                                 </tr>
                             </tbody>
@@ -1825,13 +1944,13 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>hs1</td>
                                     <td>
-                                        Dans la hiérarchie des situations avec contexte explicite, le mot <i>history</i> doit être traduit par « antécédent » au singulier par défaut.<br/>
+                                        Dans la hiérarchie des situations avec contexte explicite, le terme <i>history</i> doit être traduit par « antécédent » au singulier par défaut.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li>antécédent familial d’asthme</li>
@@ -1839,6 +1958,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>antécédents familiaux inconnus (le pluriel permet d’éviter une mauvaise interprétation du sens)</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>10/02/25</td>
                                 </tr>
@@ -1851,20 +1971,21 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
 	                                <td>bs2</td>
 	                                <td>
-                                        Les concepts représentant une structure articulaire doivent avoir un terme préféré contenant le mot « articulation ».<br/>
+                                        Les concepts représentant une structure articulaire doivent avoir un terme préféré contenant le terme « articulation ».<br/>
                                         <u>Exemple</u> : <i>Lateral collateral ligament of knee joint</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : ligament collatéral latéral de l'articulation du genou</li>
                                             <li>SYN : ligament collatéral latéral du genou</li>
                                         </ul></div>
                                     </td>
-	                                <td>FTCG</td>
+	                                <td>PT</td>
+                                    <td>FTCG</td>
 	                                <td>18/10/21</td>
                                 </tr>
                                 <tr>
@@ -1878,78 +1999,95 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <div class="wysiwyg"><ul>
                                             <li>PT : « [X] »</li>
                                             <li>SYN : « [X], structure »</li>
-                                        </ul></div><br/>
+                                        </ul></div>
+                                        Exception : Les concepts du type « Structure [X, forme adjectivale] » doivent être traduits par « structure [X, forme adjectivale] ». 
+                                        <br/><br/>
                                         Les descriptions des concepts Entire doivent contenir « entier » ou « entière ».<br/><br/>
                                         Les descriptions des concepts Part doivent contenir « partie ».<br/><br/>
-                                        <u>Exemple</u> :<br/>
-                                        <img src="../assets/images/sep_exemple.png"/>
+                                        <u>Exemples</u> :<br/>
+                                        <div class="wysiwyg"><ul>
+                                            <li><i>Structure of ear</i></li>
+                                                <ul>
+                                                    <li>PT: oreille</li>
+                                                    <li>SYN: oreille, structure</li>
+                                                </ul>
+                                            <li><i>Venous structure</i> &rarr; PT: structure veineuse</li>
+                                            <li><i>Entire ear</i> &rarr; PT: oreille entière</li>
+                                            <li><i>Part of ear</i> &rarr; PT: partie de l'oreille</li>
+                                        </ul></div>
                                     </td>
-	                                <td>SI</td>
+	                                <td>Global<br/>PT + SYN (Structure)</td>
+                                    <td>SI</td>
 	                                <td>24/01/22</td>
                                 </tr>
                                 <tr>
 	                                <td>bs4</td>
 	                                <td>Les descendants de 91723000 |Anatomical structure (body structure)| doivent avoir un terme préféré suivant la nouvelle nomenclature Terminologia Anatomica. Un synonyme acceptable suivant l’ancienne nomenclature Nomina Anatomica peut être ajouté.</td>
-                                	<td>FTCG</td>
+                                	<td>PT</td>
+                                    <td>FTCG</td>
                                 	<td>24/01/22</td>
                                 </tr>
                                 <tr>
 	                                <td>bs5</td>
 	                                <td>
-                                        Le mot <i>region</i> doit être traduit dans les termes préférés par « région ».<br/>
+                                        Le terme <i>region</i> doit être traduit dans les termes préférés par « région ».<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
                                             <li><i>Hip region structure</i> &rarr; région de la hanche</li>
                                             <li><i>Sacral region</i> &rarr; région sacrale</li>
                                         </ul></div>
                                     </td>
-                                	<td>FTCG</td>
+                                	<td>PT</td>
+                                    <td>FTCG</td>
                                 	<td>12/12/22</td>
                                 </tr>
                                 <tr>
 	                                <td>bs6</td>
 	                                <td>
-                                        Les mots <i>zone</i> ou <i>area</i> doivent être traduits dans les termes préférés par l'un des termes suivants « zone », « surface », « aire » ou par un terme plus pertinent s'il existe.<br/><br/>
-                                        Dans le cas d'un concept impacté par les règles bs5 et bs6, un compromis entre les deux termes à ajouté peut être trouvé pour simoplifier le terme préféré et assurer sa pertinence.<br/><br/>
+                                        Les termes <i>zone</i> ou <i>area</i> doivent être traduits dans les termes préférés par l'un des termes suivants « zone », « surface », « aire » ou par un terme plus pertinent s'il existe.<br/><br/>
+                                        Dans le cas d'un concept impacté par les règles bs5 et bs6, un compromis entre les deux termes à ajouter peut être trouvé pour simplifier le terme préféré et assurer sa pertinence.<br/><br/>
                                         <u>Exemple</u> : <i>Skin structure of dorsal area of hand</i> &rarr; peau de la zone dorsale de la main
                                     </td>
-                                	<td>FTCG</td>
+                                	<td>PT</td>
+                                    <td>FTCG</td>
                                 	<td>12/12/22</td>
                                 </tr>
                                 <tr>
 	                                <td>bs7</td>
 	                                <td>
-                                        Le mot <i>proper</i> doit être traduit dans les termes préférés par « propre ».<br/><br/>
+                                        Le terme <i>proper</i> doit être traduit dans les termes préférés par « propre ».<br/><br/>
                                         <u>Exception 1</u> : Si l’utilisation de « propre » provoque un risque de confusion avec l’état de propreté, <i>proper</i> doit être traduit par « proprement dit » ou « proprement dite ».<br/><br/>
                                         <u>Exception 2</u> : Si un terme plus pertinent existe, il peut remplacer « propre ».
                                     </td>
-                                	<td>FTCG</td>
+                                	<td>PT</td>
+                                    <td>FTCG</td>
                                 	<td>05/04/23</td>
                                 </tr>
                                 <tr>
                                 	<td>bs8</td>
                                 	<td>
-                                        Le mot <i>apex</i> doit être traduit dans les termes préférés par « apex » ou un terme plus pertinent s'il existe.
+                                        Le terme <i>apex</i> doit être traduit dans les termes préférés par « apex » ou un terme plus pertinent s'il existe.
                                         <u>Exemples</u> : <i>Structure of tip of tongue</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : apex de la langue</li>
-                                            <li>SYN : bout de la langue</li>
                                         </ul></div>
                                     </td>
-                                	<td>FTCG</td>
+                                	<td>PT</td>
+                                    <td>FTCG</td>
                                 	<td>12/12/22</td>
                                 </tr>
                                 <tr>
                                 	<td>bs9</td>
                                 	<td>
-                                        Les concepts contenant les termes « <i>Lesser toe</i> » désignent un orteil sauf le pouce, ils doivent donc avoir un terme préféré et au moins un synonyme acceptable contenant les termes suivants :
+                                        Les concepts contenant l'expression « <i>Lesser toe</i> » désignent un orteil sauf le pouce, ils doivent donc avoir un terme préféré et au moins un synonyme acceptable de la forme suivante :
                                         <div class="wysiwyg"><ul>
                                             <li>PT : orteil excepté l'hallux</li>
                                             <li>SYN : orteil latéral</li>
                                         </ul></div>
-                                        Le terme « petit orteil » est considéré comme erroné.
+                                        L'expression « petit orteil » est considérée comme erronée.
                                     </td>
-                                	<td>FTCG</td>
+                                	<td>PT + SYN</td>
+                                    <td>FTCG</td>
                                 	<td>18/12/23</td>
                                 </tr>
                                 <tr>
@@ -1958,7 +2096,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         L'expression <i>Lower limb</i> doit être traduite par « membre inférieur ».<br/><br/>
                                         L'expression <i>Lower leg</i> doit être traduite « partie inférieure de la jambe ».
                                     </td>
-	                                <td>ANS</td>
+	                                <td>Global</td>
+                                    <td>ANS</td>
 	                                <td>01/08/25</td>
                                 </tr>
                                 <tr>
@@ -1967,25 +2106,28 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         L'expression <i>Upper limb</i> doit être traduite par « membre supérieur ».<br/><br/>
                                         L'expression <i>Upper arm</i> doit être traduite par « partie supérieure du bras ».
                                     </td>
-                                	<td>ANS</td>
+                                	<td>Global</td>
+                                    <td>ANS</td>
                                 	<td>01/08/25</td>
                                 </tr>
                                 <tr>
 	                                <td>bs12</td>
 	                                <td>
-                                        Le mot <i>cerebrum</i> doit être traduit par « cerveau » ou « cérébral ».<br/><br/>
+                                        Le terme <i>cerebrum</i> et ses formes dérivées doivent être traduites par « cerveau » ou « cérébral ».<br/><br/>
                                         Les termes « encéphale » ou « encéphalique » sont considérés comme erronés.
                                     </td>
-                                	<td>FTCG</td>
+                                	<td>Global</td>
+                                    <td>FTCG</td>
                                 	<td>13/01/25</td>
                                 </tr>
                                 <tr>
                                 	<td>bs13</td>
                                 	<td>
-                                        Le mot <i>brain</i> doit être traduit par « encéphale » ou « encéphalique ».<br/><br/>
-                                        Le mot <i>brainstem</i> est une exception et doit être traduit par « tronc cérébral ».
+                                        Le terme <i>brain</i> doit être traduit par « encéphale » ou « encéphalique ».<br/><br/>
+                                        Le terme <i>brainstem</i> est une exception et doit être traduit par « tronc cérébral ».
                                     </td>
-                                	<td>FTCG</td>
+                                	<td>Global</td>
+                                    <td>FTCG</td>
                                 	<td>13/01/25</td>
                                 </tr>
                             </tbody>
@@ -1997,7 +2139,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                     <div class="wysiwyg">
                         <table>
                             <thead>
-                                <tr><th>ID</th><th>Règles</th><th>Source</th><th>Mise à jour</th></tr>
+                                <tr><th>ID</th><th>Règles</th><th>Type</th><th>Source</th><th>Mise à jour</th></tr>
                             </thead>
                             <tbody>
                                 <tr>
@@ -2016,7 +2158,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li>SYN : anticorps antirabique</li>
                                         </ul></div>
                                     </td>
-	                                <td>ANS</td>
+	                                <td>PT + SYN</td>
+                                    <td>ANS</td>
 	                                <td>29/07/25</td>
                                 </tr>
                                 <tr>
@@ -2055,7 +2198,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                               </ul>
                                         </ul></div>
                                     </td>
-	                                <td>ANS</td>
+	                                <td>PT + SYN</td>
+                                    <td>ANS</td>
 	                                <td>10/12/25</td>
                                 </tr>
                                 <tr>
@@ -2074,7 +2218,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                           <li>SYN : parahydroxybenzoate d'éthyle</li>
                                         </ul></div>
                                     </td>
-	                                <td>ANS</td>
+	                                <td>PT + SYN</td>
+                                    <td>ANS</td>
 	                                <td>10/12/25</td>
                                 </tr>
                                 <tr>
@@ -2087,7 +2232,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                           <li>SYN : acide 9-cis-octadécénoïque</li>
                                         </ul></div>
                                     </td>
-	                                <td>ANS</td>
+	                                <td>Global</td>
+                                    <td>ANS</td>
 	                                <td>10/12/25</td>
                                 </tr>
                                 <tr>
@@ -2100,7 +2246,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                           <li>SYN : tartrate de (S)-métoprolol</li>
                                         </ul></div>
                                     </td>
-	                                <td>ANS</td>
+	                                <td>Global</td>
+                                    <td>ANS</td>
 	                                <td>10/12/25</td>
                                 </tr>
                                 <tr>
@@ -2122,7 +2269,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             </ul>
                                         </ul></div>
                                     </td>
-	                                <td>ANS</td>
+	                                <td>PT</td>
+                                    <td>ANS</td>
 	                                <td>10/12/25</td>
                                 </tr>
                                 <tr>
@@ -2141,7 +2289,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                           <li>SYN : alcaloïde d'Atropa belladonna</li>
                                         </ul></div>
                                     </td>
-	                                <td>ANS</td>
+	                                <td>PT + SYN</td>
+                                    <td>ANS</td>
 	                                <td>10/12/25</td>
                                 </tr>
                                 <tr>
@@ -2154,7 +2303,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                           <li>SYN : moénomycine >B1<</li>
                                         </ul></div>
                                     </td>
-	                                <td>ANS</td>
+	                                <td>PT</td>
+                                    <td>ANS</td>
 	                                <td>10/12/25</td>
                                 </tr>
                                 <tr>
@@ -2167,7 +2317,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                           <li>SYN : extrait d'aubier de tilleul</li>
                                         </ul></div>
                                     </td>
-	                                <td>ANS</td>
+	                                <td>PT</td>
+                                    <td>ANS</td>
 	                                <td>10/12/25</td>
                                 </tr>
                             </tbody>
