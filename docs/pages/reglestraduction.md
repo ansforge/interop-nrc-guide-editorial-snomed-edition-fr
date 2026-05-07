@@ -79,7 +79,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>SI</td>
-                                    <td>25/11/24</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>ab3</td>
@@ -89,7 +89,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>02/07/19</td>
+                                    <td>07/05/26</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -121,7 +121,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>05/06/23</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>ar3</td>
@@ -131,7 +131,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>28/06/21</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>ar4-FR</td>
@@ -157,7 +157,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>02/11/20</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>ar7</td>
@@ -171,7 +171,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>02/11/20</td>
+                                    <td>07/05/26</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -287,7 +287,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <td>Les parenthèses doivent être utilisées pour encadrer la forme développée d’un acronyme ou d’un sigle au sein d’une description plus vaste. Les règles de typographie françaises doivent être respectées.</td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>05/06/23</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>se10</td>
@@ -307,7 +307,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>SI</td>
-                                    <td>18/12/23</td>
+                                    <td>07/05/26</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -503,7 +503,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>SI</td>
-                                    <td>02/11/20</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>ss2</td>
@@ -518,7 +518,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>SI</td>
-                                    <td>08/04/19</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>ss3</td>
@@ -589,7 +589,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>SI</td>
-                                    <td>05/06/23</td>
+                                    <td>07/05/26</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -653,7 +653,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>02/11/20</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>sc6</td>
@@ -667,7 +667,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>05/06/23</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>sc7</td>
@@ -730,7 +730,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>SI</td>
-                                    <td>13/12/21</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>tv2</td>
@@ -752,7 +752,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>SI</td>
-                                    <td>05/06/23</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>tv3</td>
@@ -767,7 +767,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>SI</td>
-                                    <td>13/12/21</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>tv4</td>
@@ -868,7 +868,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>05/06/23</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>um7</td>
@@ -924,7 +924,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>05/06/23</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>co5</td>
@@ -939,7 +939,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>07/11/19</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>co6-FR</td>
@@ -971,7 +971,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>PT + SYN</td>
                                     <td>ANS</td>
-                                    <td>01/08/25</td>
+                                    <td>07/05/26</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1015,7 +1015,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td><ul><li>Global</li><li>PT + Syn (section 4)</li></ul></td>
                                     <td>FTCG</td>
-                                    <td>05/06/23</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>pa3</td>
@@ -1036,7 +1036,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td></td>
                                     <td>FTCG</td>
-                                    <td>27/05/24</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>pa3.1</td>
@@ -1050,7 +1050,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>19/08/24</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>pa4</td>
@@ -1071,7 +1071,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>05/06/23</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>pa5</td>
@@ -1086,7 +1086,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>23/01/23</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>pa6</td>
@@ -1100,7 +1100,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>PT</td>
                                     <td>FTCG</td>
-                                    <td>05/04/23</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>pa7</td>
@@ -1124,7 +1124,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>18/12/23</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>pa8</td>
@@ -1143,7 +1143,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>18/12/23</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>pa9</td>
@@ -1162,7 +1162,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         </ul></div>
                                     </td>
                                     <td>FTCG</td>
-                                    <td>27/05/24</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>pa10</td>
@@ -1189,7 +1189,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>10/02/25</td>
+                                    <td>07/05/26</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1215,7 +1215,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>05/06/23</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>ec4</td>
@@ -1229,7 +1229,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>18/10/21</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>ec5</td>
@@ -1294,7 +1294,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>PT + SYN</td>
                                     <td>ANS</td>
-                                    <td>21/06/24</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>en2-FR</td>
@@ -1308,7 +1308,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>ANS</td>
-                                    <td>21/06/24</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>en3-FR</td>
@@ -1322,7 +1322,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>PT</td>
                                     <td>ANS</td>
-                                    <td>21/06/24</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>en4</td>
@@ -1332,7 +1332,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>07/10/24</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>en5</td>
@@ -1350,7 +1350,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>07/10/24</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>en6-FR</td>
@@ -1367,7 +1367,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>ANS</td>
-                                    <td>21/06/24</td>
+                                    <td>07/05/26</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1408,7 +1408,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>PT</td>
                                     <td>FTCG</td>
-                                    <td>25/11/24</td>
+                                    <td>07/05/26</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1430,7 +1430,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>PT</td>
                                     <td>FTCG</td>
-                                    <td>07/11/19</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>sb2</td>
@@ -1440,7 +1440,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>PT</td>
                                     <td>FTCG</td>
-                                    <td>07/11/19</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                     <td>sb3</td>
@@ -1459,7 +1459,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>PT + SYN</td>
                                     <td>FTCG</td>
-                                    <td>18/09/23</td>
+                                    <td>07/05/26</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1480,7 +1480,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>04/04/22</td>
+                                    <td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>ho3</td>
@@ -1494,7 +1494,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td>PT</td>
                                     <td>SI</td>
-	                                <td>30/05/22</td>
+	                                <td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>ho4</td>
@@ -1525,7 +1525,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td>PT + SYN</td>
                                     <td>FTCG</td>
-	                                <td>10/02/25</td>
+	                                <td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>ho6</td>
@@ -1545,7 +1545,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td>PT + SYN</td>
                                     <td>FTCG</td>
-	                                <td>10/02/25</td>
+	                                <td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>ho7</td>
@@ -1563,7 +1563,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td>PT + SYN</td>
                                     <td>FTCG</td>
-	                                <td>10/02/25</td>
+	                                <td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>ho8</td>
@@ -1577,7 +1577,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td>Global</td>
                                     <td>FTCG</td>
-	                                <td>10/02/25</td>
+	                                <td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>ho9</td>
@@ -1591,7 +1591,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td>Global</td>
                                     <td>FTCG</td>
-	                                <td>10/02/25</td>
+	                                <td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>ho10</td>
@@ -1601,7 +1601,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td>Global</td>
                                     <td>FTCG</td>
-	                                <td>10/02/25</td>
+	                                <td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>ho11</td>
@@ -1611,7 +1611,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td>Global</td>
                                     <td>FTCG</td>
-	                                <td>10/02/25</td>
+	                                <td>07/05/26</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1663,14 +1663,14 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 </td>
 	                            <td>PT + SYN</td>
                                 <td>FTCG</td>
-	                            <td>23/11/20</td>
+	                            <td>07/05/26</td>
                             </tr>
                             <tr>
 	                            <td>pr3</td>
 	                            <td>Le terme <i>consultation</i> se traduit par « consultation ».</td>
 	                        	<td>Global</td>
                                 <td>FTCG</td>
-	                        	<td>23/11/20</td>
+	                        	<td>07/05/26</td>
                             </tr>
                             <tr>
 	                            <td>pr4</td>
@@ -1685,7 +1685,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 </td>
 	                            <td>PT</td>
                                 <td>FTCG</td>
-	                            <td>28/09/22</td>
+	                            <td>07/05/26</td>
                             </tr>
                             <tr>
 	                            <td>pr5</td>
@@ -1699,7 +1699,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 </td>
 	                            <td>Global</td>
                                 <td>FTCG</td>
-	                            <td>28/09/22</td>
+	                            <td>07/05/26</td>
                             </tr>
                             <tr>
 	                            <td>pr6</td>
@@ -1714,7 +1714,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 </td>
 	                            <td>PT + SYN</td>
                                 <td>FTCG</td>
-	                            <td>28/09/22</td>
+	                            <td>07/05/26</td>
                             </tr>
                             <tr>
 	                            <td>pr7</td>
@@ -1730,7 +1730,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 </td>
                             	<td>PT + SYN</td>
                                 <td>FTCG</td>
-                            	<td>28/09/22</td>
+                            	<td>07/05/26</td>
                             </tr>
                             <tr>
 	                            <td>pr8</td>
@@ -1745,7 +1745,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 </td>
                             	<td>PT</td>
                                 <td>FTCG</td>
-                            	<td>28/09/22</td>
+                            	<td>07/05/26</td>
                             </tr>
                             <tr>
 	                            <td>pr9</td>
@@ -1763,7 +1763,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 </td>
                             	<td>PT + SYN</td>
                                 <td>FTCG</td>
-                            	<td>28/09/22</td>
+                            	<td>07/05/26</td>
                             </tr>
                             <tr>
 	                            <td>pr10</td>
@@ -1777,7 +1777,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 </td>
                             	<td>Global</td>
                                 <td>FTCG</td>
-                            	<td>28/09/22</td>
+                            	<td>07/05/26</td>
                             </tr>
                             <tr>
                             	<td>pr12</td>
@@ -1803,7 +1803,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 </td>
                             	<td>PT + SYN</td>
                                 <td>SI</td>
-                            	<td>18/12/23</td>
+                            	<td>07/05/26</td>
                             </tr>
                             <tr>
 	                            <td>pr13</td>
@@ -1823,7 +1823,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 </td>
                             	<td>PT + SYN</td>
                                 <td>FTCG</td>
-                            	<td>18/12/23</td>
+                            	<td>07/05/26</td>
                             </tr>
                             <tr>
 	                            <td>pr14</td>
@@ -1850,7 +1850,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 </td>
                             	<td>PT + SYN</td>
                                 <td>FTCG</td>
-                            	<td>18/12/23</td>
+                            	<td>07/05/26</td>
                             </tr>
                             <tr>
 	                            <td>pr15-FR</td>
@@ -1864,7 +1864,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 </td>
                             	<td>Global</td>
                                 <td>ANS</td>
-                            	<td>23/10/25</td>
+                            	<td>07/05/26</td>
                             </tr>
                             </tbody>
                         </table>
@@ -1892,7 +1892,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td>PT</td>
                                     <td>SI</td>
-	                                <td>05/06/23</td>
+	                                <td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>me2-FR</td>
@@ -1908,7 +1908,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                 	<td>PT</td>
                                     <td>SI</td>
-                                	<td>05/06/23</td>
+                                	<td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>me3</td>
@@ -1923,7 +1923,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                 	<td>PT</td>
                                     <td>SI</td>
-                                	<td>05/06/23</td>
+                                	<td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>me4</td>
@@ -1960,7 +1960,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                     <td>Global</td>
                                     <td>FTCG</td>
-                                    <td>10/02/25</td>
+                                    <td>07/05/26</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1986,7 +1986,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td>PT</td>
                                     <td>FTCG</td>
-	                                <td>18/10/21</td>
+	                                <td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>bs3</td>
@@ -2018,7 +2018,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td><ul><li>Global</li><li>PT + SYN (Structure)</li></ul></td>
                                     <td>SI</td>
-	                                <td>24/01/22</td>
+	                                <td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>bs4</td>
@@ -2039,7 +2039,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                 	<td>PT</td>
                                     <td>FTCG</td>
-                                	<td>12/12/22</td>
+                                	<td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>bs6</td>
@@ -2050,7 +2050,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                 	<td>PT</td>
                                     <td>FTCG</td>
-                                	<td>12/12/22</td>
+                                	<td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>bs7</td>
@@ -2061,7 +2061,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                 	<td>PT</td>
                                     <td>FTCG</td>
-                                	<td>05/04/23</td>
+                                	<td>07/05/26</td>
                                 </tr>
                                 <tr>
                                 	<td>bs8</td>
@@ -2074,7 +2074,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                 	<td>PT</td>
                                     <td>FTCG</td>
-                                	<td>12/12/22</td>
+                                	<td>07/05/26</td>
                                 </tr>
                                 <tr>
                                 	<td>bs9</td>
@@ -2088,7 +2088,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                 	<td>PT + SYN</td>
                                     <td>FTCG</td>
-                                	<td>18/12/23</td>
+                                	<td>07/05/26</td>
                                 </tr>
                                 <tr>
                                 	<td>bs10-FR</td>
@@ -2098,7 +2098,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td>Global</td>
                                     <td>ANS</td>
-	                                <td>01/08/25</td>
+	                                <td>07/05/26</td>
                                 </tr>
                                 <tr>
                                 	<td>bs11-FR</td>
@@ -2108,7 +2108,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                 	<td>Global</td>
                                     <td>ANS</td>
-                                	<td>01/08/25</td>
+                                	<td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>bs12</td>
@@ -2118,7 +2118,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                 	<td>Global</td>
                                     <td>FTCG</td>
-                                	<td>13/01/25</td>
+                                	<td>07/05/26</td>
                                 </tr>
                                 <tr>
                                 	<td>bs13</td>
@@ -2128,7 +2128,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
                                 	<td>Global</td>
                                     <td>FTCG</td>
-                                	<td>13/01/25</td>
+                                	<td>07/05/26</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -2160,7 +2160,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td>PT + SYN</td>
                                     <td>ANS</td>
-	                                <td>29/07/25</td>
+	                                <td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>su2-FR</td>
@@ -2200,7 +2200,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td>PT + SYN</td>
                                     <td>ANS</td>
-	                                <td>10/12/25</td>
+	                                <td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>su3-FR</td>
@@ -2220,7 +2220,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td>PT + SYN</td>
                                     <td>ANS</td>
-	                                <td>10/12/25</td>
+	                                <td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>su4-FR</td>
@@ -2234,7 +2234,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td>Global</td>
                                     <td>ANS</td>
-	                                <td>10/12/25</td>
+	                                <td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>su5-FR</td>
@@ -2248,7 +2248,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td>Global</td>
                                     <td>ANS</td>
-	                                <td>10/12/25</td>
+	                                <td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>su6-FR</td>
@@ -2271,7 +2271,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td>PT</td>
                                     <td>ANS</td>
-	                                <td>10/12/25</td>
+	                                <td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>su7-FR</td>
@@ -2291,7 +2291,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td>PT + SYN</td>
                                     <td>ANS</td>
-	                                <td>10/12/25</td>
+	                                <td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>su8-FR</td>
@@ -2305,7 +2305,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     </td>
 	                                <td>PT</td>
                                     <td>ANS</td>
-	                                <td>10/12/25</td>
+	                                <td>07/05/26</td>
                                 </tr>
                                 <tr>
 	                                <td>su9-FR</td>
