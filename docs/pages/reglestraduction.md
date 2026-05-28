@@ -1161,6 +1161,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                             <li><i>Anthrax</i> &rarr; maladie du charbon</li>
                                         </ul></div>
                                     </td>
+                                    <td>Global</td>
                                     <td>FTCG</td>
                                     <td>07/05/26</td>
                                 </tr>
