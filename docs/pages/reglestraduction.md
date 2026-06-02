@@ -988,7 +988,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                 <tr>
                                     <td>pa2</td>
                                     <td>
-                                        Le terme <i>disorder</i> doit être traduit dans les termes préférés par :<br/><br/>
+                                        Le terme <i>disorder</i> doit être traduit par :<br/><br/>
                                         1. <b>trouble</b> : si l’objet est une fonction, un métabolisme, a trait au psychisme, au comportement ou au développement.<br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
@@ -1001,7 +1001,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <u>Exemple</u> : <i>Disorder of skin</i> &rarr; affection cutanée<br/><br/>
                                         3. <b>anomalie</b> : si l’objet est un descendant de 4421005 |Cell structure (cell structure)|<br/>
                                         <u>Exemple</u> : <i>Chromosomal disorder</i> &rarr; anomalie chromosomique<br/><br/>
-                                        4. <b>complication</b> en terme préféré et <b>problème</b> en synonyme acceptable : si associé à un dispositif médical.<br/>
+                                        4. <b>complication</b> dans le terme préféré et <b>problème</b> dans au moins un synonyme acceptable : si associé à un dispositif médical.<br/>
                                         <u>Exemple</u> : <i>Disorder of pancreatic stent</i>
                                         <div class="wysiwyg"><ul>
                                             <li>PT : complication d'une endoprothèse pancréatique</li>
