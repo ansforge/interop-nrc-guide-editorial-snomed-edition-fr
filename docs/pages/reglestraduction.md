@@ -1711,7 +1711,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <li>SYN : excision totale [X]</li>
                                         <li>SYN : exérèse [X]</li>
                                     </ul></div><br/>
-                                    <u>Exemples</u><i>Total nephrectomy</i> &rarr; néphrectomie totale ; excision totale du rein ; exérèse du rein
+                                    <u>Exemples</u> : <i>Total nephrectomy</i> &rarr; néphrectomie totale ; excision totale du rein ; exérèse du rein
                                 </td>
 	                            <td>PT + SYN</td>
                                 <td>FTCG</td>
@@ -1727,7 +1727,7 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                         <li>SYN : résection partielle [X]</li>
                                     </ul></div><br/>
                                     L’adjectif « partielle » est ajouté à la résection pour éviter un conflit de traduction avec un concept parent employant l’expression « resection of [X] ».<br/><br/>
-                                    <u>Exemples</u><i>Partial nephrectomy</i> &rarr; néphrectomie partielle ; résection partielle du rein ; excision partielle du rein
+                                    <u>Exemples</u> : <i>Partial nephrectomy</i> &rarr; néphrectomie partielle ; résection partielle du rein ; excision partielle du rein
                                 </td>
                             	<td>PT + SYN</td>
                                 <td>FTCG</td>
