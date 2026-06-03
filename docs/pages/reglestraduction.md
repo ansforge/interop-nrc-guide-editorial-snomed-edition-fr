@@ -1169,8 +1169,8 @@ La colonne « Source » indique la source d’origine de la règle en question :
                                     <td>pa10</td>
                                     <td>
                                         <div class="wysiwyg"><ol>
-                                            <li><i>vapors</i> doit être traduit par « vapeurs » ;</li>
-                                            <li><i>fumes</i> doit être traduit par « émanation » ou « fumées ».</li>
+                                            <li><i>vapor</i> doit être traduit par « vapeurs » ;</li>
+                                            <li><i>fumes</i> doit être traduit par « émanations » ou « fumées ».</li>
                                         </ol></div><br/>
                                         <u>Exemples</u> :
                                         <div class="wysiwyg"><ul>
